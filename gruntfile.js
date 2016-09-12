@@ -2,12 +2,12 @@ module.exports = function(grunt) {
   grunt.initConfig({
     ts: {
       client : {
-        src: ["**/client/*.ts", "!node_modules/**"],
-        out:'dist/scripts/client.js'
+        src: ["client/*/*.ts", "!node_modules/**"],
+        out:'dist/client/scripts/site.js'
       },
-      client : {
-        src: ["**/server/*.ts", "!node_modules/**"],
-        out:'dist/scripts/server.js'
+      server : {
+        src: ["server/**/*.ts", "!node_modules/**"],
+        out:'dist/server/app.js'
       }
     }
   });
