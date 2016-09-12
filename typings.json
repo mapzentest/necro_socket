@@ -1,0 +1,8 @@
+{
+  "globalDependencies": {
+    "body-parser": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/body-parser/body-parser.d.ts",
+    "express-serve-static-core": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express-serve-static-core/express-serve-static-core.d.ts",
+    "mime": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mime/mime.d.ts",
+    "node": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/node/node.d.ts"
+  }
+}
