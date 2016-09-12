@@ -1,3 +1,9 @@
+.tscache/
+dist/
+.tmp/
+.build/
+public/
+.
 # Logs
 logs
 *.log
