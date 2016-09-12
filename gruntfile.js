@@ -1,13 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     ts: {
-      client : {
-        src: ["typings/*","client/*/*.ts", "!node_modules/**"],
-        out:'dist/client/scripts/site.js'
-      },
-      server : {
-        src: ["typings/*","server/**/*.ts", "!node_modules/**"],
-        out:'dist/server/app.js'
+      app : {
+        src: ["typings/*","app/**/*.ts", "!node_modules/**"],
+        options: {
+          module: "commonjs",
+          noLib: true,
+          target: "es6",
+          sourceMap: false
+        }
       }
     },
 

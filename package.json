@@ -4,6 +4,8 @@
   "description": "the simple socket server to collect & serving data from necrobot.",
   "main": "index.js",
   "scripts": {
+    "grunt": "grunt",
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
