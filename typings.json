@@ -1,11 +1,11 @@
 {
   "globalDependencies": {
     "body-parser": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/body-parser/body-parser.d.ts",
+    "express": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express/express.d.ts",
     "express-serve-static-core": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express-serve-static-core/express-serve-static-core.d.ts",
     "mime": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mime/mime.d.ts",
+    "mongoose": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongoose/mongoose.d.ts",
     "node": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/node/node.d.ts",
-    "socket.io": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io/socket.io.d.ts",
-    "express":"https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express/express.d.ts"
-   }
- 
+    "socket.io": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io/socket.io.d.ts"
+  }
 }
