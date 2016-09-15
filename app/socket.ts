@@ -31,6 +31,12 @@ class SocketServer {
                 console.log('message: ' + msg);
                 this.server.emit('chat message', msg);
             });
+             socket.on('pokemon', function (msg) {
+                console.log(msg)
+                //console.log(eval(msg));
+                this.server.broadcast.emit('pokemon', msg);
+            });
+
         });
     }
 }

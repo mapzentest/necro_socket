@@ -1,8 +1,14 @@
 "use strict";
 const socketio = require("socket.io");
+var middleware = require('socketio-wildcard')();
+
+//io.use(middleware);
+
 class SocketServer {
     constructor(http) {
         this.server = socketio(http);
+        this.server.use(middleware);
+
         this.config();
     }
     config() {
@@ -11,10 +17,17 @@ class SocketServer {
             socket.on('disconnect', function () {
                 console.log('user disconnected');
             });
-            socket.on('chat message', function (msg) {
-                console.log('message: ' + msg);
+            socket.on('pokemon', function (msg) {
+                console.log(msg)
+                //console.log(eval(msg));
                 this.server.emit('chat message', msg);
             });
+
+            // socket.on('*', function (msg) {
+            //     console.log('message 111: ' + msg);
+            //     console.log("Session: %j", msg);
+            //     this.server.emit('chat message', msg);
+            // });
         });
     }
 }
