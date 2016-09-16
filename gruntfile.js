@@ -1,41 +1,55 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
+  require('load-grunt-tasks')(grunt)
+
   grunt.initConfig({
     ts: {
-      app : {
-        src: ["typings/*","app/**/*.ts", "!node_modules/**"],
+      app: {
+        src: ['typings/*', 'app/**/*.ts', '!node_modules/**'],
         options: {
-          module: "commonjs",
+          module: 'commonjs',
           noLib: true,
-          target: "es6",
+          target: 'es6',
           sourceMap: false
         }
       }
     },
 
-   tslint: {
+    tslint: {
       options: {
-        configuration: "tslint.json"
+        configuration: 'tslint.json'
       },
       files: {
-        src: ["src/**/*.ts"]
+        src: ['src/**/*.ts']
+      }
+    },
+    sass: { // Task
+      dist: { // Target
+        options: { // Target options
+          // style: 'expanded',
+          sourceMap: true
+        },
+        files: { // Dictionary of files
+          'app/www/styles/ui.css': 'app/www/styles/ui.scss', // 'destination': 'source'
+        }
       }
     },
     watch: {
       ts: {
-        files: ["js/src/**/*.ts", "src/**/*.ts"],
-        tasks: ["ts", "tslint"]
+        files: ['app/**/*.ts'],
+        tasks: ['ts', 'tslint']
+      },
+      sass: {
+        files: ['app/**/*.scss'],
+        tasks: ['sass']
       }
     }
-  });
+  })
 
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-ts");
-  grunt.loadNpmTasks("grunt-tslint");
-
-  grunt.registerTask("default", [
-    "ts",
-    "tslint"
-  ]);
-  //grunt.registerTask("default", ["ts"]);
-};
-//https://github.com/TypeStrong/grunt-ts/tree/master/sample
+  grunt.registerTask('default', [
+    'sass',
+    'ts',
+    'tslint'
+  ])
+// grunt.registerTask("default", ["ts"])
+}
+// https://github.com/TypeStrong/grunt-ts/tree/master/sample

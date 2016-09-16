@@ -1,0 +1,104 @@
+ @import "_constants.scss";
+ html {
+     position: relative;
+     min-height: 100%;
+ }
+ 
+ body {
+     /* Margin bottom by footer height */
+     margin-bottom: 60px;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ .footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     /* Set the fixed height of the footer here */
+     height: 60px;
+     line-height: 60px;
+     /* Vertically center the text there */
+     background-color: #f5f5f5;
+ }
+ /* Custom page CSS
+-------------------------------------------------- */
+ /* Not required for template or sticky footer method. */
+ 
+ body> .container {
+     padding: 80px 15px 0;
+ }
+ 
+ .footer> .container {
+     padding-right: 15px;
+     padding-left: 15px;
+ }
+ 
+ code {
+     font-size: 80%;
+ }
+ 
+ .navbar {
+     height: 70px;
+     background-color: seagreen;
+     border-radius: 0;
+     color: snow;
+     padding-top: 15px;
+     .navbar-brand {
+         color: #fff;
+     }
+     .nav {
+         .nav-link {
+             color: #fff;
+         }
+     }
+ }
+ 
+ //  pokemon item
+ .pokemon-item {
+     .sniper-links {
+         position: absolute;
+         top: 50px;
+         left: 20;
+         display: none;
+         background: url('images/snipe-icon.svg');
+         background-size: cover;
+         width: 200px;
+         height: 200px;
+     }
+     &:hover {
+         .sniper-links {
+             display: block;
+         }
+     }
+     .card {
+         &.Common {
+             border-color: $color-pokemon-common;
+             .card-header{
+                 background-color: $color-pokemon-common;
+                 color: #fff;
+             }
+         }
+         &.Rare {
+             border-color: $color-pokemon-rare;
+             .card-header{
+                 background-color: $color-pokemon-rare;
+                 color: #fff;
+             }
+         }
+         &.Uncommon {
+             border-color: $color-pokemon-popular;
+             .card-header{
+                 background-color: $color-pokemon-popular;
+                 color: #fff;
+             }
+         }
+         &.SuperRare {
+             border-color: $color-pokemon-special;
+             .card-header{
+                 background-color: $color-pokemon-special;
+                 color: #fff;
+             }
+         }
+         
+     }
+ }

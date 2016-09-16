@@ -1,0 +1,6491 @@
+{
+    "1": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bulbasaur",
+        "Id": 1,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Rare"
+    },
+    "2": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ivysaur",
+        "Id": 2,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Rare"
+    },
+    "3": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Venusaur",
+        "Id": 3,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Rare"
+    },
+    "4": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Charmander",
+        "Id": 4,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "5": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Charmeleon",
+        "Id": 5,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "6": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Charizard",
+        "Id": 6,
+        "Types": ["Fire", "Flying"],
+        "Rarity": "Rare"
+    },
+    "7": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Squirtle",
+        "Id": 7,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "8": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wartortle",
+        "Id": 8,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "9": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Blastoise",
+        "Id": 9,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "10": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Caterpie",
+        "Id": 10,
+        "Types": ["Bug"],
+        "Rarity": "Uncommon"
+    },
+    "11": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Metapod",
+        "Id": 11,
+        "Types": ["Bug"],
+        "Rarity": "Uncommon"
+    },
+    "12": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Butterfree",
+        "Id": 12,
+        "Types": ["Bug", "Flying"],
+        "Rarity": "Uncommon"
+    },
+    "13": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Weedle",
+        "Id": 13,
+        "Types": ["Bug", "Poison"],
+        "Rarity": "Common"
+    },
+    "14": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kakuna",
+        "Id": 14,
+        "Types": ["Bug", "Poison"],
+        "Rarity": "Common"
+    },
+    "15": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Beedrill",
+        "Id": 15,
+        "Types": ["Bug", "Poison"],
+        "Rarity": "Common"
+    },
+    "16": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pidgey",
+        "Id": 16,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "Common"
+    },
+    "17": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pidgeotto",
+        "Id": 17,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "Common"
+    },
+    "18": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pidgeot",
+        "Id": 18,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "Common"
+    },
+    "19": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rattata",
+        "Id": 19,
+        "Types": ["Normal"],
+        "Rarity": "Common"
+    },
+    "20": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Raticate",
+        "Id": 20,
+        "Types": ["Normal"],
+        "Rarity": "Common"
+    },
+    "21": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spearow",
+        "Id": 21,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "Uncommon"
+    },
+    "22": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Fearow",
+        "Id": 22,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "Uncommon"
+    },
+    "23": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ekans",
+        "Id": 23,
+        "Types": ["Poison"],
+        "Rarity": "Uncommon"
+    },
+    "24": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Arbok",
+        "Id": 24,
+        "Types": ["Poison"],
+        "Rarity": "Uncommon"
+    },
+    "25": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pikachu",
+        "Id": 25,
+        "Types": ["Electric"],
+        "Rarity": "Rare"
+    },
+    "26": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Raichu",
+        "Id": 26,
+        "Types": ["Electric"],
+        "Rarity": "Rare"
+    },
+    "27": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sandshrew",
+        "Id": 27,
+        "Types": ["Ground"],
+        "Rarity": "Rare"
+    },
+    "28": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sandslash",
+        "Id": 28,
+        "Types": ["Ground"],
+        "Rarity": "Rare"
+    },
+    "29": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nidoranâ™€",
+        "Id": 29,
+        "Types": ["Poison"],
+        "Rarity": "Uncommon"
+    },
+    "30": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nidorina",
+        "Id": 30,
+        "Types": ["Poison"],
+        "Rarity": "Uncommon"
+    },
+    "31": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nidoqueen",
+        "Id": 31,
+        "Types": ["Poison", "Ground"],
+        "Rarity": "Uncommon"
+    },
+    "32": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nidoranâ™‚",
+        "Id": 32,
+        "Types": ["Poison"],
+        "Rarity": "Uncommon"
+    },
+    "33": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nidorino",
+        "Id": 33,
+        "Types": ["Poison"],
+        "Rarity": "Uncommon"
+    },
+    "34": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nidoking",
+        "Id": 34,
+        "Types": ["Poison", "Ground"],
+        "Rarity": "Uncommon"
+    },
+    "35": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Clefairy",
+        "Id": 35,
+        "Types": ["Fairy"],
+        "Rarity": "Rare"
+    },
+    "36": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Clefable",
+        "Id": 36,
+        "Types": ["Fairy"],
+        "Rarity": "Rare"
+    },
+    "37": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vulpix",
+        "Id": 37,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "38": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ninetales",
+        "Id": 38,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "39": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Jigglypuff",
+        "Id": 39,
+        "Types": ["Normal", "Fairy"],
+        "Rarity": "Rare"
+    },
+    "40": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wigglytuff",
+        "Id": 40,
+        "Types": ["Normal", "Fairy"],
+        "Rarity": "Rare"
+    },
+    "41": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zubat",
+        "Id": 41,
+        "Types": ["Poison", "Flying"],
+        "Rarity": "Common"
+    },
+    "42": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Golbat",
+        "Id": 42,
+        "Types": ["Poison", "Flying"],
+        "Rarity": "Common"
+    },
+    "43": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Oddish",
+        "Id": 43,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "44": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gloom",
+        "Id": 44,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "45": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vileplume",
+        "Id": 45,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "46": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Paras",
+        "Id": 46,
+        "Types": ["Bug", "Grass"],
+        "Rarity": "Uncommon"
+    },
+    "47": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Parasect",
+        "Id": 47,
+        "Types": ["Bug", "Grass"],
+        "Rarity": "Uncommon"
+    },
+    "48": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Venonat",
+        "Id": 48,
+        "Types": ["Bug", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "49": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Venomoth",
+        "Id": 49,
+        "Types": ["Bug", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "50": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Diglett",
+        "Id": 50,
+        "Types": ["Ground"],
+        "Rarity": "Rare"
+    },
+    "51": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dugtrio",
+        "Id": 51,
+        "Types": ["Ground"],
+        "Rarity": "Rare"
+    },
+    "52": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Meowth",
+        "Id": 52,
+        "Types": ["Normal"],
+        "Rarity": "Rare"
+    },
+    "53": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Persian",
+        "Id": 53,
+        "Types": ["Normal"],
+        "Rarity": "Rare"
+    },
+    "54": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Psyduck",
+        "Id": 54,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "55": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Golduck",
+        "Id": 55,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "56": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mankey",
+        "Id": 56,
+        "Types": ["Fighting"],
+        "Rarity": "Rare"
+    },
+    "57": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Primeape",
+        "Id": 57,
+        "Types": ["Fighting"],
+        "Rarity": "Rare"
+    },
+    "58": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Growlithe",
+        "Id": 58,
+        "Types": ["Fire"],
+        "Rarity": "Uncommon"
+    },
+    "59": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Arcanine",
+        "Id": 59,
+        "Types": ["Fire"],
+        "Rarity": "Uncommon"
+    },
+    "60": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Poliwag",
+        "Id": 60,
+        "Types": ["Water"],
+        "Rarity": "Uncommon"
+    },
+    "61": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Poliwhirl",
+        "Id": 61,
+        "Types": ["Water"],
+        "Rarity": "Uncommon"
+    },
+    "62": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Poliwrath",
+        "Id": 62,
+        "Types": ["Water", "Fighting"],
+        "Rarity": "Uncommon"
+    },
+    "63": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Abra",
+        "Id": 63,
+        "Types": ["Psychic"],
+        "Rarity": "Rare"
+    },
+    "64": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kadabra",
+        "Id": 64,
+        "Types": ["Psychic"],
+        "Rarity": "Rare"
+    },
+    "65": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Alakazam",
+        "Id": 65,
+        "Types": ["Psychic"],
+        "Rarity": "Rare"
+    },
+    "66": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Machop",
+        "Id": 66,
+        "Types": ["Fighting"],
+        "Rarity": "Rare"
+    },
+    "67": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Machoke",
+        "Id": 67,
+        "Types": ["Fighting"],
+        "Rarity": "Rare"
+    },
+    "68": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Machamp",
+        "Id": 68,
+        "Types": ["Fighting"],
+        "Rarity": "Rare"
+    },
+    "69": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bellsprout",
+        "Id": 69,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "70": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Weepinbell",
+        "Id": 70,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "71": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Victreebel",
+        "Id": 71,
+        "Types": ["Grass", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "72": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tentacool",
+        "Id": 72,
+        "Types": ["Water", "Poison"],
+        "Rarity": "Rare"
+    },
+    "73": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tentacruel",
+        "Id": 73,
+        "Types": ["Water", "Poison"],
+        "Rarity": "Rare"
+    },
+    "74": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Geodude",
+        "Id": 74,
+        "Types": ["Rock", "Ground"],
+        "Rarity": "Rare"
+    },
+    "75": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Graveler",
+        "Id": 75,
+        "Types": ["Rock", "Ground"],
+        "Rarity": "Rare"
+    },
+    "76": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Golem",
+        "Id": 76,
+        "Types": ["Rock", "Ground"],
+        "Rarity": "Rare"
+    },
+    "77": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ponyta",
+        "Id": 77,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "78": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rapidash",
+        "Id": 78,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "79": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Slowpoke",
+        "Id": 79,
+        "Types": ["Water", "Psychic"],
+        "Rarity": "Rare"
+    },
+    "80": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Slowbro",
+        "Id": 80,
+        "Types": ["Water", "Psychic"],
+        "Rarity": "Rare"
+    },
+    "81": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magnemite",
+        "Id": 81,
+        "Types": ["Electric", "Steel"],
+        "Rarity": "Rare"
+    },
+    "82": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magneton",
+        "Id": 82,
+        "Types": ["Electric", "Steel"],
+        "Rarity": "Rare"
+    },
+    "83": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Farfetch'd",
+        "Id": 83,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "SuperRare"
+    },
+    "84": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Doduo",
+        "Id": 84,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "Uncommon"
+    },
+    "85": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dodrio",
+        "Id": 85,
+        "Types": ["Normal", "Flying"],
+        "Rarity": "Uncommon"
+    },
+    "86": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Seel",
+        "Id": 86,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "87": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dewgong",
+        "Id": 87,
+        "Types": ["Water", "Ice"],
+        "Rarity": "Rare"
+    },
+    "88": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Grimer",
+        "Id": 88,
+        "Types": ["Poison"],
+        "Rarity": "VeryRare"
+    },
+    "89": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Muk",
+        "Id": 89,
+        "Types": ["Poison"],
+        "Rarity": "VeryRare"
+    },
+    "90": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shellder",
+        "Id": 90,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "91": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cloyster",
+        "Id": 91,
+        "Types": ["Water", "Ice"],
+        "Rarity": "Rare"
+    },
+    "92": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gastly",
+        "Id": 92,
+        "Types": ["Ghost", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "93": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Haunter",
+        "Id": 93,
+        "Types": ["Ghost", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "94": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gengar",
+        "Id": 94,
+        "Types": ["Ghost", "Poison"],
+        "Rarity": "Uncommon"
+    },
+    "95": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Onix",
+        "Id": 95,
+        "Types": ["Rock", "Ground"],
+        "Rarity": "Rare"
+    },
+    "96": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Drowzee",
+        "Id": 96,
+        "Types": ["Psychic"],
+        "Rarity": "Uncommon"
+    },
+    "97": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hypno",
+        "Id": 97,
+        "Types": ["Psychic"],
+        "Rarity": "Uncommon"
+    },
+    "98": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Krabby",
+        "Id": 98,
+        "Types": ["Water"],
+        "Rarity": "Uncommon"
+    },
+    "99": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kingler",
+        "Id": 99,
+        "Types": ["Water"],
+        "Rarity": "Uncommon"
+    },
+    "100": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Voltorb",
+        "Id": 100,
+        "Types": ["Electric"],
+        "Rarity": "Rare"
+    },
+    "101": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Electrode",
+        "Id": 101,
+        "Types": ["Electric"],
+        "Rarity": "Rare"
+    },
+    "102": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Exeggcute",
+        "Id": 102,
+        "Types": ["Grass", "Psychic"],
+        "Rarity": "Rare"
+    },
+    "103": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Exeggutor",
+        "Id": 103,
+        "Types": ["Grass", "Psychic"],
+        "Rarity": "Rare"
+    },
+    "104": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cubone",
+        "Id": 104,
+        "Types": ["Ground"],
+        "Rarity": "Rare"
+    },
+    "105": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Marowak",
+        "Id": 105,
+        "Types": ["Ground"],
+        "Rarity": "Rare"
+    },
+    "106": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hitmonlee",
+        "Id": 106,
+        "Types": ["Fighting"],
+        "Rarity": "VeryRare"
+    },
+    "107": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hitmonchan",
+        "Id": 107,
+        "Types": ["Fighting"],
+        "Rarity": "VeryRare"
+    },
+    "108": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lickitung",
+        "Id": 108,
+        "Types": ["Normal"],
+        "Rarity": "VeryRare"
+    },
+    "109": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Koffing",
+        "Id": 109,
+        "Types": ["Poison"],
+        "Rarity": "Rare"
+    },
+    "110": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Weezing",
+        "Id": 110,
+        "Types": ["Poison"],
+        "Rarity": "Rare"
+    },
+    "111": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rhyhorn",
+        "Id": 111,
+        "Types": ["Ground", "Rock"],
+        "Rarity": "Rare"
+    },
+    "112": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rhydon",
+        "Id": 112,
+        "Types": ["Ground", "Rock"],
+        "Rarity": "Rare"
+    },
+    "113": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chansey",
+        "Id": 113,
+        "Types": ["Normal"],
+        "Rarity": "VeryRare"
+    },
+    "114": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tangela",
+        "Id": 114,
+        "Types": ["Grass"],
+        "Rarity": "Rare"
+    },
+    "115": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kangaskhan",
+        "Id": 115,
+        "Types": ["Normal"],
+        "Rarity": "SuperRare"
+    },
+    "116": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Horsea",
+        "Id": 116,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "117": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Seadra",
+        "Id": 117,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "118": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Goldeen",
+        "Id": 118,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "119": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Seaking",
+        "Id": 119,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "120": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Staryu",
+        "Id": 120,
+        "Types": ["Water"],
+        "Rarity": "Uncommon"
+    },
+    "121": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Starmie",
+        "Id": 121,
+        "Types": ["Water", "Psychic"],
+        "Rarity": "Uncommon"
+    },
+    "122": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mr. Mime",
+        "Id": 122,
+        "Types": ["Psychic", "Fairy"],
+        "Rarity": "SuperRare"
+    },
+    "123": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Scyther",
+        "Id": 123,
+        "Types": ["Bug", "Flying"],
+        "Rarity": "Rare"
+    },
+    "124": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Jynx",
+        "Id": 124,
+        "Types": ["Ice", "Psychic"],
+        "Rarity": "Rare"
+    },
+    "125": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Electabuzz",
+        "Id": 125,
+        "Types": ["Electric"],
+        "Rarity": "Rare"
+    },
+    "126": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magmar",
+        "Id": 126,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "127": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pinsir",
+        "Id": 127,
+        "Types": ["Bug"],
+        "Rarity": "Uncommon"
+    },
+    "128": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tauros",
+        "Id": 128,
+        "Types": ["Normal"],
+        "Rarity": "Rare"
+    },
+    "129": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magikarp",
+        "Id": 129,
+        "Types": ["Water"],
+        "Rarity": "VeryRare"
+    },
+    "130": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gyarados",
+        "Id": 130,
+        "Types": ["Water", "Flying"],
+        "Rarity": "VeryRare"
+    },
+    "131": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lapras",
+        "Id": 131,
+        "Types": ["Water", "Ice"],
+        "Rarity": "SuperRare"
+    },
+    "132": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ditto",
+        "Id": 132,
+        "Types": ["Normal"],
+        "Rarity": "SuperRare"
+    },
+    "133": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Eevee",
+        "Id": 133,
+        "Types": ["Normal"],
+        "Rarity": "Rare"
+    },
+    "134": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vaporeon",
+        "Id": 134,
+        "Types": ["Water"],
+        "Rarity": "Rare"
+    },
+    "135": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Jolteon",
+        "Id": 135,
+        "Types": ["Electric"],
+        "Rarity": "Rare"
+    },
+    "136": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Flareon",
+        "Id": 136,
+        "Types": ["Fire"],
+        "Rarity": "Rare"
+    },
+    "137": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Porygon",
+        "Id": 137,
+        "Types": ["Normal"],
+        "Rarity": "VeryRare"
+    },
+    "138": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Omanyte",
+        "Id": 138,
+        "Types": ["Rock", "Water"],
+        "Rarity": "Rare"
+    },
+    "139": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Omastar",
+        "Id": 139,
+        "Types": ["Rock", "Water"],
+        "Rarity": "Rare"
+    },
+    "140": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kabuto",
+        "Id": 140,
+        "Types": ["Rock", "Water"],
+        "Rarity": "Rare"
+    },
+    "141": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kabutops",
+        "Id": 141,
+        "Types": ["Rock", "Water"],
+        "Rarity": "Rare"
+    },
+    "142": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Aerodactyl",
+        "Id": 142,
+        "Types": ["Rock", "Flying"],
+        "Rarity": "VeryRare"
+    },
+    "143": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Snorlax",
+        "Id": 143,
+        "Types": ["Normal"],
+        "Rarity": "Rare"
+    },
+    "144": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Articuno",
+        "Id": 144,
+        "Types": ["Ice", "Flying"],
+        "Rarity": "SuperRare"
+    },
+    "145": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zapdos",
+        "Id": 145,
+        "Types": ["Electric", "Flying"],
+        "Rarity": "SuperRare"
+    },
+    "146": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Moltres",
+        "Id": 146,
+        "Types": ["Fire", "Flying"],
+        "Rarity": "SuperRare"
+    },
+    "147": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dratini",
+        "Id": 147,
+        "Types": ["Dragon"],
+        "Rarity": "Rare"
+    },
+    "148": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dragonair",
+        "Id": 148,
+        "Types": ["Dragon"],
+        "Rarity": "Rare"
+    },
+    "149": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dragonite",
+        "Id": 149,
+        "Types": ["Dragon", "Flying"],
+        "Rarity": "Rare"
+    },
+    "150": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mewtwo",
+        "Id": 150,
+        "Types": ["Psychic"],
+        "Rarity": "SuperRare"
+    },
+    "151": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mew",
+        "Id": 151,
+        "Types": ["Psychic"],
+        "Rarity": "SuperRare"
+    },
+    "152": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chikorita",
+        "Id": 152,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "153": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bayleef",
+        "Id": 153,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "154": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Meganium",
+        "Id": 154,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "155": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cyndaquil",
+        "Id": 155,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "156": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Quilava",
+        "Id": 156,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "157": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Typhlosion",
+        "Id": 157,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "158": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Totodile",
+        "Id": 158,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "159": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Croconaw",
+        "Id": 159,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "160": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Feraligatr",
+        "Id": 160,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "161": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sentret",
+        "Id": 161,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "162": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Furret",
+        "Id": 162,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "163": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hoothoot",
+        "Id": 163,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "164": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Noctowl",
+        "Id": 164,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "165": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ledyba",
+        "Id": 165,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "166": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ledian",
+        "Id": 166,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "167": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spinarak",
+        "Id": 167,
+        "Types": ["Bug", "Poison"],
+        "Rarity": null
+    },
+    "168": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ariados",
+        "Id": 168,
+        "Types": ["Bug", "Poison"],
+        "Rarity": null
+    },
+    "169": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Crobat",
+        "Id": 169,
+        "Types": ["Poison", "Flying"],
+        "Rarity": null
+    },
+    "170": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chinchou",
+        "Id": 170,
+        "Types": ["Water", "Electric"],
+        "Rarity": null
+    },
+    "171": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lanturn",
+        "Id": 171,
+        "Types": ["Water", "Electric"],
+        "Rarity": null
+    },
+    "172": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pichu",
+        "Id": 172,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "173": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cleffa",
+        "Id": 173,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "174": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Igglybuff",
+        "Id": 174,
+        "Types": ["Normal", "Fairy"],
+        "Rarity": null
+    },
+    "175": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Togepi",
+        "Id": 175,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "176": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Togetic",
+        "Id": 176,
+        "Types": ["Fairy", "Flying"],
+        "Rarity": null
+    },
+    "177": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Natu",
+        "Id": 177,
+        "Types": ["Psychic", "Flying"],
+        "Rarity": null
+    },
+    "178": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Xatu",
+        "Id": 178,
+        "Types": ["Psychic", "Flying"],
+        "Rarity": null
+    },
+    "179": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mareep",
+        "Id": 179,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "180": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Flaaffy",
+        "Id": 180,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "181": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ampharos",
+        "Id": 181,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "182": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bellossom",
+        "Id": 182,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "183": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Marill",
+        "Id": 183,
+        "Types": ["Water", "Fairy"],
+        "Rarity": null
+    },
+    "184": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Azumarill",
+        "Id": 184,
+        "Types": ["Water", "Fairy"],
+        "Rarity": null
+    },
+    "185": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sudowoodo",
+        "Id": 185,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "186": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Politoed",
+        "Id": 186,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "187": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hoppip",
+        "Id": 187,
+        "Types": ["Grass", "Flying"],
+        "Rarity": null
+    },
+    "188": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Skiploom",
+        "Id": 188,
+        "Types": ["Grass", "Flying"],
+        "Rarity": null
+    },
+    "189": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Jumpluff",
+        "Id": 189,
+        "Types": ["Grass", "Flying"],
+        "Rarity": null
+    },
+    "190": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Aipom",
+        "Id": 190,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "191": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sunkern",
+        "Id": 191,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "192": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sunflora",
+        "Id": 192,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "193": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Yanma",
+        "Id": 193,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "194": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wooper",
+        "Id": 194,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "195": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Quagsire",
+        "Id": 195,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "196": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Espeon",
+        "Id": 196,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "197": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Umbreon",
+        "Id": 197,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "198": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Murkrow",
+        "Id": 198,
+        "Types": ["Dark", "Flying"],
+        "Rarity": null
+    },
+    "199": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Slowking",
+        "Id": 199,
+        "Types": ["Water", "Psychic"],
+        "Rarity": null
+    },
+    "200": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Misdreavus",
+        "Id": 200,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "201": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Unown",
+        "Id": 201,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "202": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wobbuffet",
+        "Id": 202,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "203": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Girafarig",
+        "Id": 203,
+        "Types": ["Normal", "Psychic"],
+        "Rarity": null
+    },
+    "204": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pineco",
+        "Id": 204,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "205": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Forretress",
+        "Id": 205,
+        "Types": ["Bug", "Steel"],
+        "Rarity": null
+    },
+    "206": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dunsparce",
+        "Id": 206,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "207": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gligar",
+        "Id": 207,
+        "Types": ["Ground", "Flying"],
+        "Rarity": null
+    },
+    "208": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Steelix",
+        "Id": 208,
+        "Types": ["Steel", "Ground"],
+        "Rarity": null
+    },
+    "209": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Snubbull",
+        "Id": 209,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "210": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Granbull",
+        "Id": 210,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "211": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Qwilfish",
+        "Id": 211,
+        "Types": ["Water", "Poison"],
+        "Rarity": null
+    },
+    "212": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Scizor",
+        "Id": 212,
+        "Types": ["Bug", "Steel"],
+        "Rarity": null
+    },
+    "213": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shuckle",
+        "Id": 213,
+        "Types": ["Bug", "Rock"],
+        "Rarity": null
+    },
+    "214": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Heracross",
+        "Id": 214,
+        "Types": ["Bug", "Fighting"],
+        "Rarity": null
+    },
+    "215": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sneasel",
+        "Id": 215,
+        "Types": ["Dark", "Ice"],
+        "Rarity": null
+    },
+    "216": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Teddiursa",
+        "Id": 216,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "217": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ursaring",
+        "Id": 217,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "218": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Slugma",
+        "Id": 218,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "219": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magcargo",
+        "Id": 219,
+        "Types": ["Fire", "Rock"],
+        "Rarity": null
+    },
+    "220": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swinub",
+        "Id": 220,
+        "Types": ["Ice", "Ground"],
+        "Rarity": null
+    },
+    "221": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Piloswine",
+        "Id": 221,
+        "Types": ["Ice", "Ground"],
+        "Rarity": null
+    },
+    "222": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Corsola",
+        "Id": 222,
+        "Types": ["Water", "Rock"],
+        "Rarity": null
+    },
+    "223": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Remoraid",
+        "Id": 223,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "224": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Octillery",
+        "Id": 224,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "225": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Delibird",
+        "Id": 225,
+        "Types": ["Ice", "Flying"],
+        "Rarity": null
+    },
+    "226": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mantine",
+        "Id": 226,
+        "Types": ["Water", "Flying"],
+        "Rarity": null
+    },
+    "227": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Skarmory",
+        "Id": 227,
+        "Types": ["Steel", "Flying"],
+        "Rarity": null
+    },
+    "228": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Houndour",
+        "Id": 228,
+        "Types": ["Dark", "Fire"],
+        "Rarity": null
+    },
+    "229": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Houndoom",
+        "Id": 229,
+        "Types": ["Dark", "Fire"],
+        "Rarity": null
+    },
+    "230": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kingdra",
+        "Id": 230,
+        "Types": ["Water", "Dragon"],
+        "Rarity": null
+    },
+    "231": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Phanpy",
+        "Id": 231,
+        "Types": ["Ground"],
+        "Rarity": null
+    },
+    "232": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Donphan",
+        "Id": 232,
+        "Types": ["Ground"],
+        "Rarity": null
+    },
+    "233": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Porygon2",
+        "Id": 233,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "234": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Stantler",
+        "Id": 234,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "235": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Smeargle",
+        "Id": 235,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "236": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tyrogue",
+        "Id": 236,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "237": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hitmontop",
+        "Id": 237,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "238": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Smoochum",
+        "Id": 238,
+        "Types": ["Ice", "Psychic"],
+        "Rarity": null
+    },
+    "239": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Elekid",
+        "Id": 239,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "240": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magby",
+        "Id": 240,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "241": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Miltank",
+        "Id": 241,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "242": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Blissey",
+        "Id": 242,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "243": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Raikou",
+        "Id": 243,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "244": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Entei",
+        "Id": 244,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "245": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Suicune",
+        "Id": 245,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "246": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Larvitar",
+        "Id": 246,
+        "Types": ["Rock", "Ground"],
+        "Rarity": null
+    },
+    "247": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pupitar",
+        "Id": 247,
+        "Types": ["Rock", "Ground"],
+        "Rarity": null
+    },
+    "248": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tyranitar",
+        "Id": 248,
+        "Types": ["Rock", "Dark"],
+        "Rarity": null
+    },
+    "249": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lugia",
+        "Id": 249,
+        "Types": ["Psychic", "Flying"],
+        "Rarity": null
+    },
+    "250": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ho-oh",
+        "Id": 250,
+        "Types": ["Fire", "Flying"],
+        "Rarity": null
+    },
+    "251": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Celebi",
+        "Id": 251,
+        "Types": ["Psychic", "Grass"],
+        "Rarity": null
+    },
+    "252": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Treecko",
+        "Id": 252,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "253": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Grovyle",
+        "Id": 253,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "254": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sceptile",
+        "Id": 254,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "255": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Torchic",
+        "Id": 255,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "256": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Combusken",
+        "Id": 256,
+        "Types": ["Fire", "Fighting"],
+        "Rarity": null
+    },
+    "257": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Blaziken",
+        "Id": 257,
+        "Types": ["Fire", "Fighting"],
+        "Rarity": null
+    },
+    "258": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mudkip",
+        "Id": 258,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "259": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Marshtomp",
+        "Id": 259,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "260": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swampert",
+        "Id": 260,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "261": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Poochyena",
+        "Id": 261,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "262": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mightyena",
+        "Id": 262,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "263": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zigzagoon",
+        "Id": 263,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "264": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Linoone",
+        "Id": 264,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "265": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wurmple",
+        "Id": 265,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "266": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Silcoon",
+        "Id": 266,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "267": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Beautifly",
+        "Id": 267,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "268": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cascoon",
+        "Id": 268,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "269": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dustox",
+        "Id": 269,
+        "Types": ["Bug", "Poison"],
+        "Rarity": null
+    },
+    "270": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lotad",
+        "Id": 270,
+        "Types": ["Water", "Grass"],
+        "Rarity": null
+    },
+    "271": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lombre",
+        "Id": 271,
+        "Types": ["Water", "Grass"],
+        "Rarity": null
+    },
+    "272": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ludicolo",
+        "Id": 272,
+        "Types": ["Water", "Grass"],
+        "Rarity": null
+    },
+    "273": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Seedot",
+        "Id": 273,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "274": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nuzleaf",
+        "Id": 274,
+        "Types": ["Grass", "Dark"],
+        "Rarity": null
+    },
+    "275": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shiftry",
+        "Id": 275,
+        "Types": ["Grass", "Dark"],
+        "Rarity": null
+    },
+    "276": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Taillow",
+        "Id": 276,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "277": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swellow",
+        "Id": 277,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "278": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wingull",
+        "Id": 278,
+        "Types": ["Water", "Flying"],
+        "Rarity": null
+    },
+    "279": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pelipper",
+        "Id": 279,
+        "Types": ["Water", "Flying"],
+        "Rarity": null
+    },
+    "280": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ralts",
+        "Id": 280,
+        "Types": ["Psychic", "Fairy"],
+        "Rarity": null
+    },
+    "281": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kirlia",
+        "Id": 281,
+        "Types": ["Psychic", "Fairy"],
+        "Rarity": null
+    },
+    "282": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gardevoir",
+        "Id": 282,
+        "Types": ["Psychic", "Fairy"],
+        "Rarity": null
+    },
+    "283": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Surskit",
+        "Id": 283,
+        "Types": ["Bug", "Water"],
+        "Rarity": null
+    },
+    "284": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Masquerain",
+        "Id": 284,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "285": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shroomish",
+        "Id": 285,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "286": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Breloom",
+        "Id": 286,
+        "Types": ["Grass", "Fighting"],
+        "Rarity": null
+    },
+    "287": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Slakoth",
+        "Id": 287,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "288": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vigoroth",
+        "Id": 288,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "289": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Slaking",
+        "Id": 289,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "290": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nincada",
+        "Id": 290,
+        "Types": ["Bug", "Ground"],
+        "Rarity": null
+    },
+    "291": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ninjask",
+        "Id": 291,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "292": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shedinja",
+        "Id": 292,
+        "Types": ["Bug", "Ghost"],
+        "Rarity": null
+    },
+    "293": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Whismur",
+        "Id": 293,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "294": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Loudred",
+        "Id": 294,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "295": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Exploud",
+        "Id": 295,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "296": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Makuhita",
+        "Id": 296,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "297": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hariyama",
+        "Id": 297,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "298": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Azurill",
+        "Id": 298,
+        "Types": ["Normal", "Fairy"],
+        "Rarity": null
+    },
+    "299": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Nosepass",
+        "Id": 299,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "300": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Skitty",
+        "Id": 300,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "301": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Delcatty",
+        "Id": 301,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "302": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sableye",
+        "Id": 302,
+        "Types": ["Dark", "Ghost"],
+        "Rarity": null
+    },
+    "303": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mawile",
+        "Id": 303,
+        "Types": ["Steel", "Fairy"],
+        "Rarity": null
+    },
+    "304": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Aron",
+        "Id": 304,
+        "Types": ["Steel", "Rock"],
+        "Rarity": null
+    },
+    "305": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lairon",
+        "Id": 305,
+        "Types": ["Steel", "Rock"],
+        "Rarity": null
+    },
+    "306": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Aggron",
+        "Id": 306,
+        "Types": ["Steel", "Rock"],
+        "Rarity": null
+    },
+    "307": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Meditite",
+        "Id": 307,
+        "Types": ["Fighting", "Psychic"],
+        "Rarity": null
+    },
+    "308": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Medicham",
+        "Id": 308,
+        "Types": ["Fighting", "Psychic"],
+        "Rarity": null
+    },
+    "309": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Electrike",
+        "Id": 309,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "310": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Manectric",
+        "Id": 310,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "311": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Plusle",
+        "Id": 311,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "312": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Minun",
+        "Id": 312,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "313": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Volbeat",
+        "Id": 313,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "314": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Illumise",
+        "Id": 314,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "315": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Roselia",
+        "Id": 315,
+        "Types": ["Grass", "Poison"],
+        "Rarity": null
+    },
+    "316": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gulpin",
+        "Id": 316,
+        "Types": ["Poison"],
+        "Rarity": null
+    },
+    "317": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swalot",
+        "Id": 317,
+        "Types": ["Poison"],
+        "Rarity": null
+    },
+    "318": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Carvanha",
+        "Id": 318,
+        "Types": ["Water", "Dark"],
+        "Rarity": null
+    },
+    "319": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sharpedo",
+        "Id": 319,
+        "Types": ["Water", "Dark"],
+        "Rarity": null
+    },
+    "320": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wailmer",
+        "Id": 320,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "321": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wailord",
+        "Id": 321,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "322": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Numel",
+        "Id": 322,
+        "Types": ["Fire", "Ground"],
+        "Rarity": null
+    },
+    "323": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Camerupt",
+        "Id": 323,
+        "Types": ["Fire", "Ground"],
+        "Rarity": null
+    },
+    "324": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Torkoal",
+        "Id": 324,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "325": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spoink",
+        "Id": 325,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "326": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Grumpig",
+        "Id": 326,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "327": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spinda",
+        "Id": 327,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "328": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Trapinch",
+        "Id": 328,
+        "Types": ["Ground"],
+        "Rarity": null
+    },
+    "329": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vibrava",
+        "Id": 329,
+        "Types": ["Ground", "Dragon"],
+        "Rarity": null
+    },
+    "330": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Flygon",
+        "Id": 330,
+        "Types": ["Ground", "Dragon"],
+        "Rarity": null
+    },
+    "331": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cacnea",
+        "Id": 331,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "332": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cacturne",
+        "Id": 332,
+        "Types": ["Grass", "Dark"],
+        "Rarity": null
+    },
+    "333": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swablu",
+        "Id": 333,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "334": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Altaria",
+        "Id": 334,
+        "Types": ["Dragon", "Flying"],
+        "Rarity": null
+    },
+    "335": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zangoose",
+        "Id": 335,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "336": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Seviper",
+        "Id": 336,
+        "Types": ["Poison"],
+        "Rarity": null
+    },
+    "337": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lunatone",
+        "Id": 337,
+        "Types": ["Rock", "Psychic"],
+        "Rarity": null
+    },
+    "338": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Solrock",
+        "Id": 338,
+        "Types": ["Rock", "Psychic"],
+        "Rarity": null
+    },
+    "339": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Barboach",
+        "Id": 339,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "340": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Whiscash",
+        "Id": 340,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "341": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Corphish",
+        "Id": 341,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "342": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Crawdaunt",
+        "Id": 342,
+        "Types": ["Water", "Dark"],
+        "Rarity": null
+    },
+    "343": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Baltoy",
+        "Id": 343,
+        "Types": ["Ground", "Psychic"],
+        "Rarity": null
+    },
+    "344": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Claydol",
+        "Id": 344,
+        "Types": ["Ground", "Psychic"],
+        "Rarity": null
+    },
+    "345": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lileep",
+        "Id": 345,
+        "Types": ["Rock", "Grass"],
+        "Rarity": null
+    },
+    "346": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cradily",
+        "Id": 346,
+        "Types": ["Rock", "Grass"],
+        "Rarity": null
+    },
+    "347": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Anorith",
+        "Id": 347,
+        "Types": ["Rock", "Bug"],
+        "Rarity": null
+    },
+    "348": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Armaldo",
+        "Id": 348,
+        "Types": ["Rock", "Bug"],
+        "Rarity": null
+    },
+    "349": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Feebas",
+        "Id": 349,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "350": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Milotic",
+        "Id": 350,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "351": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Castform",
+        "Id": 351,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "352": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kecleon",
+        "Id": 352,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "353": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shuppet",
+        "Id": 353,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "354": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Banette",
+        "Id": 354,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "355": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Duskull",
+        "Id": 355,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "356": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dusclops",
+        "Id": 356,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "357": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tropius",
+        "Id": 357,
+        "Types": ["Grass", "Flying"],
+        "Rarity": null
+    },
+    "358": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chimecho",
+        "Id": 358,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "359": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Absol",
+        "Id": 359,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "360": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wynaut",
+        "Id": 360,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "361": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Snorunt",
+        "Id": 361,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "362": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Glalie",
+        "Id": 362,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "363": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spheal",
+        "Id": 363,
+        "Types": ["Ice", "Water"],
+        "Rarity": null
+    },
+    "364": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sealeo",
+        "Id": 364,
+        "Types": ["Ice", "Water"],
+        "Rarity": null
+    },
+    "365": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Walrein",
+        "Id": 365,
+        "Types": ["Ice", "Water"],
+        "Rarity": null
+    },
+    "366": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Clamperl",
+        "Id": 366,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "367": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Huntail",
+        "Id": 367,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "368": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gorebyss",
+        "Id": 368,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "369": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Relicanth",
+        "Id": 369,
+        "Types": ["Water", "Rock"],
+        "Rarity": null
+    },
+    "370": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Luvdisc",
+        "Id": 370,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "371": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bagon",
+        "Id": 371,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "372": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shelgon",
+        "Id": 372,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "373": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Salamence",
+        "Id": 373,
+        "Types": ["Dragon", "Flying"],
+        "Rarity": null
+    },
+    "374": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Beldum",
+        "Id": 374,
+        "Types": ["Steel", "Psychic"],
+        "Rarity": null
+    },
+    "375": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Metang",
+        "Id": 375,
+        "Types": ["Steel", "Psychic"],
+        "Rarity": null
+    },
+    "376": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Metagross",
+        "Id": 376,
+        "Types": ["Steel", "Psychic"],
+        "Rarity": null
+    },
+    "377": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Regirock",
+        "Id": 377,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "378": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Regice",
+        "Id": 378,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "379": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Registeel",
+        "Id": 379,
+        "Types": ["Steel"],
+        "Rarity": null
+    },
+    "380": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Latias",
+        "Id": 380,
+        "Types": ["Dragon", "Psychic"],
+        "Rarity": null
+    },
+    "381": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Latios",
+        "Id": 381,
+        "Types": ["Dragon", "Psychic"],
+        "Rarity": null
+    },
+    "382": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kyogre",
+        "Id": 382,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "383": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Groudon",
+        "Id": 383,
+        "Types": ["Ground"],
+        "Rarity": null
+    },
+    "384": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rayquaza",
+        "Id": 384,
+        "Types": ["Dragon", "Flying"],
+        "Rarity": null
+    },
+    "385": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Jirachi",
+        "Id": 385,
+        "Types": ["Steel", "Psychic"],
+        "Rarity": null
+    },
+    "386": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Deoxys",
+        "Id": 386,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "387": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Turtwig",
+        "Id": 387,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "388": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Grotle",
+        "Id": 388,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "389": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Torterra",
+        "Id": 389,
+        "Types": ["Grass", "Ground"],
+        "Rarity": null
+    },
+    "390": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chimchar",
+        "Id": 390,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "391": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Monferno",
+        "Id": 391,
+        "Types": ["Fire", "Fighting"],
+        "Rarity": null
+    },
+    "392": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Infernape",
+        "Id": 392,
+        "Types": ["Fire", "Fighting"],
+        "Rarity": null
+    },
+    "393": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Piplup",
+        "Id": 393,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "394": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Prinplup",
+        "Id": 394,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "395": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Empoleon",
+        "Id": 395,
+        "Types": ["Water", "Steel"],
+        "Rarity": null
+    },
+    "396": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Starly",
+        "Id": 396,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "397": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Staravia",
+        "Id": 397,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "398": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Staraptor",
+        "Id": 398,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "399": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bidoof",
+        "Id": 399,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "400": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bibarel",
+        "Id": 400,
+        "Types": ["Normal", "Water"],
+        "Rarity": null
+    },
+    "401": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kricketot",
+        "Id": 401,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "402": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kricketune",
+        "Id": 402,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "403": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shinx",
+        "Id": 403,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "404": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Luxio",
+        "Id": 404,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "405": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Luxray",
+        "Id": 405,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "406": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Budew",
+        "Id": 406,
+        "Types": ["Grass", "Poison"],
+        "Rarity": null
+    },
+    "407": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Roserade",
+        "Id": 407,
+        "Types": ["Grass", "Poison"],
+        "Rarity": null
+    },
+    "408": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cranidos",
+        "Id": 408,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "409": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rampardos",
+        "Id": 409,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "410": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shieldon",
+        "Id": 410,
+        "Types": ["Rock", "Steel"],
+        "Rarity": null
+    },
+    "411": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bastiodon",
+        "Id": 411,
+        "Types": ["Rock", "Steel"],
+        "Rarity": null
+    },
+    "412": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Burmy",
+        "Id": 412,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "413": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Wormadam",
+        "Id": 413,
+        "Types": ["Bug", "Grass"],
+        "Rarity": null
+    },
+    "414": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mothim",
+        "Id": 414,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "415": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Combee",
+        "Id": 415,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "416": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vespiquen",
+        "Id": 416,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "417": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pachirisu",
+        "Id": 417,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "418": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Buizel",
+        "Id": 418,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "419": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Floatzel",
+        "Id": 419,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "420": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cherubi",
+        "Id": 420,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "421": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cherrim",
+        "Id": 421,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "422": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shellos",
+        "Id": 422,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "423": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gastrodon",
+        "Id": 423,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "424": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ambipom",
+        "Id": 424,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "425": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Drifloon",
+        "Id": 425,
+        "Types": ["Ghost", "Flying"],
+        "Rarity": null
+    },
+    "426": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Drifblim",
+        "Id": 426,
+        "Types": ["Ghost", "Flying"],
+        "Rarity": null
+    },
+    "427": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Buneary",
+        "Id": 427,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "428": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lopunny",
+        "Id": 428,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "429": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mismagius",
+        "Id": 429,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "430": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Honchkrow",
+        "Id": 430,
+        "Types": ["Dark", "Flying"],
+        "Rarity": null
+    },
+    "431": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Glameow",
+        "Id": 431,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "432": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Purugly",
+        "Id": 432,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "433": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chingling",
+        "Id": 433,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "434": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Stunky",
+        "Id": 434,
+        "Types": ["Poison", "Dark"],
+        "Rarity": null
+    },
+    "435": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Skuntank",
+        "Id": 435,
+        "Types": ["Poison", "Dark"],
+        "Rarity": null
+    },
+    "436": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bronzor",
+        "Id": 436,
+        "Types": ["Steel", "Psychic"],
+        "Rarity": null
+    },
+    "437": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bronzong",
+        "Id": 437,
+        "Types": ["Steel", "Psychic"],
+        "Rarity": null
+    },
+    "438": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bonsly",
+        "Id": 438,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "439": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mime Jr.",
+        "Id": 439,
+        "Types": ["Psychic", "Fairy"],
+        "Rarity": null
+    },
+    "440": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Happiny",
+        "Id": 440,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "441": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chatot",
+        "Id": 441,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "442": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spiritomb",
+        "Id": 442,
+        "Types": ["Ghost", "Dark"],
+        "Rarity": null
+    },
+    "443": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gible",
+        "Id": 443,
+        "Types": ["Dragon", "Ground"],
+        "Rarity": null
+    },
+    "444": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gabite",
+        "Id": 444,
+        "Types": ["Dragon", "Ground"],
+        "Rarity": null
+    },
+    "445": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Garchomp",
+        "Id": 445,
+        "Types": ["Dragon", "Ground"],
+        "Rarity": null
+    },
+    "446": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Munchlax",
+        "Id": 446,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "447": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Riolu",
+        "Id": 447,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "448": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lucario",
+        "Id": 448,
+        "Types": ["Fighting", "Steel"],
+        "Rarity": null
+    },
+    "449": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hippopotas",
+        "Id": 449,
+        "Types": ["Ground"],
+        "Rarity": null
+    },
+    "450": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hippowdon",
+        "Id": 450,
+        "Types": ["Ground"],
+        "Rarity": null
+    },
+    "451": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Skorupi",
+        "Id": 451,
+        "Types": ["Poison", "Bug"],
+        "Rarity": null
+    },
+    "452": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Drapion",
+        "Id": 452,
+        "Types": ["Poison", "Dark"],
+        "Rarity": null
+    },
+    "453": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Croagunk",
+        "Id": 453,
+        "Types": ["Poison", "Fighting"],
+        "Rarity": null
+    },
+    "454": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Toxicroak",
+        "Id": 454,
+        "Types": ["Poison", "Fighting"],
+        "Rarity": null
+    },
+    "455": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Carnivine",
+        "Id": 455,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "456": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Finneon",
+        "Id": 456,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "457": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lumineon",
+        "Id": 457,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "458": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mantyke",
+        "Id": 458,
+        "Types": ["Water", "Flying"],
+        "Rarity": null
+    },
+    "459": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Snover",
+        "Id": 459,
+        "Types": ["Grass", "Ice"],
+        "Rarity": null
+    },
+    "460": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Abomasnow",
+        "Id": 460,
+        "Types": ["Grass", "Ice"],
+        "Rarity": null
+    },
+    "461": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Weavile",
+        "Id": 461,
+        "Types": ["Dark", "Ice"],
+        "Rarity": null
+    },
+    "462": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magnezone",
+        "Id": 462,
+        "Types": ["Electric", "Steel"],
+        "Rarity": null
+    },
+    "463": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lickilicky",
+        "Id": 463,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "464": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rhyperior",
+        "Id": 464,
+        "Types": ["Ground", "Rock"],
+        "Rarity": null
+    },
+    "465": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tangrowth",
+        "Id": 465,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "466": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Electivire",
+        "Id": 466,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "467": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Magmortar",
+        "Id": 467,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "468": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Togekiss",
+        "Id": 468,
+        "Types": ["Fairy", "Flying"],
+        "Rarity": null
+    },
+    "469": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Yanmega",
+        "Id": 469,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "470": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Leafeon",
+        "Id": 470,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "471": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Glaceon",
+        "Id": 471,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "472": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gliscor",
+        "Id": 472,
+        "Types": ["Ground", "Flying"],
+        "Rarity": null
+    },
+    "473": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mamoswine",
+        "Id": 473,
+        "Types": ["Ice", "Ground"],
+        "Rarity": null
+    },
+    "474": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Porygon-Z",
+        "Id": 474,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "475": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gallade",
+        "Id": 475,
+        "Types": ["Psychic", "Fighting"],
+        "Rarity": null
+    },
+    "476": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Probopass",
+        "Id": 476,
+        "Types": ["Rock", "Steel"],
+        "Rarity": null
+    },
+    "477": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dusknoir",
+        "Id": 477,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "478": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Froslass",
+        "Id": 478,
+        "Types": ["Ice", "Ghost"],
+        "Rarity": null
+    },
+    "479": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rotom",
+        "Id": 479,
+        "Types": ["Electric", "Ghost"],
+        "Rarity": null
+    },
+    "480": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Uxie",
+        "Id": 480,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "481": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mesprit",
+        "Id": 481,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "482": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Azelf",
+        "Id": 482,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "483": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dialga",
+        "Id": 483,
+        "Types": ["Steel", "Dragon"],
+        "Rarity": null
+    },
+    "484": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Palkia",
+        "Id": 484,
+        "Types": ["Water", "Dragon"],
+        "Rarity": null
+    },
+    "485": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Heatran",
+        "Id": 485,
+        "Types": ["Fire", "Steel"],
+        "Rarity": null
+    },
+    "486": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Regigigas",
+        "Id": 486,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "487": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Giratina",
+        "Id": 487,
+        "Types": ["Ghost", "Dragon"],
+        "Rarity": null
+    },
+    "488": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cresselia",
+        "Id": 488,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "489": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Phione",
+        "Id": 489,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "490": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Manaphy",
+        "Id": 490,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "491": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Darkrai",
+        "Id": 491,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "492": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shaymin",
+        "Id": 492,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "493": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Arceus",
+        "Id": 493,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "494": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Victini",
+        "Id": 494,
+        "Types": ["Psychic", "Fire"],
+        "Rarity": null
+    },
+    "495": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Snivy",
+        "Id": 495,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "496": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Servine",
+        "Id": 496,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "497": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Serperior",
+        "Id": 497,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "498": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tepig",
+        "Id": 498,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "499": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pignite",
+        "Id": 499,
+        "Types": ["Fire", "Fighting"],
+        "Rarity": null
+    },
+    "500": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Emboar",
+        "Id": 500,
+        "Types": ["Fire", "Fighting"],
+        "Rarity": null
+    },
+    "501": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Oshawott",
+        "Id": 501,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "502": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dewott",
+        "Id": 502,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "503": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Samurott",
+        "Id": 503,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "504": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Patrat",
+        "Id": 504,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "505": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Watchog",
+        "Id": 505,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "506": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lillipup",
+        "Id": 506,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "507": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Herdier",
+        "Id": 507,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "508": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Stoutland",
+        "Id": 508,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "509": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Purrloin",
+        "Id": 509,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "510": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Liepard",
+        "Id": 510,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "511": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pansage",
+        "Id": 511,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "512": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Simisage",
+        "Id": 512,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "513": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pansear",
+        "Id": 513,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "514": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Simisear",
+        "Id": 514,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "515": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Panpour",
+        "Id": 515,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "516": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Simipour",
+        "Id": 516,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "517": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Munna",
+        "Id": 517,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "518": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Musharna",
+        "Id": 518,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "519": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pidove",
+        "Id": 519,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "520": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tranquill",
+        "Id": 520,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "521": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Unfezant",
+        "Id": 521,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "522": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Blitzle",
+        "Id": 522,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "523": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zebstrika",
+        "Id": 523,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "524": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Roggenrola",
+        "Id": 524,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "525": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Boldore",
+        "Id": 525,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "526": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gigalith",
+        "Id": 526,
+        "Types": ["Rock"],
+        "Rarity": null
+    },
+    "527": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Woobat",
+        "Id": 527,
+        "Types": ["Psychic", "Flying"],
+        "Rarity": null
+    },
+    "528": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swoobat",
+        "Id": 528,
+        "Types": ["Psychic", "Flying"],
+        "Rarity": null
+    },
+    "529": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Drilbur",
+        "Id": 529,
+        "Types": ["Ground"],
+        "Rarity": null
+    },
+    "530": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Excadrill",
+        "Id": 530,
+        "Types": ["Ground", "Steel"],
+        "Rarity": null
+    },
+    "531": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Audino",
+        "Id": 531,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "532": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Timburr",
+        "Id": 532,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "533": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gurdurr",
+        "Id": 533,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "534": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Conkeldurr",
+        "Id": 534,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "535": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tympole",
+        "Id": 535,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "536": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Palpitoad",
+        "Id": 536,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "537": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Seismitoad",
+        "Id": 537,
+        "Types": ["Water", "Ground"],
+        "Rarity": null
+    },
+    "538": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Throh",
+        "Id": 538,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "539": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sawk",
+        "Id": 539,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "540": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sewaddle",
+        "Id": 540,
+        "Types": ["Bug", "Grass"],
+        "Rarity": null
+    },
+    "541": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swadloon",
+        "Id": 541,
+        "Types": ["Bug", "Grass"],
+        "Rarity": null
+    },
+    "542": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Leavanny",
+        "Id": 542,
+        "Types": ["Bug", "Grass"],
+        "Rarity": null
+    },
+    "543": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Venipede",
+        "Id": 543,
+        "Types": ["Bug", "Poison"],
+        "Rarity": null
+    },
+    "544": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Whirlipede",
+        "Id": 544,
+        "Types": ["Bug", "Poison"],
+        "Rarity": null
+    },
+    "545": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Scolipede",
+        "Id": 545,
+        "Types": ["Bug", "Poison"],
+        "Rarity": null
+    },
+    "546": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cottonee",
+        "Id": 546,
+        "Types": ["Grass", "Fairy"],
+        "Rarity": null
+    },
+    "547": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Whimsicott",
+        "Id": 547,
+        "Types": ["Grass", "Fairy"],
+        "Rarity": null
+    },
+    "548": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Petilil",
+        "Id": 548,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "549": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lilligant",
+        "Id": 549,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "550": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Basculin",
+        "Id": 550,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "551": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sandile",
+        "Id": 551,
+        "Types": ["Ground", "Dark"],
+        "Rarity": null
+    },
+    "552": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Krokorok",
+        "Id": 552,
+        "Types": ["Ground", "Dark"],
+        "Rarity": null
+    },
+    "553": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Krookodile",
+        "Id": 553,
+        "Types": ["Ground", "Dark"],
+        "Rarity": null
+    },
+    "554": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Darumaka",
+        "Id": 554,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "555": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Darmanitan",
+        "Id": 555,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "556": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Maractus",
+        "Id": 556,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "557": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dwebble",
+        "Id": 557,
+        "Types": ["Bug", "Rock"],
+        "Rarity": null
+    },
+    "558": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Crustle",
+        "Id": 558,
+        "Types": ["Bug", "Rock"],
+        "Rarity": null
+    },
+    "559": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Scraggy",
+        "Id": 559,
+        "Types": ["Dark", "Fighting"],
+        "Rarity": null
+    },
+    "560": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Scrafty",
+        "Id": 560,
+        "Types": ["Dark", "Fighting"],
+        "Rarity": null
+    },
+    "561": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sigilyph",
+        "Id": 561,
+        "Types": ["Psychic", "Flying"],
+        "Rarity": null
+    },
+    "562": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Yamask",
+        "Id": 562,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "563": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cofagrigus",
+        "Id": 563,
+        "Types": ["Ghost"],
+        "Rarity": null
+    },
+    "564": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tirtouga",
+        "Id": 564,
+        "Types": ["Water", "Rock"],
+        "Rarity": null
+    },
+    "565": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Carracosta",
+        "Id": 565,
+        "Types": ["Water", "Rock"],
+        "Rarity": null
+    },
+    "566": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Archen",
+        "Id": 566,
+        "Types": ["Rock", "Flying"],
+        "Rarity": null
+    },
+    "567": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Archeops",
+        "Id": 567,
+        "Types": ["Rock", "Flying"],
+        "Rarity": null
+    },
+    "568": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Trubbish",
+        "Id": 568,
+        "Types": ["Poison"],
+        "Rarity": null
+    },
+    "569": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Garbodor",
+        "Id": 569,
+        "Types": ["Poison"],
+        "Rarity": null
+    },
+    "570": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zorua",
+        "Id": 570,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "571": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zoroark",
+        "Id": 571,
+        "Types": ["Dark"],
+        "Rarity": null
+    },
+    "572": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Minccino",
+        "Id": 572,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "573": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cinccino",
+        "Id": 573,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "574": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gothita",
+        "Id": 574,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "575": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gothorita",
+        "Id": 575,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "576": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gothitelle",
+        "Id": 576,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "577": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Solosis",
+        "Id": 577,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "578": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Duosion",
+        "Id": 578,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "579": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Reuniclus",
+        "Id": 579,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "580": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ducklett",
+        "Id": 580,
+        "Types": ["Water", "Flying"],
+        "Rarity": null
+    },
+    "581": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swanna",
+        "Id": 581,
+        "Types": ["Water", "Flying"],
+        "Rarity": null
+    },
+    "582": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vanillite",
+        "Id": 582,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "583": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vanillish",
+        "Id": 583,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "584": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vanilluxe",
+        "Id": 584,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "585": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Deerling",
+        "Id": 585,
+        "Types": ["Normal", "Grass"],
+        "Rarity": null
+    },
+    "586": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sawsbuck",
+        "Id": 586,
+        "Types": ["Normal", "Grass"],
+        "Rarity": null
+    },
+    "587": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Emolga",
+        "Id": 587,
+        "Types": ["Electric", "Flying"],
+        "Rarity": null
+    },
+    "588": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Karrablast",
+        "Id": 588,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "589": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Escavalier",
+        "Id": 589,
+        "Types": ["Bug", "Steel"],
+        "Rarity": null
+    },
+    "590": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Foongus",
+        "Id": 590,
+        "Types": ["Grass", "Poison"],
+        "Rarity": null
+    },
+    "591": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Amoonguss",
+        "Id": 591,
+        "Types": ["Grass", "Poison"],
+        "Rarity": null
+    },
+    "592": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Frillish",
+        "Id": 592,
+        "Types": ["Water", "Ghost"],
+        "Rarity": null
+    },
+    "593": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Jellicent",
+        "Id": 593,
+        "Types": ["Water", "Ghost"],
+        "Rarity": null
+    },
+    "594": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Alomomola",
+        "Id": 594,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "595": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Joltik",
+        "Id": 595,
+        "Types": ["Bug", "Electric"],
+        "Rarity": null
+    },
+    "596": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Galvantula",
+        "Id": 596,
+        "Types": ["Bug", "Electric"],
+        "Rarity": null
+    },
+    "597": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ferroseed",
+        "Id": 597,
+        "Types": ["Grass", "Steel"],
+        "Rarity": null
+    },
+    "598": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Ferrothorn",
+        "Id": 598,
+        "Types": ["Grass", "Steel"],
+        "Rarity": null
+    },
+    "599": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Klink",
+        "Id": 599,
+        "Types": ["Steel"],
+        "Rarity": null
+    },
+    "600": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Klang",
+        "Id": 600,
+        "Types": ["Steel"],
+        "Rarity": null
+    },
+    "601": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Klinklang",
+        "Id": 601,
+        "Types": ["Steel"],
+        "Rarity": null
+    },
+    "602": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tynamo",
+        "Id": 602,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "603": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Eelektrik",
+        "Id": 603,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "604": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Eelektross",
+        "Id": 604,
+        "Types": ["Electric"],
+        "Rarity": null
+    },
+    "605": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Elgyem",
+        "Id": 605,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "606": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Beheeyem",
+        "Id": 606,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "607": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Litwick",
+        "Id": 607,
+        "Types": ["Ghost", "Fire"],
+        "Rarity": null
+    },
+    "608": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Lampent",
+        "Id": 608,
+        "Types": ["Ghost", "Fire"],
+        "Rarity": null
+    },
+    "609": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chandelure",
+        "Id": 609,
+        "Types": ["Ghost", "Fire"],
+        "Rarity": null
+    },
+    "610": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Axew",
+        "Id": 610,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "611": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Fraxure",
+        "Id": 611,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "612": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Haxorus",
+        "Id": 612,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "613": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cubchoo",
+        "Id": 613,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "614": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Beartic",
+        "Id": 614,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "615": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cryogonal",
+        "Id": 615,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "616": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Shelmet",
+        "Id": 616,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "617": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Accelgor",
+        "Id": 617,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "618": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Stunfisk",
+        "Id": 618,
+        "Types": ["Ground", "Electric"],
+        "Rarity": null
+    },
+    "619": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mienfoo",
+        "Id": 619,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "620": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mienshao",
+        "Id": 620,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "621": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Druddigon",
+        "Id": 621,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "622": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Golett",
+        "Id": 622,
+        "Types": ["Ground", "Ghost"],
+        "Rarity": null
+    },
+    "623": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Golurk",
+        "Id": 623,
+        "Types": ["Ground", "Ghost"],
+        "Rarity": null
+    },
+    "624": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pawniard",
+        "Id": 624,
+        "Types": ["Dark", "Steel"],
+        "Rarity": null
+    },
+    "625": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bisharp",
+        "Id": 625,
+        "Types": ["Dark", "Steel"],
+        "Rarity": null
+    },
+    "626": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bouffalant",
+        "Id": 626,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "627": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Rufflet",
+        "Id": 627,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "628": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Braviary",
+        "Id": 628,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "629": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vullaby",
+        "Id": 629,
+        "Types": ["Dark", "Flying"],
+        "Rarity": null
+    },
+    "630": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Mandibuzz",
+        "Id": 630,
+        "Types": ["Dark", "Flying"],
+        "Rarity": null
+    },
+    "631": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Heatmor",
+        "Id": 631,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "632": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Durant",
+        "Id": 632,
+        "Types": ["Bug", "Steel"],
+        "Rarity": null
+    },
+    "633": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Deino",
+        "Id": 633,
+        "Types": ["Dark", "Dragon"],
+        "Rarity": null
+    },
+    "634": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zweilous",
+        "Id": 634,
+        "Types": ["Dark", "Dragon"],
+        "Rarity": null
+    },
+    "635": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hydreigon",
+        "Id": 635,
+        "Types": ["Dark", "Dragon"],
+        "Rarity": null
+    },
+    "636": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Larvesta",
+        "Id": 636,
+        "Types": ["Bug", "Fire"],
+        "Rarity": null
+    },
+    "637": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Volcarona",
+        "Id": 637,
+        "Types": ["Bug", "Fire"],
+        "Rarity": null
+    },
+    "638": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Cobalion",
+        "Id": 638,
+        "Types": ["Steel", "Fighting"],
+        "Rarity": null
+    },
+    "639": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Terrakion",
+        "Id": 639,
+        "Types": ["Rock", "Fighting"],
+        "Rarity": null
+    },
+    "640": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Virizion",
+        "Id": 640,
+        "Types": ["Grass", "Fighting"],
+        "Rarity": null
+    },
+    "641": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tornadus",
+        "Id": 641,
+        "Types": ["Flying"],
+        "Rarity": null
+    },
+    "642": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Thundurus",
+        "Id": 642,
+        "Types": ["Electric", "Flying"],
+        "Rarity": null
+    },
+    "643": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Reshiram",
+        "Id": 643,
+        "Types": ["Dragon", "Fire"],
+        "Rarity": null
+    },
+    "644": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zekrom",
+        "Id": 644,
+        "Types": ["Dragon", "Electric"],
+        "Rarity": null
+    },
+    "645": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Landorus",
+        "Id": 645,
+        "Types": ["Ground", "Flying"],
+        "Rarity": null
+    },
+    "646": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Kyurem",
+        "Id": 646,
+        "Types": ["Dragon", "Ice"],
+        "Rarity": null
+    },
+    "647": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Keldeo",
+        "Id": 647,
+        "Types": ["Water", "Fighting"],
+        "Rarity": null
+    },
+    "648": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Meloetta",
+        "Id": 648,
+        "Types": ["Normal", "Psychic"],
+        "Rarity": null
+    },
+    "649": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Genesect",
+        "Id": 649,
+        "Types": ["Bug", "Steel"],
+        "Rarity": null
+    },
+    "650": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chespin",
+        "Id": 650,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "651": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Quilladin",
+        "Id": 651,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "652": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Chesnaught",
+        "Id": 652,
+        "Types": ["Grass", "Fighting"],
+        "Rarity": null
+    },
+    "653": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Fennekin",
+        "Id": 653,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "654": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Braixen",
+        "Id": 654,
+        "Types": ["Fire"],
+        "Rarity": null
+    },
+    "655": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Delphox",
+        "Id": 655,
+        "Types": ["Fire", "Psychic"],
+        "Rarity": null
+    },
+    "656": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Froakie",
+        "Id": 656,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "657": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Frogadier",
+        "Id": 657,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "658": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Greninja",
+        "Id": 658,
+        "Types": ["Water", "Dark"],
+        "Rarity": null
+    },
+    "659": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bunnelby",
+        "Id": 659,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "660": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Diggersby",
+        "Id": 660,
+        "Types": ["Normal", "Ground"],
+        "Rarity": null
+    },
+    "661": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Fletchling",
+        "Id": 661,
+        "Types": ["Normal", "Flying"],
+        "Rarity": null
+    },
+    "662": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Fletchinder",
+        "Id": 662,
+        "Types": ["Fire", "Flying"],
+        "Rarity": null
+    },
+    "663": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Talonflame",
+        "Id": 663,
+        "Types": ["Fire", "Flying"],
+        "Rarity": null
+    },
+    "664": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Scatterbug",
+        "Id": 664,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "665": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spewpa",
+        "Id": 665,
+        "Types": ["Bug"],
+        "Rarity": null
+    },
+    "666": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Vivillon",
+        "Id": 666,
+        "Types": ["Bug", "Flying"],
+        "Rarity": null
+    },
+    "667": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Litleo",
+        "Id": 667,
+        "Types": ["Fire", "Normal"],
+        "Rarity": null
+    },
+    "668": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pyroar",
+        "Id": 668,
+        "Types": ["Fire", "Normal"],
+        "Rarity": null
+    },
+    "669": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "FlabÃ©bÃ©",
+        "Id": 669,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "670": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Floette",
+        "Id": 670,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "671": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Florges",
+        "Id": 671,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "672": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Skiddo",
+        "Id": 672,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "673": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gogoat",
+        "Id": 673,
+        "Types": ["Grass"],
+        "Rarity": null
+    },
+    "674": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pancham",
+        "Id": 674,
+        "Types": ["Fighting"],
+        "Rarity": null
+    },
+    "675": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pangoro",
+        "Id": 675,
+        "Types": ["Fighting", "Dark"],
+        "Rarity": null
+    },
+    "676": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Furfrou",
+        "Id": 676,
+        "Types": ["Normal"],
+        "Rarity": null
+    },
+    "677": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Espurr",
+        "Id": 677,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "678": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Meowstic",
+        "Id": 678,
+        "Types": ["Psychic"],
+        "Rarity": null
+    },
+    "679": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Honedge",
+        "Id": 679,
+        "Types": ["Steel", "Ghost"],
+        "Rarity": null
+    },
+    "680": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Doublade",
+        "Id": 680,
+        "Types": ["Steel", "Ghost"],
+        "Rarity": null
+    },
+    "681": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Aegislash",
+        "Id": 681,
+        "Types": ["Steel", "Ghost"],
+        "Rarity": null
+    },
+    "682": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Spritzee",
+        "Id": 682,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "683": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Aromatisse",
+        "Id": 683,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "684": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Swirlix",
+        "Id": 684,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "685": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Slurpuff",
+        "Id": 685,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "686": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Inkay",
+        "Id": 686,
+        "Types": ["Dark", "Psychic"],
+        "Rarity": null
+    },
+    "687": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Malamar",
+        "Id": 687,
+        "Types": ["Dark", "Psychic"],
+        "Rarity": null
+    },
+    "688": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Binacle",
+        "Id": 688,
+        "Types": ["Rock", "Water"],
+        "Rarity": null
+    },
+    "689": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Barbaracle",
+        "Id": 689,
+        "Types": ["Rock", "Water"],
+        "Rarity": null
+    },
+    "690": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Skrelp",
+        "Id": 690,
+        "Types": ["Poison", "Water"],
+        "Rarity": null
+    },
+    "691": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dragalge",
+        "Id": 691,
+        "Types": ["Poison", "Dragon"],
+        "Rarity": null
+    },
+    "692": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Clauncher",
+        "Id": 692,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "693": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Clawitzer",
+        "Id": 693,
+        "Types": ["Water"],
+        "Rarity": null
+    },
+    "694": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Helioptile",
+        "Id": 694,
+        "Types": ["Electric", "Normal"],
+        "Rarity": null
+    },
+    "695": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Heliolisk",
+        "Id": 695,
+        "Types": ["Electric", "Normal"],
+        "Rarity": null
+    },
+    "696": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tyrunt",
+        "Id": 696,
+        "Types": ["Rock", "Dragon"],
+        "Rarity": null
+    },
+    "697": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Tyrantrum",
+        "Id": 697,
+        "Types": ["Rock", "Dragon"],
+        "Rarity": null
+    },
+    "698": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Amaura",
+        "Id": 698,
+        "Types": ["Rock", "Ice"],
+        "Rarity": null
+    },
+    "699": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Aurorus",
+        "Id": 699,
+        "Types": ["Rock", "Ice"],
+        "Rarity": null
+    },
+    "700": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sylveon",
+        "Id": 700,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "701": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hawlucha",
+        "Id": 701,
+        "Types": ["Fighting", "Flying"],
+        "Rarity": null
+    },
+    "702": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Dedenne",
+        "Id": 702,
+        "Types": ["Electric", "Fairy"],
+        "Rarity": null
+    },
+    "703": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Carbink",
+        "Id": 703,
+        "Types": ["Rock", "Fairy"],
+        "Rarity": null
+    },
+    "704": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Goomy",
+        "Id": 704,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "705": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Sliggoo",
+        "Id": 705,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "706": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Goodra",
+        "Id": 706,
+        "Types": ["Dragon"],
+        "Rarity": null
+    },
+    "707": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Klefki",
+        "Id": 707,
+        "Types": ["Steel", "Fairy"],
+        "Rarity": null
+    },
+    "708": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Phantump",
+        "Id": 708,
+        "Types": ["Ghost", "Grass"],
+        "Rarity": null
+    },
+    "709": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Trevenant",
+        "Id": 709,
+        "Types": ["Ghost", "Grass"],
+        "Rarity": null
+    },
+    "710": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Pumpkaboo",
+        "Id": 710,
+        "Types": ["Ghost", "Grass"],
+        "Rarity": null
+    },
+    "711": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Gourgeist",
+        "Id": 711,
+        "Types": ["Ghost", "Grass"],
+        "Rarity": null
+    },
+    "712": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Bergmite",
+        "Id": 712,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "713": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Avalugg",
+        "Id": 713,
+        "Types": ["Ice"],
+        "Rarity": null
+    },
+    "714": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Noibat",
+        "Id": 714,
+        "Types": ["Flying", "Dragon"],
+        "Rarity": null
+    },
+    "715": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Noivern",
+        "Id": 715,
+        "Types": ["Flying", "Dragon"],
+        "Rarity": null
+    },
+    "716": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Xerneas",
+        "Id": 716,
+        "Types": ["Fairy"],
+        "Rarity": null
+    },
+    "717": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Yveltal",
+        "Id": 717,
+        "Types": ["Dark", "Flying"],
+        "Rarity": null
+    },
+    "718": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Zygarde",
+        "Id": 718,
+        "Types": ["Dragon", "Ground"],
+        "Rarity": null
+    },
+    "719": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Diancie",
+        "Id": 719,
+        "Types": ["Rock", "Fairy"],
+        "Rarity": null
+    },
+    "720": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Hoopa",
+        "Id": 720,
+        "Types": ["Psychic", "Ghost"],
+        "Rarity": null
+    },
+    "721": {
+        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "Feed": true,
+        "Name": "Volcanion",
+        "Id": 721,
+        "Types": ["Fire", "Water"],
+        "Rarity": null
+    }
+}
