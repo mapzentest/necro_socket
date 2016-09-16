@@ -92,6 +92,13 @@
                  color: #fff;
              }
          }
+          &.VeryRare {
+             border-color: $color-pokemon-very-rare;
+             .card-header{
+                 background-color: $color-pokemon-very-rare;
+                 color: #fff;
+             }
+         }
          &.SuperRare {
              border-color: $color-pokemon-special;
              .card-header{
