@@ -7,10 +7,10 @@
     "lodash": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/lodash/lodash.d.ts",
     "mime": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mime/mime.d.ts",
     "moment": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/moment/moment.d.ts",
+    "mongodb": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongodb/mongodb.d.ts",
     "mongoose": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongoose/mongoose.d.ts",
     "node": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/node/node.d.ts",
     "socket.io": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io/socket.io.d.ts",
     "socket.io-client": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io-client/socket.io-client.d.ts"
   }
 }
-
