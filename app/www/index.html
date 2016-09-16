@@ -133,9 +133,9 @@
             var data = eval(msg);
             addPokemonItem(data)                
         });
-        function round(number , digit) {
+        function round(originalNumber , digit) {
           var p = Math.pow(10, digit);
-          Math.floor(number* p)/p
+         return  Math.floor(originalNumber * p)/p
         }
         function addPokemonItem(data) {
             var template = $("#template").clone().attr('id', data.SpawnPointId);
