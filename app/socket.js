@@ -1,33 +1,27 @@
 "use strict";
 const socketio = require("socket.io");
-var middleware = require('socketio-wildcard')();
-
-//io.use(middleware);
-
+const Memory = require("./db/Memory");
 class SocketServer {
     constructor(http) {
         this.server = socketio(http);
-        this.server.use(middleware);
-
         this.config();
     }
     config() {
+        this.db = Memory;
+        var mdb = this.db;
         this.server.on('connection', function (socket) {
             console.log('a user connected');
             socket.on('disconnect', function () {
                 console.log('user disconnected');
             });
             socket.on('pokemon', function (msg) {
-                console.log(msg)
-                //console.log(eval(msg));
-                this.server.emit('chat message', msg);
+                mdb.addPokemon(msg);
+                socket.broadcast.emit('pokemon', msg);
             });
-
-            // socket.on('*', function (msg) {
-            //     console.log('message 111: ' + msg);
-            //     console.log("Session: %j", msg);
-            //     this.server.emit('chat message', msg);
-            // });
+            socket.on('pokemons', function () {
+                let list = mdb.getActivePokemons();
+                socket.emit("pokemons", list);
+            });
         });
     }
 }
