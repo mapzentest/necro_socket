@@ -41,18 +41,19 @@ class App {
             $('#pokemons').prepend(template);
         };
         this.config = () => {
-            var me = this;
-            this.socket.on('pokemons', function (msg) {
-                if (msg && msg.length) {
-                    _.forEach(msg, (s) => {
-                        me.addPokemonItem(s);
-                    });
-                }
-            });
-            this.socket.on('pokemon', function (msg) {
-                var data = eval(msg);
-                this.addPokemonItem(data);
-            });
+            this.socket.on('pokemons', this.onPokemonItems);
+            this.socket.on('pokemon', this.onPokemonItem);
+        };
+        this.onPokemonItem = (msg) => {
+            var data = eval(msg);
+            this.addPokemonItem(data);
+        };
+        this.onPokemonItems = (msg) => {
+            if (msg && msg.length) {
+                _.forEach(msg, (s) => {
+                    this.addPokemonItem(s);
+                });
+            }
         };
         this.socket = io();
         this.socket.connect();

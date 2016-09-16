@@ -55,17 +55,20 @@ class App {
 
     }
     private config = (): void => {
-        var me = this;
-        this.socket.on('pokemons', function (msg) {
-            if (msg && msg.length) {
-                _.forEach(msg, (s) => {
-                    me.addPokemonItem(s);
-                })
-            }
-        });
-        this.socket.on('pokemon', function (msg) {
-            var data = eval(msg);
-            me.addPokemonItem(data)
-        });
+        this.socket.on('pokemons', this.onPokemonItems)
+        this.socket.on('pokemon', this.onPokemonItem);
+    }
+    private onPokemonItem = (msg: any): void => {
+        var data = eval(msg);
+        this.addPokemonItem(data)
+    }
+
+    private onPokemonItems = (msg: any): void => {
+        if (msg && msg.length) {
+            _.forEach(msg, (s) => {
+                this.addPokemonItem(s);
+            })
+        }
+
     }
 }
