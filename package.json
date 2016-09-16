@@ -1,7 +1,7 @@
 {
   "name": "necro_socket",
   "version": "1.0.0",
-  "description": "the simple socket server to collect & serving data from necrobot.",
+  "description": "the simple socket server to collect & serving data from necrobot2.",
   "main": "index.js",
   "scripts": {
     "postinstall": "grunt",
