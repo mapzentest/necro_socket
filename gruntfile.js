@@ -22,9 +22,9 @@ module.exports = function (grunt) {
         src: ['src/**/*.ts']
       }
     },
-    sass: { // Task
+    sass: {
       dist: { // Target
-        options: { // Target options
+        options: { 
           // style: 'expanded',
           sourceMap: true
         },

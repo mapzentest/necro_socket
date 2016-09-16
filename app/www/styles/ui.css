@@ -72,6 +72,12 @@ code {
     background-color: #9DE259;
     color: #fff; }
 
+.pokemon-item .card.VeryRare {
+  border-color: #FFE060; }
+  .pokemon-item .card.VeryRare .card-header {
+    background-color: #FFE060;
+    color: #fff; }
+
 .pokemon-item .card.SuperRare {
   border-color: #FFA93B; }
   .pokemon-item .card.SuperRare .card-header {
