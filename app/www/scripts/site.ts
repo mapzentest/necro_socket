@@ -33,7 +33,7 @@ class App {
                 el.text(diff);
         })
 
-        setTimeout("updateTimerCount", 1000)
+        setTimeout(this.updateTimerCount, 1000)
     }
     private addPokemonItem = (data: any): void => {
         $('#loading').remove();
@@ -41,7 +41,7 @@ class App {
         var iv = Math.floor(data.IV * 100) / 100;
         var endTime = moment.utc(data.ExpireTimestamp)
         var exp = moment.duration(endTime.diff(moment())).format("mm:ss");
-        template.find('.card-title').text("#" + data.PokemonId + " " + data.Name)
+        template.find('.card-title').text( data.Name)
         template.find('.timer').text(exp).attr('expired', data.ExpireTimestamp)
         template.find('.iv').text("IV : " + iv + "%")
         template.find('.coordinate').text("[" + this.round(data.Latitude, 5) + "," + this.round(data.Longitude, 5) + "]")
@@ -58,6 +58,7 @@ class App {
         this.socket.on('pokemons', this.onPokemonItems)
         this.socket.on('pokemon', this.onPokemonItem);
     }
+
     private onPokemonItem = (msg: any): void => {
         var data = eval(msg);
         this.addPokemonItem(data)
