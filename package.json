@@ -4,7 +4,7 @@
   "description": "the simple socket server to collect & serving data from necrobot.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "grunt ts",
+    "postinstall": "grunt",
     "grunt": "grunt",
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
