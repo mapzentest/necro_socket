@@ -1,6 +1,6 @@
 /// <reference path="IPogoDatabase.ts" />
 /// <reference path="../../_all.d.ts" />
-import * as Moment from 'Moment'
+import * as moment from 'moment'
 
 var pokemons = require('../config/pokemons.json')
 
@@ -20,9 +20,9 @@ class Memory implements IPogoDatabase {
         this.data.push(p);
     }
     public getActivePokemons =() :any[] => {
-        const now =  Moment();
+        const now =  moment();
         this.data = this.data.filter((f)=>{
-            var exp = Moment(f.ExpireTimestamp);
+            var exp = moment(f.ExpireTimestamp);
             return exp > now;
         });
          return this.data;

@@ -1,5 +1,5 @@
 "use strict";
-const Moment = require('Moment');
+const moment = require('moment');
 var pokemons = require('../config/pokemons.json');
 class Memory {
     constructor() {
@@ -14,9 +14,9 @@ class Memory {
             this.data.push(p);
         };
         this.getActivePokemons = () => {
-            const now = Moment();
+            const now = moment();
             this.data = this.data.filter((f) => {
-                var exp = Moment(f.ExpireTimestamp);
+                var exp = moment(f.ExpireTimestamp);
                 return exp > now;
             });
             return this.data;
