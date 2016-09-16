@@ -13,7 +13,9 @@ module.exports = function (grunt) {
         }
       }
     },
-
+    typings: {
+      install: {}
+    },
     tslint: {
       options: {
         configuration: 'tslint.json'
@@ -24,7 +26,7 @@ module.exports = function (grunt) {
     },
     sass: {
       dist: { // Target
-        options: { 
+        options: {
           // style: 'expanded',
           sourceMap: true
         },
@@ -46,6 +48,7 @@ module.exports = function (grunt) {
   })
 
   grunt.registerTask('default', [
+    'typings',
     'sass',
     'ts',
     'tslint'
