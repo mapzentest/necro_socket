@@ -65,7 +65,7 @@ class App {
         });
         this.socket.on('pokemon', function (msg) {
             var data = eval(msg);
-            this.addPokemonItem(data)
+            me.addPokemonItem(data)
         });
     }
 }
