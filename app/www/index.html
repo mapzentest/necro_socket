@@ -133,6 +133,10 @@
             var data = eval(msg);
             addPokemonItem(data)                
         });
+        function round(number , digit) {
+          var p = math.power(10, digit);
+          Math.floor(data.IV * p)/p
+        }
         function addPokemonItem(data) {
             var template = $("#template").clone().attr('id', data.SpawnPointId);
             var iv = Math.floor(data.IV * 100)/100;
@@ -141,6 +145,7 @@
             template.find('.card-title').text(data.PokemonId)
             template.find('.timer').text(exp).attr('expired', data.ExpireTimestamp)
             template.find('.iv').text("IV : " + iv +"%")
+            template.find('.coordinate').text("["+ round(data.Latitude, 5) + "," + round(data.Longitude, 5)+"]")
             template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png')
             $('#pokemons').prepend(template);
 
@@ -176,7 +181,8 @@
             </div>
             <div class="card-block">
                 <img src="" class="pokemon-image" />
-                <p class="card-text">txt</p>
+                <div class="card-title"></div>
+                <p class="card-text"><span class="coordinate"></span></p>
                 <a href="#" class="btn btn-primary">Snipe</a>
             </div>
         </div>
