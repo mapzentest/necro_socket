@@ -24,7 +24,6 @@ server.on("error", onError);
 //start listening on port
 server.on("listening", onListening);
 
-
 /**
  * Normalize a port into a number, string, or false.
  */
