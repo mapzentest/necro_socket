@@ -51,6 +51,12 @@
     </div>
 
     <!-- Begin page content -->
+    <div class="load-bar" id="loading">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
     <div class="container">
         <div id="pokemons" class="row">
 
@@ -80,7 +86,6 @@
         socket.emit('pokemons')
 
         socket.on('pokemons', function(msg) {
-            console.log(msg);
             if (msg && msg.length) {
                 _.forEach(msg, (s) => {
                     addPokemonItem(s)
@@ -98,6 +103,7 @@
         }
 
         function addPokemonItem(data) {
+            $('#loading').remove();
             var template = $("#template").clone().attr('id', data.SpawnPointId);
             var iv = Math.floor(data.IV * 100) / 100;
             var endTime = moment.utc(data.ExpireTimestamp)
@@ -107,7 +113,7 @@
             template.find('.iv').text("IV : " + iv + "%")
             template.find('.coordinate').text("[" + round(data.Latitude, 5) + "," + round(data.Longitude, 5) + "]")
             template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png')
-            var sniperLink  = "msniper://"+data.Name+"/"+data.EncounterId +"/"+ data.SpawnPointId+"/" + data.Latitude + "," + data.Longitude +"/" + iv;
+            var sniperLink = "msniper://" + data.Name + "/" + data.EncounterId + "/" + data.SpawnPointId + "/" + data.Latitude + "," + data.Longitude + "/" + iv;
             console.log(sniperLink);
             template.find('.sniper-links').attr('href', sniperLink)
             template.find('.card').addClass(data.Rarity);
