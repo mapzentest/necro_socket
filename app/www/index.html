@@ -135,7 +135,7 @@
         });
         function round(number , digit) {
           var p = Math.pow(10, digit);
-          Math.floor(data.IV * p)/p
+          Math.floor(number* p)/p
         }
         function addPokemonItem(data) {
             var template = $("#template").clone().attr('id', data.SpawnPointId);
