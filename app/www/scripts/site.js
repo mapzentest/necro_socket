@@ -33,6 +33,7 @@ class App {
             return Math.floor(originalNumber * p) / p;
         };
         this.updateTimerCount = () => {
+            let hasRemoveItem = false;
             $('.timer', "#pokemons").each(function () {
                 var el = $(this);
                 var now = moment();
@@ -40,11 +41,18 @@ class App {
                 var expired = moment.utc(time);
                 var diff = moment.duration(expired.diff(now)).format("mm:ss");
                 if (now > expired) {
-                    el.closest('.pokemon-item').fadeOut().remove();
+                    this.totalPokemon = this.totalPokemon - 1;
+                    hasRemoveItem = true;
+                    el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
+                        $(this).remove();
+                    });
                 }
                 else
                     el.text(diff);
             });
+            if (hasRemoveItem) {
+                this.updateNumber();
+            }
             setTimeout(this.updateTimerCount, 1000);
         };
         this.addPokemonItem = (data) => {
@@ -83,9 +91,8 @@ class App {
             this.updateNumber();
         };
         this.updateNumber = () => {
-            this.counterElement.text(this.totalPokemon);
             let el = this.counterElement;
-            $({ someValue: this.totalPokemon - 3 }).animate({ someValue: this.totalPokemon }, {
+            $({ someValue: Math.max(this.totalPokemon - 3, 0) }).animate({ someValue: this.totalPokemon }, {
                 duration: 1000,
                 easing: 'swing',
                 step: function () {

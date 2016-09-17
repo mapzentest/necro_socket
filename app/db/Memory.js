@@ -5,8 +5,7 @@ class Memory {
     constructor() {
         this.data = [];
         this.addPokemon = (p) => {
-            console.log(p);
-            var pokemon = pokemons[p.PokemonId];
+            let pokemon = pokemons[p.PokemonId];
             if (pokemon) {
                 p.Rarity = pokemon.Rarity;
                 p.Name = pokemon.Name;

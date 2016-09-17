@@ -1,17 +1,19 @@
 /// <reference path="IPogoDatabase.ts" />
 /// <reference path="../../_all.d.ts" />
+/// <reference path="../models/IPokemonItem.ts" />
+
 import * as moment from 'moment'
 
 var pokemons = require('../config/pokemons.json')
 
 class Memory implements IPogoDatabase {
-    private data: any[] =[];
+    private data: IPokemonItem[] =[];
     constructor() {
 
     }
-    public addPokemon = (p:any) :void => {
-        console.log(p)
-        var pokemon = pokemons[p.PokemonId];
+    public addPokemon = (p:IPokemonItem) :void => {
+        let pokemon = pokemons[p.PokemonId];
+        
         if(pokemon) {
             p.Rarity = pokemon.Rarity;
             p.Name = pokemon.Name;
@@ -19,7 +21,7 @@ class Memory implements IPogoDatabase {
 
         this.data.push(p);
     }
-    public getActivePokemons =() :any[] => {
+    public getActivePokemons =() : IPokemonItem[] => {
         const now =  moment();
         this.data = this.data.filter((f)=>{
             var exp = moment(f.ExpireTimestamp);

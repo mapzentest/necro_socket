@@ -34,8 +34,8 @@ class SocketServer {
                 console.log('user disconnected');
             });
              socket.on('pokemon', function (msg) {
-                //console.log(msg)
-                //console.log(eval(msg));
+                delete msg.$type
+                let pokemon: IPokemonItem = msg;
                 mdb.addPokemon(msg) 
                 socket.broadcast.emit('pokemon', msg);
             });
