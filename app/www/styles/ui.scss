@@ -42,13 +42,27 @@
      background-color: seagreen;
      border-radius: 0;
      color: snow;
-     padding-top: 15px;
+     padding-top: 0px;
+     padding-bottom: 0px;
      .navbar-brand {
          color: #fff;
+         line-height: 70px;
+         padding :0px;
      }
      .nav {
+         height: 70px;
+         li{
+             height : 100%;
+         }
          .nav-link {
              color: #fff;
+             line-height: 70px;
+             padding: 0px 15px;
+         }
+         .nav-item{
+             &.active{
+                 background: yellow;
+             }
          }
      }
  }

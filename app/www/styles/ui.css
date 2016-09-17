@@ -35,11 +35,22 @@ code {
   background-color: seagreen;
   border-radius: 0;
   color: snow;
-  padding-top: 15px; }
+  padding-top: 0px;
+  padding-bottom: 0px; }
   .navbar .navbar-brand {
-    color: #fff; }
-  .navbar .nav .nav-link {
-    color: #fff; }
+    color: #fff;
+    line-height: 70px;
+    padding: 0px; }
+  .navbar .nav {
+    height: 70px; }
+    .navbar .nav li {
+      height: 100%; }
+    .navbar .nav .nav-link {
+      color: #fff;
+      line-height: 70px;
+      padding: 0px 15px; }
+    .navbar .nav .nav-item.active {
+      background: yellow; }
 
 .pokemon-item .sniper-links {
   position: absolute;

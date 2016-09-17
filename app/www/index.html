@@ -15,7 +15,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/ui.css">
     </style>
@@ -34,15 +34,36 @@
         </div>
         <nav class="navbar navbar-light navbar-static-top bg-faded">
             <div class="container">
-                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
-            &#9776;
-          </button>
-                <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mainNav">            &#9776;          </button>
+                <div class="collapse navbar-toggleable-xs" id="mainNav">
                     <a class="navbar-brand" href="#">POGO SPAWNING</a>
                     <ul class="nav navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Filters <span class="sr-only">(current)</span></a>
+                        <li class="nav-item active" data-sortBy="Update">
+                            <a class="nav-link" href="#" title="Sort by update time">By Update <span class="sr-only">(current)</span>
+                             <i class="fa fa-sort-desc" aria-hidden="true" id="sort-indicator"></i>
+                            </a>
                         </li>
+                        
+                        <li class="nav-item" data-sortBy="Expires">
+                            <a class="nav-link" href="#" title="Sort by Expires">By Expires</a>
+                        </li>
+
+                        <li class="nav-item" data-sortBy="IV">
+                            <a class="nav-link" href="#" title="Sort by IV" data-sortBy="Level">By IV</a>
+                        </li>
+                        
+                        <li class="nav-item" data-sortBy="Level">
+                            <a class="nav-link" href="#" title="Sort by Level">By Level</a>
+                        </li>
+
+                        <li class="nav-item" data-sortBy="Rarity">
+                            <a class="nav-link" href="#" title="Sort by Rarity">By Rarity</a>
+                        </li>
+
+                        <li class="nav-item" data-sortBy="PokemonName">
+                            <a class="nav-link" href="#" title="Sort by Name">By Name</a>
+                        </li>
+
 
                     </ul>
                 </div>
@@ -82,6 +103,8 @@
     <script src="http://momentjs.com/downloads/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/1.3.0/moment-duration-format.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.min.js"></script>
+    <script src="scripts/enums.js"></script>
     <script src="scripts/site.js"></script>
     <script>
         var app = new App();
