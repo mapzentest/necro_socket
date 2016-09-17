@@ -41,6 +41,7 @@ class App {
 
         const arrow = $(` <i class="fa fa-sort-${this.sortOrder}" aria-hidden="true" id='sort-indicator'></i>`)
         menuItem.append(arrow)
+        this.applySort();
     }
     
     private applySort= () :void => {
