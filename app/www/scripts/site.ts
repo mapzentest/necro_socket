@@ -68,12 +68,13 @@ class App {
             var expired = moment.utc(time)
             var diff = moment.duration(expired.diff(now)).format("mm:ss");
             if (now > expired) {
-                el.closest('.pokemon-item').slideUp(3000,'swing', function() {
+                this.totalPokemon = this.totalPokemon - 1;
+                hasRemoveItem = true;
+                
+                el.closest('.pokemon-item').slideUp(1500,'swing', function() {
                     $(this).remove();
                 });
 
-                this.totalPokemon = this.totalPokemon - 1;
-                hasRemoveItem = true;
             } else
                 el.text(diff);
         });
@@ -126,7 +127,7 @@ class App {
         this.updateNumber();
     }
     private updateNumber = (): void => {
-        this.counterElement.text(this.totalPokemon);
+        //this.counterElement.text(this.totalPokemon);
         let el = this.counterElement;
 
         $({ someValue: Math.max(this.totalPokemon-3,0) }).animate({ someValue: this.totalPokemon }, {
