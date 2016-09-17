@@ -60,6 +60,7 @@ class App {
         return Math.floor(originalNumber * p) / p
     }
     private updateTimerCount = (): void => {
+        let hasRemoveItem = false;
         $('.timer', "#pokemons").each(function () {
             var el = $(this);
             var now = moment();
@@ -67,12 +68,19 @@ class App {
             var expired = moment.utc(time)
             var diff = moment.duration(expired.diff(now)).format("mm:ss");
             if (now > expired) {
-                el.closest('.pokemon-item').fadeOut().remove();
+                el.closest('.pokemon-item').slideUp(3000,'swing', function() {
+                    $(this).remove();
+                });
+
                 this.totalPokemon = this.totalPokemon - 1;
+                hasRemoveItem = true;
             } else
                 el.text(diff);
-        })
-        this.updateNumber();
+        });
+        if(hasRemoveItem) {
+            this.updateNumber();
+        }
+
         setTimeout(this.updateTimerCount, 1000)
     }
     private addPokemonItem = (data: IPokemonItem): void => {
