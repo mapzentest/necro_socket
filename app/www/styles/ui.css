@@ -51,6 +51,14 @@ code {
       padding: 0px 15px; }
     .navbar .nav .nav-item.active {
       background: yellow; }
+    .navbar .nav .nav-item.counter {
+      float: right;
+      height: 40px;
+      margin-top: 15px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: orangered;
+      color: #fff; }
 
 .pokemon-item .sniper-links {
   position: absolute;

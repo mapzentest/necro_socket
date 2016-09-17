@@ -24,11 +24,11 @@
 -------------------------------------------------- */
  /* Not required for template or sticky footer method. */
  
- body> .container {
+ body>.container {
      padding: 80px 15px 0;
  }
  
- .footer> .container {
+ .footer>.container {
      padding-right: 15px;
      padding-left: 15px;
  }
@@ -47,21 +47,30 @@
      .navbar-brand {
          color: #fff;
          line-height: 70px;
-         padding :0px;
+         padding: 0px;
      }
      .nav {
          height: 70px;
-         li{
-             height : 100%;
+         li {
+             height: 100%;
          }
          .nav-link {
              color: #fff;
              line-height: 70px;
              padding: 0px 15px;
          }
-         .nav-item{
-             &.active{
+         .nav-item {
+             &.active {
                  background: yellow;
+             }
+             &.counter {
+                 float: right;
+                 height: 40px;
+                 margin-top: 15px;
+                 padding: 10px 15px;
+                 border-radius: 5px;
+                 background-color: orangered;
+                 color: #fff;
              }
          }
      }
@@ -87,74 +96,88 @@
      .card {
          &.Common {
              border-color: $color-pokemon-common;
-             .card-header{
+             .card-header {
                  background-color: $color-pokemon-common;
                  color: #fff;
              }
          }
          &.Rare {
              border-color: $color-pokemon-rare;
-             .card-header{
+             .card-header {
                  background-color: $color-pokemon-rare;
                  color: #fff;
              }
          }
          &.Uncommon {
              border-color: $color-pokemon-popular;
-             .card-header{
+             .card-header {
                  background-color: $color-pokemon-popular;
                  color: #fff;
              }
          }
-          &.VeryRare {
+         &.VeryRare {
              border-color: $color-pokemon-very-rare;
-             .card-header{
+             .card-header {
                  background-color: $color-pokemon-very-rare;
                  color: #fff;
              }
          }
          &.SuperRare {
              border-color: $color-pokemon-special;
-             .card-header{
+             .card-header {
                  background-color: $color-pokemon-special;
                  color: #fff;
              }
          }
-         
      }
  }
-
-
+ 
  .load-bar {
-  position: relative;
-  margin-top: 20px;
-  width: 100%;
-  height: 6px;
-  background-color: #fdba2c;
-}
-.bar {
-  content: "";
-  display: inline;
-  position: absolute;
-  width: 0;
-  height: 100%;
-  left: 50%;
-  text-align: center;
-}
-.bar:nth-child(1) {
-  background-color: #da4733;
-  animation: loading 3s linear infinite;
-}
-.bar:nth-child(2) {
-  background-color: #3b78e7;
-  animation: loading 3s linear 1s infinite;
-}
-.bar:nth-child(3) {
-  background-color: #fdba2c;
-  animation: loading 3s linear 2s infinite;
-}
-@keyframes loading {
-    from {left: 50%; width: 0;z-index:100;}
-    33.3333% {left: 0; width: 100%;z-index: 10;}
-    to {left: 0; width: 100%;}
-}
+     position: relative;
+     margin-top: 20px;
+     width: 100%;
+     height: 6px;
+     background-color: #fdba2c;
+ }
+ 
+ .bar {
+     content: "";
+     display: inline;
+     position: absolute;
+     width: 0;
+     height: 100%;
+     left: 50%;
+     text-align: center;
+ }
+ 
+ .bar:nth-child(1) {
+     background-color: #da4733;
+     animation: loading 3s linear infinite;
+ }
+ 
+ .bar:nth-child(2) {
+     background-color: #3b78e7;
+     animation: loading 3s linear 1s infinite;
+ }
+ 
+ .bar:nth-child(3) {
+     background-color: #fdba2c;
+     animation: loading 3s linear 2s infinite;
+ }
+ 
+ @keyframes loading {
+     from {
+         left: 50%;
+         width: 0;
+         z-index: 100;
+     }
+     33.3333% {
+         left: 0;
+         width: 100%;
+         z-index: 10;
+     }
+     to {
+         left: 0;
+         width: 100%;
+     }
+ }

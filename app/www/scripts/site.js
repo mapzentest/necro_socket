@@ -3,6 +3,8 @@ class App {
         this.sortType = "Update";
         this.sortOrder = "asc";
         this.pokemonItemSelector = '.pkm-item-query';
+        this.totalPokemon = 0;
+        this.counterElement = $('#counter');
         this.run = () => {
             this.socket.emit("pokemons");
             this.updateTimerCount();
@@ -17,9 +19,10 @@ class App {
             $('#sort-indicator').remove();
             const arrow = $(` <i class="fa fa-sort-${this.sortOrder}" aria-hidden="true" id='sort-indicator'></i>`);
             menuItem.append(arrow);
-            tinysort(this.pokemonItemSelector, { attr: this.sortType, order: this.sortOrder });
+            this.applySort();
         };
         this.applySort = () => {
+            tinysort(this.pokemonItemSelector, { attr: this.sortType, order: this.sortOrder });
         };
         this.setupMenu = () => {
             this.menu = $('#mainNav');
@@ -74,13 +77,27 @@ class App {
             this.socket.on('pokemon', this.onPokemonItem);
         };
         this.onPokemonItem = (data) => {
-            this.pokemons.push(data);
             this.addPokemonItem(data);
+            this.applySort();
+            this.totalPokemon = this.totalPokemon + 1;
+            this.updateNumber();
+        };
+        this.updateNumber = () => {
+            this.counterElement.text(this.totalPokemon);
+            let el = this.counterElement;
+            $({ someValue: this.totalPokemon - 3 }).animate({ someValue: this.totalPokemon }, {
+                duration: 1000,
+                easing: 'swing',
+                step: function () {
+                    el.text(Math.ceil(this.someValue));
+                }
+            });
         };
         this.onPokemonItems = (msg) => {
             if (msg && msg.length) {
                 _.forEach(msg, (s) => {
-                    this.pokemons.push(s);
+                    this.totalPokemon = this.totalPokemon + 1;
+                    this.updateNumber();
                     this.addPokemonItem(s);
                 });
             }

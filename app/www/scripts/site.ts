@@ -7,15 +7,17 @@ declare module moment {
         format(template?: string | Function, precision?: number, settings?: Object): string;
     }
 }
-declare var tinysort :any;
+declare var tinysort: any;
 
 class App {
     private socket: SocketIOClient.Socket;
-    private menu : JQuery;
-    private pokemons : IPokemonItem[];
+    private menu: JQuery;
+    private pokemons: IPokemonItem[];
     private sortType: string = "Update";
     private sortOrder: string = "asc";
-    private pokemonItemSelector:string = '.pkm-item-query'
+    private pokemonItemSelector: string = '.pkm-item-query';
+    private totalPokemon: number = 0;
+    private counterElement: JQuery = $('#counter');
     constructor() {
 
         this.setupMenu();
@@ -23,32 +25,32 @@ class App {
         this.socket.connect()
         this.config();
         this.pokemons = [];
-        
+
     }
     public run = (): void => {
         this.socket.emit("pokemons");
         this.updateTimerCount();
     }
-    
-    private onMenuItemClick = (ev: JQueryEventObject) : void => {
+
+    private onMenuItemClick = (ev: JQueryEventObject): void => {
         const menuItem = $(ev.target);
         this.sortType = menuItem.closest('.nav-item').attr('data-sortBy');
         this.menu.find('.active').removeClass('active');
         menuItem.closest('.nav-item').addClass('active');
         menuItem.toggleClass('desc');
-        this.sortOrder = menuItem.hasClass('desc')?'desc' :'asc';
+        this.sortOrder = menuItem.hasClass('desc') ? 'desc' : 'asc';
         $('#sort-indicator').remove();
 
         const arrow = $(` <i class="fa fa-sort-${this.sortOrder}" aria-hidden="true" id='sort-indicator'></i>`)
         menuItem.append(arrow)
         this.applySort();
     }
-    
-    private applySort= () :void => {
-        tinysort(this.pokemonItemSelector, {attr: this.sortType, order: this.sortOrder});            
+
+    private applySort = (): void => {
+        tinysort(this.pokemonItemSelector, { attr: this.sortType, order: this.sortOrder });
     };
 
-    private setupMenu = () : void => {
+    private setupMenu = (): void => {
         this.menu = $('#mainNav');
         this.menu.find('.nav-link').click(this.onMenuItemClick);
     }
@@ -66,25 +68,26 @@ class App {
             var diff = moment.duration(expired.diff(now)).format("mm:ss");
             if (now > expired) {
                 el.closest('.pokemon-item').fadeOut().remove();
+                this.totalPokemon = this.totalPokemon - 1;
             } else
                 el.text(diff);
         })
-
+        this.updateNumber();
         setTimeout(this.updateTimerCount, 1000)
     }
     private addPokemonItem = (data: IPokemonItem): void => {
-       
+
         $('#loading').remove();
         var template = $("#template")
-                        .clone()
-                        .addClass(this.pokemonItemSelector.replace('.',''))
-                        .attr('id', data.SpawnPointId)
-                        .attr('Level', data.Level)
-                        .attr('Expires', data.ExpireTimestamp)
-                        .attr('PokemonName', data.Name)
-                        .attr('IV', data.IV)
-                        .attr('Rarity', PokemonRarities[data.Rarity])
-                        .attr('Update', (new Date().getTime()));
+            .clone()
+            .addClass(this.pokemonItemSelector.replace('.', ''))
+            .attr('id', data.SpawnPointId)
+            .attr('Level', data.Level)
+            .attr('Expires', data.ExpireTimestamp)
+            .attr('PokemonName', data.Name)
+            .attr('IV', data.IV)
+            .attr('Rarity', PokemonRarities[data.Rarity])
+            .attr('Update', (new Date().getTime()));
 
         const iv = this.round(data.IV, 2);
         const endTime = moment.utc(data.ExpireTimestamp)
@@ -111,12 +114,30 @@ class App {
         //this.pokemons.push(data);
         this.addPokemonItem(data)
         this.applySort();
+        this.totalPokemon = this.totalPokemon + 1;
+        this.updateNumber();
     }
+    private updateNumber = (): void => {
+        this.counterElement.text(this.totalPokemon);
+        let el = this.counterElement;
 
+        $({ someValue: Math.max(this.totalPokemon-3,0) }).animate({ someValue: this.totalPokemon }, {
+            duration: 1000,
+            easing: 'swing', // can be anything
+            step: function () { // called on every step
+                // Update the element's text with rounded-up value:
+                el.text(Math.ceil(this.someValue));
+            }
+        });
+
+    }
     private onPokemonItems = (msg: IPokemonItem[]): void => {
         if (msg && msg.length) {
             _.forEach(msg, (s) => {
                 //this.pokemons.push(s);
+                this.totalPokemon = this.totalPokemon + 1;
+                this.updateNumber();
+
                 this.addPokemonItem(s);
             })
         }
