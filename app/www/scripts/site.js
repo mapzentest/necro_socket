@@ -73,7 +73,7 @@ class App {
             const sniperLink = "msniper://" + data.Name + "/" + data.EncounterId + "/" + data.SpawnPointId + "/" + data.Latitude + "," + data.Longitude + "/" + iv;
             template.find('.card-title').text(`LV${data.Level} - ${data.Name}`);
             template.find('.timer').text(exp).attr('expired', data.ExpireTimestamp);
-            template.find('.iv').text("IV : " + iv + "%");
+            template.find('.iv').text(`IV : ${iv}%`);
             template.find('.coordinate').text("[" + this.round(data.Latitude, 5) + "," + this.round(data.Longitude, 5) + "]");
             template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png');
             template.find('.sniper-links').attr('href', sniperLink);
@@ -91,14 +91,8 @@ class App {
             this.updateNumber();
         };
         this.updateNumber = () => {
+            this.counterElement.text(this.totalPokemon);
             let el = this.counterElement;
-            $({ someValue: Math.max(this.totalPokemon - 3, 0) }).animate({ someValue: this.totalPokemon }, {
-                duration: 1000,
-                easing: 'swing',
-                step: function () {
-                    el.text(Math.ceil(this.someValue));
-                }
-            });
         };
         this.onPokemonItems = (msg) => {
             if (msg && msg.length) {

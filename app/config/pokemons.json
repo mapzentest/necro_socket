@@ -255,7 +255,7 @@
         "FilteredIV": 0,
         "FilteredLV": 0,
         "Feed": true,
-        "Name": "Nidoranâ™€",
+        "Name": "NidoranMale",
         "Id": 29,
         "Types": ["Poison"],
         "Rarity": "Uncommon"
@@ -282,7 +282,7 @@
         "FilteredIV": 0,
         "FilteredLV": 0,
         "Feed": true,
-        "Name": "Nidoranâ™‚",
+        "Name": "NidoraFemale",
         "Id": 32,
         "Types": ["Poison"],
         "Rarity": "Uncommon"
