@@ -60,7 +60,7 @@ class App {
         return Math.floor(originalNumber * p) / p
     }
     private updateTimerCount = (): void => {
-        let hasRemoveItem = false;
+        let removedItemsCount = 0;
         $('.timer', "#pokemons").each(function () {
             var el = $(this);
             var now = moment();
@@ -69,16 +69,16 @@ class App {
             var diff = moment.duration(expired.diff(now)).format("mm:ss");
             if (now > expired) {
                 this.totalPokemon = this.totalPokemon - 1;
-                hasRemoveItem = true;
-                
-                el.closest('.pokemon-item').slideUp(1500,'swing', function() {
+                removedItemsCount = removedItemsCount + 1;
+                el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
                     $(this).remove();
                 });
 
             } else
                 el.text(diff);
         });
-        if(hasRemoveItem) {
+        if (removedItemsCount > 0) {
+            this.totalPokemon = this.totalPokemon - 1;
             this.updateNumber();
         }
 
