@@ -41,11 +41,10 @@ class App {
 
         const arrow = $(` <i class="fa fa-sort-${this.sortOrder}" aria-hidden="true" id='sort-indicator'></i>`)
         menuItem.append(arrow)
-        tinysort(this.pokemonItemSelector, {attr: this.sortType, order: this.sortOrder})    
     }
     
     private applySort= () :void => {
-
+        tinysort(this.pokemonItemSelector, {attr: this.sortType, order: this.sortOrder});            
     };
 
     private setupMenu = () : void => {
@@ -108,14 +107,15 @@ class App {
     }
 
     private onPokemonItem = (data: IPokemonItem): void => {
-        this.pokemons.push(data);
+        //this.pokemons.push(data);
         this.addPokemonItem(data)
+        this.applySort();
     }
 
     private onPokemonItems = (msg: IPokemonItem[]): void => {
         if (msg && msg.length) {
             _.forEach(msg, (s) => {
-                this.pokemons.push(s);
+                //this.pokemons.push(s);
                 this.addPokemonItem(s);
             })
         }
