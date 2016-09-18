@@ -1,0 +1,24 @@
+{
+  "name": "necro_socket",
+  "description": "the simple socket server to collect & serving data from necrobot2.",
+  "main": "index.js",
+  "authors": [
+    "samuraitruong"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "necrobot"
+  ],
+  "homepage": "https://github.com/samuraitruong/necro_socket",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "store-js": "store.js#^1.3.20"
+  }
+}
