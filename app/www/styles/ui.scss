@@ -107,6 +107,11 @@
          }
      }
      .card {
+         .card-title {
+             overflow: hidden;
+             text-overflow: ellipsis;
+             white-space: nowrap;
+         }
          &.Common {
              border-color: $color-pokemon-common;
              .card-header {

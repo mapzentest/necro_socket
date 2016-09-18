@@ -5,6 +5,7 @@
 /// <reference path="INotification.ts" />
 /// <reference path="DesktopNotification.ts" />
 /// <reference path="IAppConfig.ts" />
+/// <reference path="./StoreJsLocalStorage.ts" />
 
 declare module moment {
     interface Duration {
@@ -27,6 +28,8 @@ class App {
     private settingsElement : JQuery = $("#settings");
     private loadingElement : JQuery = $("#loading");
     private configs : IAppConfig;
+    private localStogare :ILocalStorage = new StoreJsLocalStorage();
+
 
     constructor() {
 
@@ -64,14 +67,12 @@ class App {
 
     private setupSettings = () : void => {
         //load setting from memory or local stogare
+        this.configs = this.localStogare.read<IAppConfig>("app-settings");
         $('#save-settings').click(this.saveSettings);
+        this.initNotifiers();
     }
-
-    private saveSettings = () : void => {
-        this.configs = {
-            EnableDesktopNotificaiton : $('#desktop-notification-enable').prop('checked')
-        };
-
+    private initNotifiers = () :void => {
+        if(!this.configs) return;
         
         this.notifiers =[];
         if(this.configs.EnableDesktopNotificaiton) {
@@ -79,7 +80,15 @@ class App {
             destopNotifier.requestPermission();
             this.notifiers.push(destopNotifier);
         }
+    }
 
+    private saveSettings = () : void => {
+        this.configs = {
+            EnableDesktopNotificaiton : $('#desktop-notification-enable').prop('checked')
+        };
+
+        this.initNotifiers();
+        this.localStogare.save<IAppConfig>("app-settings", this.configs)
         //close setting form
         this.toggleSettingsForm();
 

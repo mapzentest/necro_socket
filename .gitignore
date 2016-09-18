@@ -4,6 +4,11 @@ dist/
 .build/
 public/
 typings/
+bower_components/
+app/**/*.js
+app/**/*.js.map
+app/**/*.css
+app/**/*.css.map
 .
 # Logs
 logs

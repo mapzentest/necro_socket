@@ -9,6 +9,7 @@ class App {
         this.pokemonListElement = $("#pokemons");
         this.settingsElement = $("#settings");
         this.loadingElement = $("#loading");
+        this.localStogare = new StoreJsLocalStorage();
         this.run = () => {
             this.socket.emit("pokemons");
             this.updateTimerCount();
@@ -29,18 +30,26 @@ class App {
             tinysort(this.pokemonItemSelector, { attr: this.sortType, order: this.sortOrder });
         };
         this.setupSettings = () => {
+            this.configs = this.localStogare.read("app-settings");
             $('#save-settings').click(this.saveSettings);
+            this.initNotifiers();
         };
-        this.saveSettings = () => {
-            this.configs = {
-                EnableDesktopNotificaiton: $('#desktop-notification-enable').prop('checked')
-            };
+        this.initNotifiers = () => {
+            if (!this.configs)
+                return;
             this.notifiers = [];
             if (this.configs.EnableDesktopNotificaiton) {
                 let destopNotifier = new DesktopNotification(this.configs);
                 destopNotifier.requestPermission();
                 this.notifiers.push(destopNotifier);
             }
+        };
+        this.saveSettings = () => {
+            this.configs = {
+                EnableDesktopNotificaiton: $('#desktop-notification-enable').prop('checked')
+            };
+            this.initNotifiers();
+            this.localStogare.save("app-settings", this.configs);
             this.toggleSettingsForm();
         };
         this.setupMenu = () => {

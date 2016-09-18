@@ -24,6 +24,9 @@ class DesktopNotification {
                 IV: ${Math.round(item.IV)} %
                 LV: ${item.Level}`
             });
+            notification.onclick = function (e) {
+                console.log(e.target.data);
+            };
         };
         this.config = cfg;
     }

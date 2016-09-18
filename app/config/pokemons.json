@@ -267,7 +267,7 @@
     },
     "24": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Arbok",
         "Id": 24,
@@ -352,7 +352,7 @@
             "Poison",
             "Ground"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Rare"
     },
     "32": {
         "FilteredLV": 0,

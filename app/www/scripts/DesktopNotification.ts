@@ -38,5 +38,9 @@ class DesktopNotification implements INotification {
                 IV: ${Math.round(item.IV)} %
                 LV: ${item.Level}`
         });
+       notification.onclick = function(e) {
+            //window.location.href = e.target.data;
+            console.log(e.target.data);
+        }
 }
 }

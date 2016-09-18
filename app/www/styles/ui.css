@@ -85,6 +85,11 @@ code {
 .pokemon-item:hover .sniper-links {
   display: block; }
 
+.pokemon-item .card .card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
 .pokemon-item .card.Common {
   border-color: #115778; }
   .pokemon-item .card.Common .card-header {
