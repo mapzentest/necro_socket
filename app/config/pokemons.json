@@ -537,7 +537,7 @@
     },
     "48": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 100,
         "Feed": true,
         "Name": "Venonat",
         "Id": 48,
@@ -1065,7 +1065,7 @@
     },
     "94": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Gengar",
         "Id": 94,

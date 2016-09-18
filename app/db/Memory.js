@@ -10,6 +10,11 @@ class Memory {
                 p.Rarity = pokemon.Rarity;
                 p.Name = pokemon.Name;
                 if (pokemon.Feed && p.IV >= pokemon.FilteredIV) {
+                    var checkexist = this.data.filter((f) => {
+                        return p.EncounterId == f.EncounterId;
+                    });
+                    if (checkexist && checkexist.length > 0)
+                        return false;
                     this.data.push(p);
                     return true;
                 }
