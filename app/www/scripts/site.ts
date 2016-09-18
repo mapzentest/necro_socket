@@ -207,7 +207,7 @@ class App {
     }
 
     private buildSnipeLink = (data: IPokemonItem ) :string => {
-        let pattern = 'msniper://{Name}/{EncounterId}';
+        let pattern = 'msniper://{Name}/{EncounterId}/{SpawnPointId}/{Latitude},{Longitude}/{IV}';
         if(this.configs.UseMSniper) {
             pattern = 'msniper://{Name}/{EncounterId}/{SpawnPointId}/{Latitude},{Longitude}/{IV}';
         }
@@ -226,6 +226,7 @@ class App {
 
         //const sniperLink = "msniper://" + data.Name + "/" + data.EncounterId + "/" + data.SpawnPointId + "/" + data.Latitude + "," + data.Longitude + "/" + iv;
         return pattern;        
+    }
     }
     private config = (): void => {
         this.socket.on('pokemons', this.onPokemonItems)
