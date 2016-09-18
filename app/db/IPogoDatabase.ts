@@ -1,4 +1,4 @@
 interface IPogoDatabase{
-    addPokemon: (p:IPokemonItem) => void;
+    addPokemon: (p:IPokemonItem) => boolean;
     getActivePokemons :() => IPokemonItem[];
 }

@@ -17,8 +17,9 @@ class SocketServer {
             socket.on('pokemon', function (msg) {
                 delete msg.$type;
                 let pokemon = msg;
-                mdb.addPokemon(msg);
-                socket.broadcast.emit('pokemon', msg);
+                if (mdb.addPokemon(msg)) {
+                    socket.broadcast.emit('pokemon', msg);
+                }
             });
             socket.on('pokemons', function () {
                 let list = mdb.getActivePokemons();

@@ -11,7 +11,7 @@ class Memory implements IPogoDatabase {
     constructor() {
 
     }
-    public addPokemon = (p: IPokemonItem): void => {
+    public addPokemon = (p: IPokemonItem): boolean => {
         let pokemon = pokemons[p.PokemonId];
 
         if (pokemon) {
@@ -20,11 +20,13 @@ class Memory implements IPogoDatabase {
      
             if (pokemon.Feed && p.IV >= pokemon.FilteredIV) {
                 this.data.push(p);
+                return true;
            }
             else {
                 console.log(`Ignored: ${p.Name} | ${p.IV} | ${p.Rarity}`)
             }
         }
+        return false;
     }
     public getActivePokemons = (): IPokemonItem[] => {
         const now = moment();
