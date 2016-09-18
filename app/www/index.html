@@ -81,7 +81,24 @@
 
         </div>
         <div id="settings" class="hidden-xs-up">
-            <h2>Under implementation - click on setting icon again to go back </H2>
+            <h2>Notification & Filter setting </h2>
+            <br/>
+            <br/>
+            <div class="abc-checkbox abc-checkbox-success checkbox-primary checkbox">
+                <input id="desktop-notification-enable" class="styled" type="checkbox" checked="">
+                <label for="desktop-notification-enable"> Enable desktop notificaiton</label>
+            </div>
+
+            <div class="abc-checkbox checkbox-primary checkbox">
+                <input id="pushbullet-notification-enable" class="styled" type="checkbox" checked="">
+                <label for="pushbullet-notification-enable">Pushbullet notification notificaiton - not implemented</label>
+            </div>
+
+            <br/><br/>
+            <div>
+                <input type="button" class="btn btn-primary btn-lg" id="save-settings" value="Save Settings" />
+            </div>
+
 
         </div>
         <div class="load-bar" id="loading">
@@ -112,6 +129,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/2.3.6/tinysort.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="scripts/enums.js"></script>
+    <script src="scripts/DesktopNotification.js"></script>
     <script src="scripts/site.js"></script>
     <script>
         var app = new App();

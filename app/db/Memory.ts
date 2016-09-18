@@ -3,7 +3,7 @@
 /// <reference path="../models/IPokemonItem.ts" />
 
 import * as moment from 'moment'
-
+var configs = require('../config/config.json')
 var pokemons = require('../config/pokemons.json')
 
 class Memory implements IPogoDatabase {
@@ -18,7 +18,7 @@ class Memory implements IPogoDatabase {
             p.Rarity = pokemon.Rarity;
             p.Name = pokemon.Name;
      
-            if (pokemon.Feed && p.IV >= pokemon.FilteredIV) {
+            if (!configs.UseFilter ||  pokemon.Feed && p.IV >= pokemon.FilteredIV) {
                 var checkexist = this.data.filter( (f)=> {
                     return p.EncounterId == f.EncounterId;
                 });

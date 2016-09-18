@@ -1,16 +1,16 @@
 {
-  "globalDependencies": {
-    "body-parser": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/body-parser/body-parser.d.ts",
-    "express": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express/express.d.ts",
-    "express-serve-static-core": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express-serve-static-core/express-serve-static-core.d.ts",
-    "jquery": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/jquery/jquery.d.ts",
-    "lodash": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/lodash/lodash.d.ts",
-    "mime": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mime/mime.d.ts",
-    "moment": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/moment/moment.d.ts",
-    "mongodb": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongodb/mongodb.d.ts",
-    "mongoose": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongoose/mongoose.d.ts",
-    "node": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/node/node.d.ts",
-    "socket.io": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io/socket.io.d.ts",
-    "socket.io-client": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io-client/socket.io-client.d.ts"
-  }
+    "globalDependencies": {
+        "body-parser": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/body-parser/body-parser.d.ts",
+        "express": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express/express.d.ts",
+        "express-serve-static-core": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express-serve-static-core/express-serve-static-core.d.ts",
+        "jquery": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/jquery/jquery.d.ts",
+        "lodash": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/lodash/lodash.d.ts",
+        "mime": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mime/mime.d.ts",
+        "moment": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/moment/moment.d.ts",
+        "mongodb": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongodb/mongodb.d.ts",
+        "mongoose": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongoose/mongoose.d.ts",
+        "node": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/node/node.d.ts",
+        "socket.io": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io/socket.io.d.ts",
+        "socket.io-client": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io-client/socket.io-client.d.ts"
+    }
 }

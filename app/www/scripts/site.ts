@@ -2,6 +2,10 @@
 /// <reference path="../../models/IPokemonItem.ts" />
 /// <reference path="./IMenuItem.ts" />
 /// <reference path=".//enums.ts" />
+/// <reference path="INotification.ts" />
+/// <reference path="DesktopNotification.ts" />
+/// <reference path="IAppConfig.ts" />
+
 declare module moment {
     interface Duration {
         format(template?: string | Function, precision?: number, settings?: Object): string;
@@ -18,17 +22,21 @@ class App {
     private pokemonItemSelector: string = '.pkm-item-query';
     private totalPokemon: number = 0;
     private counterElement: JQuery = $('#counter');
+    private notifiers : INotification [] = []
     private pokemonListElement : JQuery = $("#pokemons");
-     private settingsElement : JQuery = $("#settings");
-      private loadingElement : JQuery = $("#loading");
+    private settingsElement : JQuery = $("#settings");
+    private loadingElement : JQuery = $("#loading");
+    private configs : IAppConfig;
+
     constructor() {
 
         this.setupMenu();
+        this.setupSettings();
         this.socket = io();
         this.socket.connect()
         this.config();
         this.pokemons = [];
-
+        
     }
     public run = (): void => {
         this.socket.emit("pokemons");
@@ -52,6 +60,30 @@ class App {
     private applySort = (): void => {
         tinysort(this.pokemonItemSelector, { attr: this.sortType, order: this.sortOrder });
     };
+    
+
+    private setupSettings = () : void => {
+        //load setting from memory or local stogare
+        $('#save-settings').click(this.saveSettings);
+    }
+
+    private saveSettings = () : void => {
+        this.configs = {
+            EnableDesktopNotificaiton : $('#desktop-notification-enable').prop('checked')
+        };
+
+        
+        this.notifiers =[];
+        if(this.configs.EnableDesktopNotificaiton) {
+            let destopNotifier = new DesktopNotification(this.configs);
+            destopNotifier.requestPermission();
+            this.notifiers.push(destopNotifier);
+        }
+
+        //close setting form
+        this.toggleSettingsForm();
+
+    }
 
     private setupMenu = (): void => {
         this.menu = $('#mainNav');
@@ -149,6 +181,8 @@ class App {
         this.applySort();
         this.totalPokemon = this.totalPokemon + 1;
         this.updateNumber();
+
+        _.each(this.notifiers, n=>n.sendNotification(data));
     }
     private updateNumber = (): void => {
         this.counterElement.text(this.totalPokemon);

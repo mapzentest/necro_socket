@@ -5,6 +5,7 @@ class App {
         this.pokemonItemSelector = '.pkm-item-query';
         this.totalPokemon = 0;
         this.counterElement = $('#counter');
+        this.notifiers = [];
         this.pokemonListElement = $("#pokemons");
         this.settingsElement = $("#settings");
         this.loadingElement = $("#loading");
@@ -26,6 +27,21 @@ class App {
         };
         this.applySort = () => {
             tinysort(this.pokemonItemSelector, { attr: this.sortType, order: this.sortOrder });
+        };
+        this.setupSettings = () => {
+            $('#save-settings').click(this.saveSettings);
+        };
+        this.saveSettings = () => {
+            this.configs = {
+                EnableDesktopNotificaiton: $('#desktop-notification-enable').prop('checked')
+            };
+            this.notifiers = [];
+            if (this.configs.EnableDesktopNotificaiton) {
+                let destopNotifier = new DesktopNotification(this.configs);
+                destopNotifier.requestPermission();
+                this.notifiers.push(destopNotifier);
+            }
+            this.toggleSettingsForm();
         };
         this.setupMenu = () => {
             this.menu = $('#mainNav');
@@ -55,6 +71,7 @@ class App {
             return Math.floor(originalNumber * p) / p;
         };
         this.updateTimerCount = () => {
+            let me = this;
             $('.timer', "#pokemons").each(function () {
                 var el = $(this);
                 var now = moment();
@@ -64,8 +81,8 @@ class App {
                 if (now > expired) {
                     el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
                         $(this).remove();
-                        this.totalPokemon = this.totalPokemon - 1;
-                        this.updateNumber();
+                        me.totalPokemon = me.totalPokemon - 1;
+                        me.updateNumber();
                     });
                 }
                 else
@@ -107,6 +124,7 @@ class App {
             this.applySort();
             this.totalPokemon = this.totalPokemon + 1;
             this.updateNumber();
+            _.each(this.notifiers, n => n.sendNotification(data));
         };
         this.updateNumber = () => {
             this.counterElement.text(this.totalPokemon);
@@ -122,6 +140,7 @@ class App {
             }
         };
         this.setupMenu();
+        this.setupSettings();
         this.socket = io();
         this.socket.connect();
         this.config();

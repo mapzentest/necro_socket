@@ -1,5 +1,6 @@
 "use strict";
 const moment = require('moment');
+var configs = require('../config/config.json');
 var pokemons = require('../config/pokemons.json');
 class Memory {
     constructor() {
@@ -9,7 +10,7 @@ class Memory {
             if (pokemon) {
                 p.Rarity = pokemon.Rarity;
                 p.Name = pokemon.Name;
-                if (pokemon.Feed && p.IV >= pokemon.FilteredIV) {
+                if (!configs.UseFilter || pokemon.Feed && p.IV >= pokemon.FilteredIV) {
                     var checkexist = this.data.filter((f) => {
                         return p.EncounterId == f.EncounterId;
                     });
