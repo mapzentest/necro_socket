@@ -4,6 +4,7 @@
 /// <reference path=".//enums.ts" />
 /// <reference path="INotification.ts" />
 /// <reference path="DesktopNotification.ts" />
+/// <reference path="ToastNotification.ts" />
 /// <reference path="IAppConfig.ts" />
 /// <reference path="./StoreJsLocalStorage.ts" />
 
@@ -36,9 +37,7 @@ class App {
 
         this.setupMenu();
         this.setupSettings();
-        this.socket = io();
-        this.socket.connect()
-        this.config();
+        this.configSocket();
         this.pokemons = [];
         
     }
@@ -66,7 +65,7 @@ class App {
     };
     
     private displayConfigData = () : void => {
-        $('#desktop-notification-enable').prop('checked', this.configs && this.configs.EnableDesktopNotificaiton)
+        $('#desktop-notification-enable').prop('checked', this.configs && this.configs.EnableDesktopNotification)
         $('#toast-notification-enable').prop('checked', this.configs && this.configs.EnableToastNotification)
         $('#use-msniper').prop('checked', this.configs && this.configs.UseMSniper)
         $('#use-pokesnipers').prop('checked', this.configs && this.configs.UsePokesnipers)
@@ -80,7 +79,7 @@ class App {
         
         if(!this.configs) {
             this.configs = {
-                EnableDesktopNotificaiton : false,
+                EnableDesktopNotification : false,
                 EnableToastNotification : true,
                 UseCustomSniper:false,
                 UseMSniper:true,
@@ -96,16 +95,23 @@ class App {
         if(!this.configs) return;
 
         this.notifiers =[];
-        if(this.configs.EnableDesktopNotificaiton) {
+        if(this.configs.EnableDesktopNotification) {
             let destopNotifier = new DesktopNotification(this.configs);
             destopNotifier.requestPermission();
             this.notifiers.push(destopNotifier);
         }
+
+        if(this.configs.EnableToastNotification) {
+            let toastNotifier = new ToastNotification(this.configs);
+            toastNotifier.requestPermission();
+            this.notifiers.push(toastNotifier);
+        }
+
     }
 
     private saveSettings = () : void => {
         this.configs = {
-            EnableDesktopNotificaiton : $('#desktop-notification-enable').prop('checked'),
+            EnableDesktopNotification : $('#desktop-notification-enable').prop('checked'),
             EnableToastNotification : $('#toast-notification-enable').prop('checked'),
             UseCustomSniper:$('#use-custom-sniper').prop('checked'),
             UseMSniper:$('#use-msniper').prop('checked'),
@@ -227,8 +233,10 @@ class App {
         //const sniperLink = "msniper://" + data.Name + "/" + data.EncounterId + "/" + data.SpawnPointId + "/" + data.Latitude + "," + data.Longitude + "/" + iv;
         return pattern;        
     }
-    }
-    private config = (): void => {
+
+    private configSocket = (): void => {
+        this.socket = io();
+        this.socket.connect()
         this.socket.on('pokemons', this.onPokemonItems)
         this.socket.on('pokemon', this.onPokemonItem);
     }
@@ -240,7 +248,7 @@ class App {
         this.totalPokemon = this.totalPokemon + 1;
         this.updateNumber();
 
-        _.each(this.notifiers, n=>n.sendNotification(data));
+        _.each(this.notifiers, n=>n.sendNotification(data, this.buildSnipeLink(data)));
     }
     private updateNumber = (): void => {
         this.counterElement.text(this.totalPokemon);

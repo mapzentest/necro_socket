@@ -11,6 +11,7 @@
         "mongoose": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/mongoose/mongoose.d.ts",
         "node": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/node/node.d.ts",
         "socket.io": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io/socket.io.d.ts",
-        "socket.io-client": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io-client/socket.io-client.d.ts"
+        "socket.io-client": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/socket.io-client/socket.io-client.d.ts",
+        "toastr": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/toastr/toastr.d.ts"
     }
 }

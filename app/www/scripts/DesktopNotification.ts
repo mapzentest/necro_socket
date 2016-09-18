@@ -27,20 +27,20 @@ class DesktopNotification implements INotification {
 
     }
 
-    public sendNotification = (item: IPokemonItem): void => {
-    if (!this.config && this.config.EnableDesktopNotificaiton) return;
+    public sendNotification = (item: IPokemonItem, url:string): void => {
+    if (!this.config ||  !this.config.EnableDesktopNotification) return;
 
     var notification = new Notification(`${item.Name} - ${item.Rarity}`,
         {
             icon: `https://df48mbt4ll5mz.cloudfront.net/images/pokemon/${item.PokemonId}.png`,
-            data: item,
+            data: url,
             body: `Name: ${item.Name}
                 IV: ${Math.round(item.IV)} %
                 LV: ${item.Level}`
         });
        notification.onclick = function(e) {
             //window.location.href = e.target.data;
-            console.log(e.target.data);
+            window.open(e.target.data);
         }
 }
 }

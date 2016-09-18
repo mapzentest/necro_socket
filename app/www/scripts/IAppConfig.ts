@@ -1,7 +1,7 @@
 /// <reference path="./ILocalStorage.ts" />
 
 interface IAppConfig extends IStorageItem{
-    EnableDesktopNotificaiton:boolean;
+    EnableDesktopNotification:boolean;
     EnableToastNotification:boolean;
     UseMSniper:boolean;
     UsePokesnipers :boolean;

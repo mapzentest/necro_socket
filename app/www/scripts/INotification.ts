@@ -2,5 +2,5 @@
 
 interface INotification {
     requestPermission:() => void;
-    sendNotification : (item : IPokemonItem ) =>  void;
+    sendNotification : (item : IPokemonItem ,url:string) =>  void;
 }
