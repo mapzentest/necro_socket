@@ -612,11 +612,11 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Common"
     },
     "55": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Golduck",
         "Id": 55,
