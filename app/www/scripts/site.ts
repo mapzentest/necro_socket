@@ -71,6 +71,8 @@ class App {
         $('#use-pokesnipers').prop('checked', this.configs && this.configs.UsePokesnipers)
         $('#use-custom-sniper').prop('checked', this.configs && this.configs.UseCustomSniper)
         $('#custom-sniper-command').val(this.configs.CustomSniperLink)
+
+        $(`[value="${this.configs.ToastPosition}"]`).prop('checked', true)
         
     }
     private setupSettings = () : void => {
@@ -83,7 +85,8 @@ class App {
                 EnableToastNotification : true,
                 UseCustomSniper:false,
                 UseMSniper:true,
-                UsePokesnipers:false
+                UsePokesnipers:false,
+                ToastPosition : 'toast-top-center'
             };    
         }
         $('#save-settings').click(this.saveSettings);
@@ -91,6 +94,7 @@ class App {
         this.displayConfigData();
         this.initNotifiers();
     }
+    
     private initNotifiers = () :void => {
         if(!this.configs) return;
 
@@ -116,7 +120,8 @@ class App {
             UseCustomSniper:$('#use-custom-sniper').prop('checked'),
             UseMSniper:$('#use-msniper').prop('checked'),
             UsePokesnipers:$('#use-pokesnipers').prop('checked'),
-            CustomSniperLink: $('#custom-sniper-command').val()
+            CustomSniperLink: $('#custom-sniper-command').val(),
+            ToastPosition: $('[name="positions"]:checked').val()
         };
         console.log(this.configs);
         this.initNotifiers();

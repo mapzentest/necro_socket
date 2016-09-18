@@ -1,7 +1,7 @@
 /// <reference path="INotification.ts" />
 /// <reference path="IAppConfig.ts" />
 class ToastNotification implements INotification {
-      private config: IAppConfig;
+    private config: IAppConfig;
     constructor(cfg: IAppConfig) {
         this.config = cfg;
     }
@@ -17,7 +17,7 @@ class ToastNotification implements INotification {
             "debug": false,
             "newestOnTop": false,
             "progressBar": false,
-            "positionClass": "toast-top-right",
+            "positionClass": this.config.ToastPosition,
             toastClass: item.Rarity,
             "preventDuplicates": true,
             "showDuration": 300,

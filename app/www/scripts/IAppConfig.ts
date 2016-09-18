@@ -7,4 +7,5 @@ interface IAppConfig extends IStorageItem{
     UsePokesnipers :boolean;
     UseCustomSniper:boolean;
     CustomSniperLink?: string;
+    ToastPosition?: string;
 }
