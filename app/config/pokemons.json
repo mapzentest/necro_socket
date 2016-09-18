@@ -1,6 +1,7 @@
 {
     "1": {
-        "FilteredIV": 0,
+        "FilteredIV": 100,
+        "FilteredLV": 0,
         "Feed": true,
         "Name": "Bulbasaur",
         "Id": 1,
@@ -11,7 +12,8 @@
         "Rarity": "Rare"
     },
     "2": {
-        "FilteredIV": 0,
+        "FilteredLV": 0,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Ivysaur",
         "Id": 2,
@@ -34,7 +36,8 @@
         "Rarity": "Rare"
     },
     "4": {
-        "FilteredIV": 0,
+        "FilteredIV": 95,
+        "FilteredLV": 0,
         "Feed": true,
         "Name": "Charmander",
         "Id": 4,
@@ -44,7 +47,8 @@
         "Rarity": "Rare"
     },
     "5": {
-        "FilteredIV": 0,
+        "FilteredIV": 90,
+        "FilteredLV": 0,
         "Feed": true,
         "Name": "Charmeleon",
         "Id": 5,
