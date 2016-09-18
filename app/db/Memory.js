@@ -9,8 +9,13 @@ class Memory {
             if (pokemon) {
                 p.Rarity = pokemon.Rarity;
                 p.Name = pokemon.Name;
+                if (pokemon.Feed && p.IV >= pokemon.FilteredIV) {
+                    this.data.push(p);
+                }
+                else {
+                    console.log(`Ignored: ${p.Name} | ${p.IV} | ${p.Rarity}`);
+                }
             }
-            this.data.push(p);
         };
         this.getActivePokemons = () => {
             const now = moment();
