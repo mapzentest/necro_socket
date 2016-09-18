@@ -411,7 +411,7 @@
     },
     "37": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 99,
         "Feed": true,
         "Name": "Vulpix",
         "Id": 37,
@@ -587,7 +587,7 @@
     },
     "52": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Meowth",
         "Id": 52,

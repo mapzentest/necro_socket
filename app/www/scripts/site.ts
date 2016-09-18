@@ -18,6 +18,9 @@ class App {
     private pokemonItemSelector: string = '.pkm-item-query';
     private totalPokemon: number = 0;
     private counterElement: JQuery = $('#counter');
+    private pokemonListElement : JQuery = $("#pokemons");
+     private settingsElement : JQuery = $("#settings");
+      private loadingElement : JQuery = $("#loading");
     constructor() {
 
         this.setupMenu();
@@ -53,6 +56,29 @@ class App {
     private setupMenu = (): void => {
         this.menu = $('#mainNav');
         this.menu.find('.nav-link').click(this.onMenuItemClick);
+        this.menu.find("#btn-settings").click(this.toggleSettingsForm);
+    }
+
+    private toggleSettingsForm = () : void => {
+        if(this.settingsElement.hasClass('hidden-xs-up')) {
+            this.loadingElement.hide();
+            this.pokemonListElement.slideDown(1000, "swing", ()=>{
+                this.pokemonListElement.addClass('hidden-xs-up'); 
+                this.settingsElement.removeClass('hidden-xs-up').fadeIn(1000,"swing");
+            });
+
+        }   
+        else{     
+            if(this.totalPokemon == 0) {
+                this.loadingElement.show();
+            }
+
+            this.settingsElement.slideDown(1000, "easing", ()=>{
+                this.settingsElement.addClass('hidden-xs-up')
+                this.pokemonListElement.removeClass('hidden-xs-up').fadeIn(1000,"swing");
+            });
+
+        }
     }
 
     private round = (originalNumber: number, digit: number): number => {
@@ -60,7 +86,6 @@ class App {
         return Math.floor(originalNumber * p) / p
     }
     private updateTimerCount = (): void => {
-        let removedItemsCount = 0;
         $('.timer', "#pokemons").each(function () {
             var el = $(this);
             var now = moment();
@@ -68,20 +93,18 @@ class App {
             var expired = moment.utc(time)
             var diff = moment.duration(expired.diff(now)).format("mm:ss");
             if (now > expired) {
-                this.totalPokemon = this.totalPokemon - 1;
-                removedItemsCount = removedItemsCount + 1;
+                
                 el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
                     $(this).remove();
+                    this.totalPokemon = this.totalPokemon - 1;
+                    this.updateNumber();
+
                 });
 
             } else
                 el.text(diff);
         });
-        if (removedItemsCount > 0) {
-            this.totalPokemon = this.totalPokemon - 1;
-            this.updateNumber();
-        }
-
+        
         setTimeout(this.updateTimerCount, 1000)
     }
     private addPokemonItem = (data: IPokemonItem): void => {

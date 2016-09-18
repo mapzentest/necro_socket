@@ -5,6 +5,9 @@ class App {
         this.pokemonItemSelector = '.pkm-item-query';
         this.totalPokemon = 0;
         this.counterElement = $('#counter');
+        this.pokemonListElement = $("#pokemons");
+        this.settingsElement = $("#settings");
+        this.loadingElement = $("#loading");
         this.run = () => {
             this.socket.emit("pokemons");
             this.updateTimerCount();
@@ -27,13 +30,31 @@ class App {
         this.setupMenu = () => {
             this.menu = $('#mainNav');
             this.menu.find('.nav-link').click(this.onMenuItemClick);
+            this.menu.find("#btn-settings").click(this.toggleSettingsForm);
+        };
+        this.toggleSettingsForm = () => {
+            if (this.settingsElement.hasClass('hidden-xs-up')) {
+                this.loadingElement.hide();
+                this.pokemonListElement.slideDown(1000, "swing", () => {
+                    this.pokemonListElement.addClass('hidden-xs-up');
+                    this.settingsElement.removeClass('hidden-xs-up').fadeIn(1000, "swing");
+                });
+            }
+            else {
+                if (this.totalPokemon == 0) {
+                    this.loadingElement.show();
+                }
+                this.settingsElement.slideDown(1000, "easing", () => {
+                    this.settingsElement.addClass('hidden-xs-up');
+                    this.pokemonListElement.removeClass('hidden-xs-up').fadeIn(1000, "swing");
+                });
+            }
         };
         this.round = (originalNumber, digit) => {
             var p = Math.pow(10, digit);
             return Math.floor(originalNumber * p) / p;
         };
         this.updateTimerCount = () => {
-            let hasRemoveItem = false;
             $('.timer', "#pokemons").each(function () {
                 var el = $(this);
                 var now = moment();
@@ -41,18 +62,15 @@ class App {
                 var expired = moment.utc(time);
                 var diff = moment.duration(expired.diff(now)).format("mm:ss");
                 if (now > expired) {
-                    this.totalPokemon = this.totalPokemon - 1;
-                    hasRemoveItem = true;
                     el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
                         $(this).remove();
+                        this.totalPokemon = this.totalPokemon - 1;
+                        this.updateNumber();
                     });
                 }
                 else
                     el.text(diff);
             });
-            if (hasRemoveItem) {
-                this.updateNumber();
-            }
             setTimeout(this.updateTimerCount, 1000);
         };
         this.addPokemonItem = (data) => {
