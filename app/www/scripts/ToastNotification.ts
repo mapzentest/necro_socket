@@ -29,7 +29,7 @@ class ToastNotification implements INotification {
             "showMethod": "fadeIn",
             "hideMethod": "fadeOut",
             "onclick": () => {
-                window.document.open(url)   
+                window.open(url,'_blank')   
             },
             
             }
