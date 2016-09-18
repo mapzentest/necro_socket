@@ -86,6 +86,7 @@ class App {
         return Math.floor(originalNumber * p) / p
     }
     private updateTimerCount = (): void => {
+        let me = this;
         $('.timer', "#pokemons").each(function () {
             var el = $(this);
             var now = moment();
@@ -96,8 +97,8 @@ class App {
                 
                 el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
                     $(this).remove();
-                    this.totalPokemon = this.totalPokemon - 1;
-                    this.updateNumber();
+                    me.totalPokemon = me.totalPokemon - 1;
+                    me.updateNumber();
 
                 });
 
