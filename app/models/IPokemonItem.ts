@@ -7,7 +7,7 @@ interface IPokemonBasic {
 interface IPokemonItem  extends IPokemonBasic{
     Latitude: number;
     Longitude:number;
-    EncounterId: number;
+    EncounterId: string;
     ExpireTimestamp:number;
     Expires: Date;
     SpawnPointId:string;
