@@ -2,5 +2,6 @@
 
 interface INotification {
     requestPermission:() => void;
-    sendNotification : (item : IPokemonItem ,url:string) =>  void;
+    sendPokemonNotification : (item : IPokemonItem ,url:string) =>  void;
+    sendNotification: (title:string, body:string) => void;
 }

@@ -9,10 +9,18 @@ class ToastNotification implements INotification {
     public requestPermission = (): void => {
     }
 
-    public sendNotification = (item: IPokemonItem, url:string): void => {
+    public sendNotification = (title: string, body: string): void => {
+        toastr.info(body, title, {})
+    }
+
+    public sendPokemonNotification = (item: IPokemonItem, url: string): void => {
         if (!this.config || !this.config.EnableToastNotification) return;
-        
-        let options:ToastrOptions = {
+        if (this.config.PokemonFilters) {
+            let filters = _.filter(this.config.PokemonFilters, x => x.PokemonId == item.PokemonId);
+
+            if (filters && !filters[0].EnableNotification) return;
+        }
+        let options: ToastrOptions = {
             "closeButton": false,
             "debug": false,
             "newestOnTop": false,
@@ -29,14 +37,14 @@ class ToastNotification implements INotification {
             "showMethod": "fadeIn",
             "hideMethod": "fadeOut",
             "onclick": () => {
-                window.open(url,'_blank')   
+                window.open(url, '_blank')
             },
-            
-            }
-        let htmlBody =`<div class="pokemon-toast-body">
+
+        }
+        let htmlBody = `<div class="pokemon-toast-body">
             <img src="https://df48mbt4ll5mz.cloudfront.net/images/pokemon/${item.PokemonId}.png" width="60" />   
         </div> 
         `
-         toastr.info(htmlBody,`${item.Name} IV ${Math.round(item.IV)}%`, options)   
+        toastr.info(htmlBody, `${item.Name} IV ${Math.round(item.IV)}%`, options)
     }
 }

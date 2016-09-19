@@ -92,100 +92,109 @@
 
         </div>
         <div id="settings" class="hidden-xs-up row">
-            <h2>Notification & Filter setting </h2>
+            <h2>Settings - Notifications - Snipers </h2>
             <br/>
 
-            <div class="card card-block col-md-6">
-                <h4 class="card-title">Notifications</h4>
-                <p class="card-text">
-                    <div class="abc-checkbox abc-checkbox-success checkbox-primary checkbox">
-                        <input id="desktop-notification-enable" class="styled" type="checkbox" checked="">
-                        <label for="desktop-notification-enable"> Enable desktop notificaiton</label>
-                    </div>
-
-                    <div class="abc-checkbox abc-checkbox-success checkbox-primary checkbox">
-                        <input id="toast-notification-enable" class="styled" type="checkbox" checked="">
-                        <label for="toast-notification-enable"> Enable toast notificaiton </label>
-                    </div>
-                    <div class="controls">
-                        <div class="radio abc-radio abc-radio-info">
-                            <input type="radio" id="r1" name="positions" value="toast-top-right" checked="">
-                            <label for="r1">Top Right</label>
-
-                            <input type="radio" id="r2" name="positions" value="toast-bottom-right" checked="">
-                            <label for="r2">Bottom Right</label>
-
-                            <input type="radio" id="r3" name="positions" value="toast-bottom-left" checked="">
-                            <label for="r3">Bottom Left</label>
-
-                            <input type="radio" id="r4" name="positions" value="toast-top-left" checked="">
-                            <label for="r4">Top Left</label>
-
-                            <input type="radio" id="r5" name="positions" value="toast-top-full-width" checked="">
-                            <label for="r5">Top Full Width</label>
-
-
-                            <input type="radio" id="r6" name="positions" value="toast-bottom-full-width" checked="">
-                            <label for="r6">Bottom Full Width</label>
-                            
-                            <input type="radio" id="r7" name="positions" value="toast-top-center" checked="">
-                            <label for="r7">Top Center</label>
-
-                            <input type="radio" id="r8" name="positions" value="toast-bottom-center" checked="">
-                            <label for="r8">Bottom Center</label>
+            <div class="card col-md-6">
+                <div class="card-block">
+                    <h4 class="card-title">Notifications</h4>
+                    <p class="card-text">
+                        <div class="abc-checkbox abc-checkbox-success checkbox-primary checkbox">
+                            <input id="desktop-notification-enable" class="styled" type="checkbox" checked="">
+                            <label for="desktop-notification-enable"> Enable desktop notificaiton</label>
                         </div>
 
-                    </div>
-
-                    <div class="abc-checkbox checkbox-primary checkbox">
-                        <input id="pushbullet-notification-enable" class="styled" type="checkbox" checked="">
-                        <label for="pushbullet-notification-enable">Pushbullet notification notificaiton - not implemented</label>
-                    </div>
-
-                </p>
-            </div>
-
-
-            <div class="card card-block col-md-6">
-                <h4 class="card-title">Snipers config</h4>
-                <p class="card-text">
-                    <div class="abc-radio abc-radio-danger">
-                        <input id="use-msniper" class="styled" type="radio" name="sniper" checked="">
-                        <label for="use-msniper"> Use MSniper</label>
-                    </div>
-
-                    <div class="abc-radio abc-radio-danger">
-                        <input id="use-pokesnipers" class="styled" type="radio" name="sniper" checked="">
-                        <label for="use-pokesnipers"> Use Pokesniper2</label>
-                    </div>
-
-                    <div class="abc-radio abc-radio-danger">
-                        <input id="use-custom-sniper" class="styled" type="radio" name="sniper" checked="">
-                        <label for="use-custom-sniper"> Use custom sniper</label>
-                    </div>
-                    <div>
-                        <input type="text" class="form-control" id="custom-sniper-command" placeholder="sniper://{Name}/{Latitude},{Longitude}">
-                        <br/>
-                        <div class="alert alert-info" role="alert">
-                            Example : mysnipper://{Name}/{Latitude},{Longitude}
-                            <br> Replace tokens as bellow
-                            <ul>
-                                <li>{Name} => Pokemon name
-                                </li>
-                                <li>{Latitude} => Latitude
-                                </li>
-                                <li>{Latitude} => Longitude</li>
-                                <li>{IV} => Pokemon IV</li>
-                                <li>{EncounterId} => Unique encounter ID</li>
-                                <li>{SpawnPointId} => Unique spawn point ID</li>
-                            </ul>
+                        <div class="abc-checkbox abc-checkbox-success checkbox-primary checkbox">
+                            <input id="toast-notification-enable" class="styled" type="checkbox" checked="">
+                            <label for="toast-notification-enable"> Enable toast notificaiton </label>
                         </div>
-                    </div>
-                </p>
+                        <div class="controls">
+                            <div class="radio abc-radio abc-radio-info">
+                                <input type="radio" id="r1" name="positions" value="toast-top-right" checked="">
+                                <label for="r1">Top Right</label>
+
+                                <input `type="radio"` id="r2" name="positions" value="toast-bottom-right" checked="">
+                                <label for="r2">Bottom Right</label>
+
+                                <input type="radio" id="r3" name="positions" value="toast-bottom-left" checked="">
+                                <label for="r3">Bottom Left</label>
+
+                                <input type="radio" id="r4" name="positions" value="toast-top-left" checked="">
+                                <label for="r4">Top Left</label>
+
+                                <input type="radio" id="r5" name="positions" value="toast-top-full-width" checked="">
+                                <label for="r5">Top Full Width</label>
+
+
+                                <input type="radio" id="r6" name="positions" value="toast-bottom-full-width" checked="">
+                                <label for="r6">Bottom Full Width</label>
+
+                                <input type="radio" id="r7" name="positions" value="toast-top-center" checked="">
+                                <label for="r7">Top Center</label>
+
+                                <input type="radio" id="r8" name="positions" value="toast-bottom-center" checked="">
+                                <label for="r8">Bottom Center</label>
+                            </div>
+
+                        </div>
+
+                        <div class="abc-checkbox checkbox-primary checkbox">
+                            <input id="pushbullet-notification-enable" class="styled" type="checkbox" checked="">
+                            <label for="pushbullet-notification-enable">Pushbullet notification notificaiton - not implemented</label>
+                        </div>
+
+                    </p>
+                </div>
             </div>
 
+            <div class="card col-md-6">
+                <div class="card-block">
+                    <h4 class="card-title">Snipers config</h4>
+                    <p class="card-text">
+                        <div class="abc-radio abc-radio-danger">
+                            <input id="use-msniper" class="styled" type="radio" name="sniper" checked="">
+                            <label for="use-msniper"> Use MSniper</label>
+                        </div>
+
+                        <div class="abc-radio abc-radio-danger">
+                            <input id="use-pokesnipers" class="styled" type="radio" name="sniper" checked="">
+                            <label for="use-pokesnipers"> Use Pokesniper2</label>
+                        </div>
+
+                        <div class="abc-radio abc-radio-danger">
+                            <input id="use-custom-sniper" class="styled" type="radio" name="sniper" checked="">
+                            <label for="use-custom-sniper"> Use custom sniper</label>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" id="custom-sniper-command" placeholder="sniper://{Name}/{Latitude},{Longitude}">
+                            <br/>
+                            <div class="alert alert-info" role="alert">
+                                Example : mysnipper://{Name}/{Latitude},{Longitude}
+                                <br> Replace tokens as bellow
+                                <ul>
+                                    <li>{Name} => Pokemon name
+                                    </li>
+                                    <li>{Latitude} => Latitude
+                                    </li>
+                                    <li>{Latitude} => Longitude</li>
+                                    <li>{IV} => Pokemon IV</li>
+                                    <li>{EncounterId} => Unique encounter ID</li>
+                                    <li>{SpawnPointId} => Unique spawn point ID</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <h2>Notification filters </h2>
+            <div class="pokemon-filters" id="pkm-filters">
+
+            </div>
 
             <br/><br/>
+            <div class="clearfix"></div>
+
             <div>
                 <input type="button" class="btn btn-primary btn-lg" id="save-settings" value="Save Settings" />
                 <input type="button" class="btn btn-danger btn-lg" id="close-settings" value="Cancel" />

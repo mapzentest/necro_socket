@@ -1,4 +1,6 @@
 {
-    "UseFilter": true,
-    "BatchSize": 1000
+    "UseFilter": false,
+    "BatchSize": 1000,
+    "DropboxKey": "",
+    "DropboxSync": false
 }

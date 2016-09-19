@@ -1,13 +1,16 @@
-interface IPokemonItem {
-    Latitude: number;
-    Longitude:number;
+interface IPokemonBasic {
     PokemonId:number;
     Name:string;
+    Rarity:string;
+}
+
+interface IPokemonItem  extends IPokemonBasic{
+    Latitude: number;
+    Longitude:number;
     EncounterId: number;
     ExpireTimestamp:number;
     Expires: Date;
     SpawnPointId:string;
     Level:number;
-    Rarity:string;
     IV:number
 }

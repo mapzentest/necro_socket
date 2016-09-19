@@ -17,6 +17,9 @@ class MongoDatabase implements IPogoDatabase {
     constructor() {
 
     }
+    public getPokemonSettings = () : IPokemonBasic[] => {
+        return null;
+    }
     public addPokemon = (p:IPokemonItem) :boolean => {
         let pokemon = pokemons[p.PokemonId];
         

@@ -1,4 +1,5 @@
 /// <reference path="./ILocalStorage.ts" />
+/// <reference path="./IPokemonFilter.ts" />
 
 interface IAppConfig extends IStorageItem{
     EnableDesktopNotification:boolean;
@@ -8,4 +9,5 @@ interface IAppConfig extends IStorageItem{
     UseCustomSniper:boolean;
     CustomSniperLink?: string;
     ToastPosition?: string;
+    PokemonFilters? :IPokemonFilter[]
 }
