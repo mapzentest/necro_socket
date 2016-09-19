@@ -19,7 +19,7 @@ class Memory implements IPogoDatabase {
     public addPokemon = (p: IPokemonItem): boolean => {
         this.all.push(p);
 
-        if(this.all.length == 100) {
+        if(this.all.length == configs.BatchSize) {
             this.dropbox.createFile(`${(new Date()).getTime()}.json`, JSON.stringify(this.all) , function aaa(err, res, body) {
                 // body...
                 console.log('dropbox file synced.')
