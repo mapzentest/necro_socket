@@ -13,7 +13,7 @@ class Memory implements IPogoDatabase {
     private data: IPokemonItem[] = [];
     private dropbox: any;
     private all: any = [];
-    private counter: any = 201000; //current value....
+    private counter: any = 0; //current value....
     private stats: any = {}
     private pokemonSettings: IPokemonBasic[];
     constructor() {
@@ -37,7 +37,7 @@ class Memory implements IPogoDatabase {
                     console.log('data file stored on dropbox');
                 })
                 .catch(function (error) {
-                    console.log(error);
+                    console.log("error dropbox write");
                 });
 
         }
