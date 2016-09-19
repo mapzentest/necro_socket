@@ -1,6 +1,6 @@
 {
     "UseFilter": true,
-    "BatchSize": 1000,
+    "BatchSize": 5000,
     "DropboxKey": "",
     "DropboxSync": true
 }
