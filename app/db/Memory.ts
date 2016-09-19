@@ -76,7 +76,7 @@ class Memory implements IPogoDatabase {
             this.stats.totals = this.stats.totals + 1;
         }
 
-        if (configs.DropboxSync && (this.counter = configs.BatchSize)) {
+        if (configs.DropboxSync && (this.counter == configs.BatchSize)) {
             this.counter = 0;
             this.storeSyncedData(this.stats)
         }
