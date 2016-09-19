@@ -20,7 +20,7 @@ class Memory implements IPogoDatabase {
         this.all.push(p);
 
         if(this.all.length == configs.BatchSize) {
-            this.dropbox.createFile(`${(new Date()).getTime()}.json`, JSON.stringify(this.all) , function aaa(err, res, body) {
+            this.dropbox.createFile(`${(new Date()).getTime()}.json`, this.all , function aaa(err, res, body) {
                 // body...
                 console.log('dropbox file synced.')
             }); // Creates a new file.

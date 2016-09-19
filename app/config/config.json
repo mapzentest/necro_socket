@@ -1,4 +1,4 @@
 {
     "UseFilter": true,
-    "BatchSize": 1000
+    "BatchSize": 100
 }
