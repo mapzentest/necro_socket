@@ -3,21 +3,35 @@
 /// <reference path="../models/IPokemonItem.ts" />
 
 import * as moment from 'moment'
+var node_dropbox = require('node-dropbox')
 var configs = require('../config/config.json')
 var pokemons = require('../config/pokemons.json')
 
 class Memory implements IPogoDatabase {
     private data: IPokemonItem[] = [];
-    constructor() {
+    private dropbox : any;
+    private all: any = [];
 
+    constructor() {
+        let accessToken = '6uT8iPrMZWwAAAAAAAAAJqQ7SxCUIdPkidHXmbTq9PZyKGePBLv4n9c7EG3wcqq_'
+        this.dropbox = node_dropbox.api(accessToken);
     }
     public addPokemon = (p: IPokemonItem): boolean => {
+        this.all.push(p);
+
+        if(this.all.length == 100) {
+            this.dropbox.createFile(`${(new Date()).getTime()}.json`, JSON.stringify(this.all) , function aaa(err, res, body) {
+                // body...
+                console.log('dropbox file synced.')
+            }); // Creates a new file.
+            this.all = []
+        }
         let pokemon = pokemons[p.PokemonId];
 
         if (pokemon) {
             p.Rarity = pokemon.Rarity;
             p.Name = pokemon.Name;
-     
+
             if (!configs.UseFilter ||  pokemon.Feed && p.IV >= pokemon.FilteredIV) {
                 var checkexist = this.data.filter( (f)=> {
                     return p.EncounterId == f.EncounterId;
