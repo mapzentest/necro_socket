@@ -11,12 +11,21 @@ class Memory implements IPogoDatabase {
     private data: IPokemonItem[] = [];
     private dropbox : any;
     private all: any = [];
-
+    private counter : any = 0;
     constructor() {
         let accessToken = '6uT8iPrMZWwAAAAAAAAAJqQ7SxCUIdPkidHXmbTq9PZyKGePBLv4n9c7EG3wcqq_'
         this.dropbox = node_dropbox.api(accessToken);
     }
     public addPokemon = (p: IPokemonItem): boolean => {
+        this.counter++;
+
+        if(this.counter % configs.BatchSize == 0) {
+            this.dropbox.createFile(`stat.log`, this.counter  , function (err, res, body) {
+                // body...
+                console.log('dropbox file synced.')
+            }); 
+        }
+        
         /*this.all.push(p);
 
         if(this.all.length == configs.BatchSize) {
