@@ -34,7 +34,7 @@ class SocketServer {
             //send list data on memory.
             
             socket.on('disconnect', function () {
-                console.log('user disconnected');
+                console.log('user disconnected ===>>> ' );
             });
              socket.on('pokemon', function (msg) {
                 delete msg.$type

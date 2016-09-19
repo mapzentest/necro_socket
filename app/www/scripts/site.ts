@@ -37,8 +37,8 @@ class App {
     constructor() {
 
         this.setupMenu();
-        this.setupSettings();
         this.configSocket();
+        this.setupSettings();
         this.pokemons = [];
 
     }
@@ -159,8 +159,10 @@ class App {
                 UsePokesnipers: false,
                 ToastPosition: 'toast-top-center'
             };
-            this.socket.emit('pokemon-settings', '');
         }
+        if(!this.configs.PokemonFilters) 
+            this.socket.emit('pokemon-settings', '');
+        
         $('#save-settings').click(this.saveSettings);
         $('#close-settings').click(this.toggleSettingsForm);
         this.displayConfigData();
