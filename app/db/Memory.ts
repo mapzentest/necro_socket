@@ -17,7 +17,7 @@ class Memory implements IPogoDatabase {
         this.dropbox = node_dropbox.api(accessToken);
     }
     public addPokemon = (p: IPokemonItem): boolean => {
-        this.all.push(p);
+        /*this.all.push(p);
 
         if(this.all.length == configs.BatchSize) {
             this.dropbox.createFile(`${(new Date()).getTime()}.json`, this.all , function aaa(err, res, body) {
@@ -26,6 +26,7 @@ class Memory implements IPogoDatabase {
             }); // Creates a new file.
             this.all = []
         }
+        */
         let pokemon = pokemons[p.PokemonId];
 
         if (pokemon) {
