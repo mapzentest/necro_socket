@@ -39,6 +39,7 @@ class SocketServer {
              socket.on('pokemon', function (msg) {
                 delete msg.$type
                 let pokemon: IPokemonItem = msg;
+                console.log(pokemon);
                 if(mdb.addPokemon(msg)) { 
                     socket.broadcast.emit('pokemon', msg);
                 }
