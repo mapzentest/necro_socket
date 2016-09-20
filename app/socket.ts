@@ -29,13 +29,13 @@ class SocketServer {
         this.db = Memory
         var mdb = this.db;
         var me = this;
+        let clientCount = 0;
         this.server.on('connection', function (socket) {
-            console.log('a user connected');
-            //send list data on memory.
-            
-            socket.on('disconnect', function () {
-                console.log('user disconnected ===>>> ' );
+             console.log('a user connected ===>>>', ++clientCount);
+            socket.on('disconnect', function() {
+                console.log('user disconnected ===>>> ', --clientCount);
             });
+
              socket.on('pokemon', function (msg) {
                 delete msg.$type
                 let pokemon: IPokemonItem = msg;
