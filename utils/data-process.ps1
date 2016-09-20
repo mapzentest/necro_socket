@@ -96,3 +96,5 @@ $list = ($list | sort Rate -Descending)
 
 $list | Export-Csv "rates.csv"
 $list | ConvertTo-Json | Out-File "Rates.json"
+
+$list | sort Rate -Descending

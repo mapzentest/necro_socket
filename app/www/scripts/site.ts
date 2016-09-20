@@ -264,7 +264,7 @@ class App {
                 el.text(diff);
         });
 
-        //setTimeout(this.updateTimerCount, 1000)
+        setTimeout(this.updateTimerCount, 1000)
     }
     private addPokemonItem = (data: IPokemonItem): void => {
 
