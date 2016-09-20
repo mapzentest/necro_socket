@@ -26,7 +26,7 @@ class Memory implements IPogoDatabase {
         if (obj) {
             this.dropbox.filesUpload(
                 {
-                    path: '/stats.txt',
+                    path: '/' + configs.StatsFile,
                     contents: JSON.stringify(obj),
                     mode: {
                         '.tag': 'overwrite'
@@ -41,11 +41,12 @@ class Memory implements IPogoDatabase {
 
         }
     }
+    
     public loadSyncedData = (): void => {
         let me = this;
         this.dropbox.filesDownload(
             {
-                path: '/stats.txt',
+                path: '/' + configs.StatsFile,
                 '.tag': 'path'
             })
             .then(function (response) {
@@ -61,6 +62,7 @@ class Memory implements IPogoDatabase {
     }
 
     public addStatistics = (pkm: IPokemonItem): void => {
+        console.log('addStatistics')
         this.counter++;
         if (this.stats && pkm.Name) {
             if (!this.stats.pokemons[pkm.Name]) this.stats.pokemons[pkm.Name] = {

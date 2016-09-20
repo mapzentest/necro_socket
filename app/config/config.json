@@ -1,7 +1,8 @@
 {
     "UseFilter": true,
-    "BatchSize": 5000,
+    "BatchSize": 1234,
     "SyncByTimes": 0,
     "DropboxKey": "6uT8iPrMZWwAAAAAAAAAJqQ7SxCUIdPkidHXmbTq9PZyKGePBLv4n9c7EG3wcqq_",
-    "DropboxSync": true
+    "DropboxSync": true,
+    "StatsFile": "stats.txt"
 }
