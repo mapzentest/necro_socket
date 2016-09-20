@@ -41,7 +41,7 @@ class Memory implements IPogoDatabase {
 
         }
     }
-    
+
     public loadSyncedData = (): void => {
         let me = this;
         this.dropbox.filesDownload(
@@ -62,7 +62,6 @@ class Memory implements IPogoDatabase {
     }
 
     public addStatistics = (pkm: IPokemonItem): void => {
-        console.log('addStatistics')
         this.counter++;
         if (this.stats && pkm.Name) {
             if (!this.stats.pokemons[pkm.Name]) this.stats.pokemons[pkm.Name] = {
