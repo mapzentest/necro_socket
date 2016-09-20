@@ -1,41 +1,71 @@
-#pkm-filters {
-    .pokemon-filter {
-        ul {
-            list-style-type: _none;
-            margin: 0px;
-            padding: 0px;
-            li {
-                list-style: none;
-                list-style-type: none;
-                float: left;
-                cursor: pointer;
-                margin: 3px;
-                opacity: 1;
-                transition: opacity 0.4s ease-in;
-                -ms-transition: opacity 0.4s ease-in;
-                -moz-transition: opacity 0.4s ease-in;
-                -webkit-transition: opacity 0.4s ease-in;
-                &.deselected {
-                    opacity: 0.35;
-                    img {
-                        filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
-                        /* Firefox 3.5+ */
-                        filter: grayscale(100%);
-                        /* Current draft standard */
-                        -webkit-filter: grayscale(100%);
-                        /* New WebKit */
-                        -moz-filter: grayscale(100%);
-                        -ms-filter: grayscale(100%);
-                        -o-filter: grayscale(100%);
-                        filter: gray;
-                        /* IE6+ */
+        @mixin rarity-css($color) {
+            border-color: $color;
+            .card-header {
+                background-color: $color;
+                color: #fff;
+            }
+            .notification-filter {
+                img {
+                    &:hover {
+                        border-color: $color;
                     }
-                }
-                &:hover {
-                    opacity: 1px;
-                    border-color: lightseagreen;
                 }
             }
         }
-    }
-}
+        
+        #pkm-filters {
+            .pokemon-filter {
+                ul {
+                    list-style-type: _none;
+                    margin: 0px;
+                    padding: 0px;
+                    li {
+                        list-style: none;
+                        list-style-type: none;
+                        float: left;
+                        cursor: pointer;
+                        margin: 3px;
+                        opacity: 1;
+                        transition: opacity 0.4s ease-in;
+                        -ms-transition: opacity 0.4s ease-in;
+                        -moz-transition: opacity 0.4s ease-in;
+                        -webkit-transition: opacity 0.4s ease-in;
+                        &.deselected {
+                            opacity: 0.35;
+                            img {
+                                filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+                                /* Firefox 3.5+ */
+                                filter: grayscale(100%);
+                                /* Current draft standard */
+                                -webkit-filter: grayscale(100%);
+                                /* New WebKit */
+                                -moz-filter: grayscale(100%);
+                                -ms-filter: grayscale(100%);
+                                -o-filter: grayscale(100%);
+                                filter: gray;
+                                /* IE6+ */
+                            }
+                        }
+                        &:hover {
+                            opacity: 1px;
+                            border-color: lightseagreen;
+                        }
+                    }
+                }
+                &.Common {
+                    @include rarity-css($color-pokemon-common)
+                }
+                &.Rare {
+                    @include rarity-css($color-pokemon-rare)
+                }
+                &.Uncommon {
+                    @include rarity-css($color-pokemon-popular)
+                }
+                &.VeryRare {
+                    @include rarity-css($color-pokemon-very-rare)
+                }
+                &.SuperRare {
+                    @include rarity-css($color-pokemon-special)
+                }
+            }
+        }

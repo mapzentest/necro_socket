@@ -92,14 +92,15 @@
  //  pokemon item
  .pokemon-item {
      .sniper-links {
+         transition: all 1.3s ease;
          position: absolute;
          top: 50px;
-         left: 20;
+         left: 20px;
          display: none;
          background: url('images/snipe-icon.svg');
          background-size: cover;
-         width: 200px;
-         height: 200px;
+         width: 100px;
+         height: 100px;
      }
      &:hover {
          .sniper-links {

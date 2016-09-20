@@ -10,16 +10,15 @@ var Dropbox = require('dropbox');
 
 
 class Memory implements IPogoDatabase {
-    private data: IPokemonItem[] = [];
+    private rarePokemons: IPokemonItem[] = [];
     private dropbox: any;
     private all: any = [];
-    private counter: any = 0; //current value....
+    private counter: any = 0;
     private stats: any = {}
     private pokemonSettings: IPokemonBasic[];
     constructor() {
         this.pokemonSettings = [];
-        let accessToken = '6uT8iPrMZWwAAAAAAAAAJqQ7SxCUIdPkidHXmbTq9PZyKGePBLv4n9c7EG3wcqq_'
-        this.dropbox = new Dropbox({ accessToken: accessToken });
+        this.dropbox = new Dropbox({ accessToken: configs.DropboxKey });
         this.loadSyncedData()
     }
 
@@ -60,19 +59,15 @@ class Memory implements IPogoDatabase {
             });
 
     }
-    public addPokemon = (p: IPokemonItem): boolean => {
-        let pokemon = pokemons[p.PokemonId];
-        if (!pokemon) return;
-        p.Rarity = pokemon.Rarity;
-        p.Name = pokemon.Name;
 
+    public addStatistics = (pkm: IPokemonItem): void => {
         this.counter++;
-        if (this.stats) {
-            if (!this.stats.pokemons[p.Name]) this.stats.pokemons[p.Name] = {
-                Id: p.PokemonId,
+        if (this.stats && pkm.Name) {
+            if (!this.stats.pokemons[pkm.Name]) this.stats.pokemons[pkm.Name] = {
+                Id: pkm.PokemonId,
                 Count: 0
             };
-            this.stats.pokemons[p.Name].Count = this.stats.pokemons[p.Name].Count + 1;
+            this.stats.pokemons[pkm.Name].Count = this.stats.pokemons[pkm.Name].Count + 1;
             this.stats.totals = this.stats.totals + 1;
         }
 
@@ -80,28 +75,40 @@ class Memory implements IPogoDatabase {
             this.counter = 0;
             this.storeSyncedData(this.stats)
         }
+    }
+    public addPokemon = (p: IPokemonItem): boolean => {
+        let pokemon = pokemons[p.PokemonId];
+        if (!pokemon) return;
+        p.Rarity = pokemon.Rarity;
+        p.Name = pokemon.Name;
 
         if (!configs.UseFilter || pokemon.Feed && p.IV >= pokemon.FilteredIV) {
-            var checkexist = this.data.filter((f) => {
+            var checkexist = this.rarePokemons.filter((f) => {
                 return p.EncounterId == f.EncounterId;
             });
-            if (checkexist && checkexist.length > 0) return false;
 
-            this.data.push(p);
+            if (checkexist && checkexist.length > 0) {
+                return false;
+            }
+
+            this.rarePokemons.push(p);
+            this.addStatistics(p);
             return true;
         }
         else {
+            this.addStatistics(pokemon);
             console.log(`Ignored: ${p.Name} | ${p.IV} | ${p.Rarity}`)
         }
         return false;
     }
+
     public getActivePokemons = (): IPokemonItem[] => {
         const now = moment();
-        this.data = this.data.filter((f) => {
+        this.rarePokemons = this.rarePokemons.filter((f) => {
             var exp = moment(f.ExpireTimestamp);
             return exp > now;
         });
-        return this.data;
+        return this.rarePokemons;
     }
     public getPokemonSettings = (): IPokemonBasic[] => {
         if (!this.pokemonSettings || this.pokemonSettings.length == 0) {

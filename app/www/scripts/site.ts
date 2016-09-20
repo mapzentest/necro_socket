@@ -81,7 +81,7 @@ class App {
                 if (!grouped[rarity]) grouped[rarity] = []
                 grouped[rarity].push(x);
             });
-            console.log(grouped);
+
             $('#pkm-filters').html("");
             for (var rarity in grouped) {
                 let rarityDiv = $(`
@@ -243,6 +243,7 @@ class App {
         return Math.floor(originalNumber * p) / p
     }
     private updateTimerCount = (): void => {
+        
         let me = this;
         $('.timer', "#pokemons").each(function () {
             var el = $(this);
@@ -263,7 +264,7 @@ class App {
                 el.text(diff);
         });
 
-        setTimeout(this.updateTimerCount, 1000)
+        //setTimeout(this.updateTimerCount, 1000)
     }
     private addPokemonItem = (data: IPokemonItem): void => {
 
@@ -290,10 +291,21 @@ class App {
         template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png')
         template.find('.sniper-links').attr('href', this.buildSnipeLink(data))
         template.find('.card').addClass(data.Rarity);
-
+        template.hover(this.onHoverOnPokemonItem)
         $('#pokemons').prepend(template);
-    }
 
+    }
+    private onHoverOnPokemonItem = (el:JQueryEventObject ): void => {
+        var img = $(el.target).find('.pokemon-image')
+        let pos = img.position();
+        if(!pos ) return;
+
+        var link = $(el.target).find('.sniper-links')
+        link.width(img.width())
+                .height(img.height())
+                .css('top', `${pos.top}px`)
+                .css('left', `${pos.left}px`);
+    }
     private buildSnipeLink = (data: IPokemonItem): string => {
         let pattern = 'msniper://{Name}/{EncounterId}/{SpawnPointId}/{Latitude},{Longitude}/{IV}';
         if (this.configs.UseMSniper) {
