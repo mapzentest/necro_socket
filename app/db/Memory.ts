@@ -1,7 +1,7 @@
 /// <reference path="IPogoDatabase.ts" />
 /// <reference path="../../_all.d.ts" />
 /// <reference path="../models/IPokemonItem.ts" />
-
+/// <reference path="../models/IAppSettings.ts" />
 import * as moment from 'moment'
 var node_dropbox = require('node-dropbox')
 //var configs = require('../config/config.json')
@@ -10,20 +10,18 @@ var Dropbox = require('dropbox');
 
 
 class Memory implements IPogoDatabase {
-    private configs :any;
+    private configs :IAppConfigs;
     private rarePokemons: IPokemonItem[] = [];
     private dropbox: any;
     private all: any = [];
     private counter: any = 0;
     private stats: any = {}
     private pokemonSettings: IPokemonBasic[];
-    constructor(settings: any) {
+    constructor(settings: IAppConfigs) {
         this.configs = settings;
         this.pokemonSettings = [];
         this.dropbox = new Dropbox({ accessToken: this.configs.DropboxKey });
         this.loadSyncedData()
-
-        console.log('app config applies' , this.configs)
     }
 
     public storeSyncedData = (obj: any): void => {
@@ -134,6 +132,6 @@ class Memory implements IPogoDatabase {
 }
 //export = module.exports = new Memory();
 
-export = module.exports = function (settings :any) {
+export = module.exports = function (settings : IAppConfigs) {
     return new Memory(settings)
 }

@@ -1,4 +1,5 @@
 /// <reference path="../_all.d.ts" />
+/// <reference path="models/IAppSettings.ts" />
 //http://brianflove.com/2016/03/29/typescript-express-node-js/
 
 "use strict";
@@ -9,7 +10,7 @@ import Memory = require("./db/Memory")
 var pokemons: IPokemonItem[] = require('./config/pokemons.json')
 
 class SocketServer {
-    private appConfigs : any;
+    private appConfigs : IAppConfigs;
     public server: SocketIO.Server;
     public db : IPogoDatabase;
     public pokemonSettings : IPokemonBasic[]
@@ -19,7 +20,7 @@ class SocketServer {
      * @class Server
      * @constructor
      */
-    constructor(http: any, settings: any) {
+    constructor(http: any, settings: IAppConfigs) {
         //create expressjs application
         this.appConfigs = settings;
         
@@ -66,6 +67,6 @@ class SocketServer {
     }
 }
 
-export = module.exports = function (http: any, settings :any) {
+export = module.exports = function (http: any, settings :IAppConfigs) {
     return new SocketServer(http, settings).server
 }

@@ -1,4 +1,6 @@
 /// <reference path="../_all.d.ts" />
+/// <reference path="models/IAppSettings.ts" />
+
 //http://brianflove.com/2016/03/29/typescript-express-node-js/
 
 "use strict";
@@ -26,7 +28,7 @@ class Server {
    * @static
    * @return {ng.auto.IInjectorService} Returns the newly created injector for this app.
    */
-  public static bootstrap(settings:any): Server {
+  public static bootstrap(settings:IAppConfigs): Server {
     return new Server(settings);
   }
 
@@ -36,7 +38,7 @@ class Server {
    * @class Server
    * @constructor
    */
-  constructor(settings: any) {
+  constructor(settings: IAppConfigs) {
     //create expressjs application
     this.app = express();
 
@@ -103,6 +105,6 @@ class Server {
 }
 //var server = Server.bootstrap();
 //export = server.app;
-export = module.exports = function (settings: any) {
+export = module.exports = function (settings: IAppConfigs) {
     return new Server(settings).app
 }
