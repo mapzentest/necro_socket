@@ -25,7 +25,7 @@ class App {
     private sortOrder: string = "asc";
     private pokemonItemSelector: string = '.pkm-item-query';
     private totalPokemon: number = 0;
-    private counterElement: JQuery = $('#counter');
+    private counterElement: JQuery = $('.counter span');
     private notifiers: INotification[] = []
     private pokemonListElement: JQuery = $("#pokemons");
     private settingsElement: JQuery = $("#settings");
@@ -58,6 +58,9 @@ class App {
 
         const arrow = $(` <i class="fa fa-sort-${this.sortOrder}" aria-hidden="true" id='sort-indicator'></i>`)
         menuItem.append(arrow)
+        if($(document).width() < 480) {
+            $('.navbar-toggler').click();
+        }
         this.applySort();
     }
 
@@ -211,7 +214,7 @@ class App {
     private setupMenu = (): void => {
         this.menu = $('#mainNav');
         this.menu.find('.nav-link').click(this.onMenuItemClick);
-        this.menu.find("#btn-settings").click(this.toggleSettingsForm);
+        $("#btn-settings,#btn-settings-xs").click(this.toggleSettingsForm);
     }
 
     private toggleSettingsForm = (): void => {

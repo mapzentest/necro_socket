@@ -26,6 +26,9 @@
  
  body>.container {
      padding: 80px 15px 0;
+     @media (max-width: $screen-mobile) {
+         padding-top: 50px;
+     }
  }
  
  .footer>.container {
@@ -39,6 +42,16 @@
  
  .navbar {
      height: 70px;
+     @media (max-width: $screen-mobile) {
+         height: 40px;
+         .navbar-toggleable-xs {
+             background-color: $color-menu-mobile;
+             margin-top: 2px;
+         }
+         .container {
+             padding-left: 0px;
+         }
+     }
      background-color: seagreen;
      border-radius: 0;
      color: snow;
@@ -49,8 +62,31 @@
          line-height: 70px;
          padding: 0px;
      }
+     .counter {
+         float: right;
+         height: 40px;
+         margin-top: 15px;
+         padding: 10px 15px;
+         border-radius: 5px;
+         background-color: orangered;
+         color: #fff;
+         font-weight: bold;
+         .settings {
+             cursor: pointer;
+         }
+         @media (max-width: $screen-mobile) {
+             position: fixed;
+             top: -10px;
+             right: 15px;
+             height: 30px;
+             padding-top: 5px;
+         }
+     }
      .nav {
          height: 70px;
+         @media (max-width: $screen-mobile) {
+             height: 40px;
+         }
          li {
              height: 100%;
          }
@@ -58,6 +94,9 @@
              color: #fff;
              line-height: 70px;
              padding: 0px 15px;
+             @media (max-width: $screen-mobile) {
+                 line-height: 40px;
+             }
          }
          .nav-item {
              margin-left: 0px;
@@ -69,21 +108,14 @@
                  background: #FAD400;
                  border-bottom: solid 4px #da4733;
              }
-             &.counter {
-                 float: right;
-                 height: 40px;
-                 margin-top: 15px;
-                 padding: 10px 15px;
-                 border-radius: 5px;
-                 background-color: orangered;
-                 color: #fff;
-                 font-weight: bold;
-                 .settings {
-                     cursor: pointer;
-                 }
-             }
              #sort-indicator {
                  margin-left: 6px;
+             }
+             @media (max-width: $screen-mobile) {
+                 background-color: $color-menu-mobile;
+             }
+             &.counter {
+                 height: 40px;
              }
          }
      }

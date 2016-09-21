@@ -47,7 +47,7 @@
             <div class="container">
                 <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mainNav">            &#9776;          </button>
                 <div class="collapse navbar-toggleable-xs" id="mainNav">
-                    <a class="navbar-brand" href="#">POGO SPAWNING</a>
+                    <a class="navbar-brand hidden-sm-down" href="#">POGO SPAWNING</a>
                     <ul class="nav navbar-nav">
                         <li class="nav-item active" data-sortBy="Update">
                             <a class="nav-link" href="#" title="Sort by update time">By Update <span class="sr-only">(current)</span>
@@ -74,13 +74,19 @@
                         <li class="nav-item" data-sortBy="PokemonName">
                             <a class="nav-link" href="#" title="Sort by Name">By Name</a>
                         </li>
-                        <li class="nav-item counter">
+
+                        <li class="counter nav-item hidden-sm-down">
                             <i class="fa fa-cog settings" aria-hidden="true" id="btn-settings"></i>
                             <span id="counter">0</span>
                         </li>
 
                     </ul>
+
                 </div>
+            </div>
+            <div class="counter hidden-sm-up">
+                <i class="fa fa-cog settings" aria-hidden="true" id="btn-settings-xs"></i>
+                <span>0</span>
             </div>
         </nav>
     </div>
