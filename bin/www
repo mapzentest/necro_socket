@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 
 "use strict";
+var config = process.env.ENV_CONFIG || "config1.json"
+console.log('file', config)
+var congigs = require('../app/config/' + config)
+congigs.DropboxKey = process.env.DROPBOX_ACCESS_TOKEN || confis.DropboxKey
+
+console.log('config file', configs);
+
 
 //module dependencies.
 var app = require("../app/server");
