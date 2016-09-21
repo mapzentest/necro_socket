@@ -4,7 +4,7 @@
   "description": "the simple socket server to collect & serving data from necrobot2.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower install && grunt",
+    "postinstall": "export HOME=/var/lib/openshift/57e1fefc2d52717ab300014b/.configbower install && grunt",
     "grunt": "grunt",
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
