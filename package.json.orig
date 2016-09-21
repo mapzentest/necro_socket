@@ -1,0 +1,76 @@
+{
+<<<<<<< HEAD
+  "name": "necro_socket",
+  "version": "1.0.0",
+  "description": "the simple socket server to collect & serving data from necrobot2.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install && grunt",
+    "grunt": "grunt",
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraitruong/necro_socket.git"
+  },
+  "keywords": [
+    "necrobot"
+  ],
+  "author": "samuraitruong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuraitruong/necro_socket/issues"
+  },
+  "homepage": "https://github.com/samuraitruong/necro_socket#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-ts": "^6.0.0-beta.3",
+    "grunt-typings": "^0.1.5",
+    "load-grunt-tasks": "^3.5.2",
+    "moment": "^2.15.0",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.0",
+    "socket.io": "^1.4.8",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "dropbox": "^2.2.1",
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-ts": "^6.0.0-beta.3",
+    "grunt-tslint": "^3.2.1",
+    "grunt-typings": "^0.1.5",
+    "load-grunt-tasks": "^3.5.2",
+    "moment": "^2.15.0",
+    "mongoose": "^4.6.0",
+    "node-dropbox": "^0.1.8",
+    "sass": "^0.5.0",
+    "socket.io": "^1.4.8",
+    "socketio-wildcard": "^0.3.0",
+    "tslint": "^3.15.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.3"
+  }
+=======
+  "name": "openshift-cartridge-nodejs-template",
+  "version": "1.0.1",
+  "description": "Custom Node.js cartridge for OpenShift - sample application",
+  "private": true,
+  "main": "start.js",
+  "scripts": {
+    "start": "node --use_strict start.js"
+  },
+  "author": "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
+  "license": "ISC"
+>>>>>>> 95972521b9c54cf59b9e094a238b8b9e0ec9e293
+}
