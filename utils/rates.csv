@@ -1,5 +1,5 @@
 #TYPE System.Management.Automation.PSCustomObject
-"PokemonId","Name","Count","Rate"
+"PokemonId","Name","Count","Rate","Rarity"
 "129","Magikarp","221904","0.153048640864285"
 "16","Pidgey","105989","0.0731013068559589"
 "54","Psyduck","88549","0.061072824734532"

@@ -10,9 +10,13 @@ var app = require("../app/server")(appConfigs);
 var debug = require("debug")("express:server");
 var http = require("http");
 
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 5000
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+
 //get port from environment and store in Express.
-var port = normalizePort(process.env.PORT || 5000);
+var port = normalizePort(server_port);
 app.set("port", port);
+app.set('ipaddr',server_ip_address)
 
 var server = http.createServer(app);
 var socket = require("../app/socket")(server, appConfigs);
