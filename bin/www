@@ -6,6 +6,8 @@ var app = require("../app/server");
 var debug = require("debug")("express:server");
 var http = require("http");
 
+console.log(process.env)
+
 //get port from environment and store in Express.
 var port = normalizePort(process.env.PORT || 5000);
 app.set("port", port);
