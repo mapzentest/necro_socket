@@ -2,7 +2,7 @@
     "UseFilter": true,
     "BatchSize": 1250,
     "SyncByTimes": 0,
-    "DropboxKey": "6uT8iPrMZWwAAAAAAAAAJqQ7SxCUIdPkidHXmbTq9PZyKGePBLv4n9c7EG3wcqq_", //this will overwrite by ENV.DROPBOX_ACCESS_TOKEN
+    "DropboxKey": "6uT8iPrMZWwAAAAAAAAAJqQ7SxCUIdPkidHXmbTq9PZyKGePBLv4n9c7EG3wcqq_",
     "DropboxSync": true,
     "StatsFile": "stats.txt"
 }
