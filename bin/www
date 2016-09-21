@@ -3,10 +3,10 @@
 "use strict";
 var config = process.env.ENV_CONFIG || "config1.json"
 console.log('file', config)
-var congigs = require('config/' + config)
-congigs.DropboxKey = process.env.DROPBOX_ACCESS_TOKEN || confis.DropboxKey
+var appConfigs = require('../app/config/' + config)
+appConfigs.DropboxKey = process.env.DROPBOX_ACCESS_TOKEN || appConfigs.DropboxKey
 
-console.log('config file', configs);
+console.log('config file', appConfigs);
 
 
 //module dependencies.
