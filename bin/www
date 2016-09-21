@@ -1,28 +1,21 @@
 #!/usr/bin/env node
 
 "use strict";
-var config = process.env.ENV_CONFIG || "config1.json"
-console.log('file', config)
+var config = process.env.ENV_CONFIG || "config.json"
 var appConfigs = require('../app/config/' + config)
 appConfigs.DropboxKey = process.env.DROPBOX_ACCESS_TOKEN || appConfigs.DropboxKey
 
-console.log('config file', appConfigs);
-
-
 //module dependencies.
-var app = require("../app/server");
+var app = require("../app/server")(appConfigs);
 var debug = require("debug")("express:server");
 var http = require("http");
-
-console.log('env')
-console.log(process.env)
 
 //get port from environment and store in Express.
 var port = normalizePort(process.env.PORT || 5000);
 app.set("port", port);
 
 var server = http.createServer(app);
-var socket = require("../app/socket")(server);
+var socket = require("../app/socket")(server, appConfigs);
 
 //create http server
 

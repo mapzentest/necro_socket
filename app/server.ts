@@ -15,7 +15,7 @@ import * as socketio from "socket.io"
  * @class Server
  */
 class Server {
-
+  private appConfigs : any;
   public app: express.Application;
 
   /**
@@ -26,8 +26,8 @@ class Server {
    * @static
    * @return {ng.auto.IInjectorService} Returns the newly created injector for this app.
    */
-  public static bootstrap(): Server {
-    return new Server();
+  public static bootstrap(settings:any): Server {
+    return new Server(settings);
   }
 
   /**
@@ -36,7 +36,7 @@ class Server {
    * @class Server
    * @constructor
    */
-  constructor() {
+  constructor(settings: any) {
     //create expressjs application
     this.app = express();
 
@@ -44,6 +44,8 @@ class Server {
     this.config();
     //configure routes
     this.routes();
+
+    this.appConfigs = settings;
   }
   private config() {
     //add static paths
@@ -63,7 +65,7 @@ class Server {
     //add static paths
     this.app.use(express.static(path.join(__dirname, "www")));
     this.app.use(express.static(path.join(__dirname, "../bower_components")));
-    
+
     // catch 404 and forward to error handler
     this.app.use(function(err: any, req: express.Request, res: express.Response, next: express.NextFunction) {
       var error = new Error("Not Found");
@@ -99,5 +101,8 @@ class Server {
   }
 
 }
-var server = Server.bootstrap();
-export = server.app;
+//var server = Server.bootstrap();
+//export = server.app;
+export = module.exports = function (settings: any) {
+    return new Server(settings).app
+}

@@ -4,29 +4,33 @@
 
 import * as moment from 'moment'
 var node_dropbox = require('node-dropbox')
-var configs = require('../config/config.json')
+//var configs = require('../config/config.json')
 var pokemons = require('../config/pokemons.json')
 var Dropbox = require('dropbox');
 
 
 class Memory implements IPogoDatabase {
+    private configs :any;
     private rarePokemons: IPokemonItem[] = [];
     private dropbox: any;
     private all: any = [];
     private counter: any = 0;
     private stats: any = {}
     private pokemonSettings: IPokemonBasic[];
-    constructor() {
+    constructor(settings: any) {
+        this.configs = settings;
         this.pokemonSettings = [];
-        this.dropbox = new Dropbox({ accessToken: configs.DropboxKey });
+        this.dropbox = new Dropbox({ accessToken: this.configs.DropboxKey });
         this.loadSyncedData()
+
+        console.log('app config applies' , this.configs)
     }
 
     public storeSyncedData = (obj: any): void => {
         if (obj) {
             this.dropbox.filesUpload(
                 {
-                    path: '/' + configs.StatsFile,
+                    path: '/' + this.configs.StatsFile,
                     contents: JSON.stringify(obj),
                     mode: {
                         '.tag': 'overwrite'
@@ -46,7 +50,7 @@ class Memory implements IPogoDatabase {
         let me = this;
         this.dropbox.filesDownload(
             {
-                path: '/' + configs.StatsFile,
+                path: '/' + this.configs.StatsFile,
                 '.tag': 'path'
             })
             .then(function (response) {
@@ -72,7 +76,7 @@ class Memory implements IPogoDatabase {
             this.stats.totals = this.stats.totals + 1;
         }
 
-        if (configs.DropboxSync && (this.counter == configs.BatchSize)) {
+        if (this.configs.DropboxSync && (this.counter == this.configs.BatchSize)) {
             this.counter = 0;
             this.storeSyncedData(this.stats)
         }
@@ -83,7 +87,7 @@ class Memory implements IPogoDatabase {
         p.Rarity = pokemon.Rarity;
         p.Name = pokemon.Name;
 
-        if (!configs.UseFilter || pokemon.Feed && p.IV >= pokemon.FilteredIV) {
+        if (!this.configs.UseFilter || pokemon.Feed && p.IV >= pokemon.FilteredIV) {
             var checkexist = this.rarePokemons.filter((f) => {
                 return p.EncounterId == f.EncounterId;
             });
@@ -128,4 +132,8 @@ class Memory implements IPogoDatabase {
         return this.pokemonSettings;
     }
 }
-export = module.exports = new Memory();
+//export = module.exports = new Memory();
+
+export = module.exports = function (settings :any) {
+    return new Memory(settings)
+}

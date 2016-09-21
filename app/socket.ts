@@ -9,6 +9,7 @@ import Memory = require("./db/Memory")
 var pokemons: IPokemonItem[] = require('./config/pokemons.json')
 
 class SocketServer {
+    private appConfigs : any;
     public server: SocketIO.Server;
     public db : IPogoDatabase;
     public pokemonSettings : IPokemonBasic[]
@@ -18,15 +19,17 @@ class SocketServer {
      * @class Server
      * @constructor
      */
-    constructor(http: any) {
+    constructor(http: any, settings: any) {
         //create expressjs application
+        this.appConfigs = settings;
+        
         this.server = socketio(http);
         this.config();
     }
 
     private config() {
 
-        this.db = Memory
+        this.db = Memory(this.appConfigs)
         var mdb = this.db;
         var me = this;
         let clientCount = 0;
@@ -63,6 +66,6 @@ class SocketServer {
     }
 }
 
-export = module.exports = function (http: any) {
-    return new SocketServer(http).server
+export = module.exports = function (http: any, settings :any) {
+    return new SocketServer(http, settings).server
 }
