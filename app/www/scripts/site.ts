@@ -294,7 +294,9 @@ class App {
         template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png')
         template.find('.sniper-links').attr('href', this.buildSnipeLink(data))
         template.find('.card').addClass(data.Rarity);
-         template.find('.gg-link').attr('href', `https://www.google.com/maps/place/${data.Latitude},${data.Longitude}}`);
+         template.find('.gg-link').attr('href', `https://www.google.com/maps/@${data.Latitude},${data.Longitude},11.25z`);
+
+         template.find('.moves').text(`${data.Move1}, ${data.Move2}`)
         template.hover(this.onHoverOnPokemonItem)
         $('#pokemons').prepend(template);
 

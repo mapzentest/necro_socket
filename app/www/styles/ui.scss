@@ -173,6 +173,15 @@
      .gg-link {
          margin-right: 8px;
      }
+     .moves {
+         font-size: 13px;
+         color: orangered;
+         white-space: nowrap;
+         text-overflow: ellipsis;
+         overflow: hidden;
+         display: block;
+         width: 100%;
+     }
      .clipboard-copy {
          background: url('images/clippy.svg');
          background-size: cover;
@@ -184,7 +193,7 @@
          bottom: 8px;
          opacity: 0.4;
          z-index: 1001;
-         cursor : pointer;
+         cursor: pointer;
          &:hover {
              opacity: 1;
          }
