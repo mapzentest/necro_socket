@@ -43,7 +43,7 @@ class App {
 
     }
     public run = (): void => {
-        this.socket.emit("pokemons");
+        this.socket.emit("active-pokemons");
         this.updateTimerCount();
     }
 
@@ -294,6 +294,7 @@ class App {
         template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png')
         template.find('.sniper-links').attr('href', this.buildSnipeLink(data))
         template.find('.card').addClass(data.Rarity);
+         template.find('.gg-link').attr('href', `https://www.google.com/maps/place/${data.Latitude},${data.Longitude}}`);
         template.hover(this.onHoverOnPokemonItem)
         $('#pokemons').prepend(template);
 

@@ -122,6 +122,14 @@
      }
  }
  
+ @mixin box-rarity-css($color) {
+     border-color: $color;
+     .card-header {
+         background-color: $color;
+         color: #fff;
+     }
+ }
+ 
  //  pokemon item
  .pokemon-item {
      .sniper-links {
@@ -147,39 +155,38 @@
              white-space: nowrap;
          }
          &.Common {
-             border-color: $color-pokemon-common;
-             .card-header {
-                 background-color: $color-pokemon-common;
-                 color: #fff;
-             }
+             @include box-rarity-css($color-pokemon-common);
          }
          &.Rare {
-             border-color: $color-pokemon-rare;
-             .card-header {
-                 background-color: $color-pokemon-rare;
-                 color: #fff;
-             }
+             @include box-rarity-css($color-pokemon-rare);
          }
          &.Uncommon {
-             border-color: $color-pokemon-popular;
-             .card-header {
-                 background-color: $color-pokemon-popular;
-                 color: #fff;
-             }
+             @include box-rarity-css($color-pokemon-popular);
          }
          &.VeryRare {
-             border-color: $color-pokemon-very-rare;
-             .card-header {
-                 background-color: $color-pokemon-very-rare;
-                 color: #fff;
-             }
+             @include box-rarity-css($color-pokemon-very-rare);
          }
          &.SuperRare {
-             border-color: $color-pokemon-special;
-             .card-header {
-                 background-color: $color-pokemon-special;
-                 color: #fff;
-             }
+             @include box-rarity-css($color-pokemon-special);
+         }
+     }
+     .gg-link {
+         margin-right: 8px;
+     }
+     .clipboard-copy {
+         background: url('images/clippy.svg');
+         background-size: cover;
+         display: inline-block;
+         width: 24px;
+         height: 24px;
+         position: absolute;
+         right: 4px;
+         bottom: 8px;
+         opacity: 0.4;
+         z-index: 1001;
+         cursor : pointer;
+         &:hover {
+             opacity: 1;
          }
      }
  }
