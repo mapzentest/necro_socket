@@ -292,6 +292,7 @@ class App {
         template.find('.iv').text(`IV : ${iv}%`)
         template.find('.coordinate').text("[" + this.round(data.Latitude, 5) + "," + this.round(data.Longitude, 5) + "]")
         template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png')
+        
         if(!data.EncounterId.endsWith('000') ||  !this.configs.UseMSniper) {
             template.find('.sniper-links').attr('href', this.buildSnipeLink(data))
         }
