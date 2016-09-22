@@ -14,5 +14,6 @@ interface IPokemonItem  extends IPokemonBasic{
     Expires: Date;
     SpawnPointId:string;
     Level:number;
-    IV:number
+    IV:number,
+    $type?:string
 }

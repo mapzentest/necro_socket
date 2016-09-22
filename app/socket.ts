@@ -6,6 +6,7 @@
 
 import * as socketio from "socket.io"
 import * as http from "http"
+import * as _ from "lodash"
 import Memory = require("./db/Memory")
 var pokemons: IPokemonItem[] = require('./config/pokemons.json')
 
@@ -47,24 +48,35 @@ class SocketServer {
                     socket.broadcast.emit('pokemon', msg);
                 }
             });
-            socket.on('pokemons', function () {
+            socket.on('active-pokemons', function () {
                 let list = mdb.getActivePokemons();
                 socket.emit("pokemons", list)
+            });
+
+            socket.on('pokemons', function (data:any) {
+                if(!data ) return;
+                _.forEach(data.$values, (msg)=> {
+                    delete msg.$type
+                    let pokemon: IPokemonItem = msg;
+                    if(mdb.addPokemon(msg)) { 
+                        socket.broadcast.emit('pokemon', msg);
+                    }
+                });
+                
+
             });
 
             socket.on('pokemon-settings', function () {
                 socket.emit("pokemon-settings", mdb.getPokemonSettings())
             });
             
-
-            // socket.on('*', function (msg) {
-            //     console.log('message 111: ' + msg);
-            //     console.log("Session: %j", msg);
-            //     this.server.emit('chat message', msg);
-            // });
-
         });
     }
+
+    public onPokemonRequest = (socket:any, pokemon :IPokemonItem) : void => {
+
+    }
+
 }
 
 export = module.exports = function (http: any, settings :IAppConfigs) {
