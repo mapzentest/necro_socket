@@ -306,39 +306,40 @@ class App {
         $('#pokemons').prepend(template);
         this.loadGeolocation(template, data.Latitude, data.Longitude);
     }
+    private displayPokemonGeoLocation=(el:any, lat : number, lng : number) : void => {
+
+        let cacheKey = Math.ceil(lat) +'-' + Math.ceil(lng);
+        var place = this.locationCache[cacheKey];
+        if(!place) {
+            this.loadGeolocation(el, lat, lng);
+        };
+
+        el.find('.place-name').text(place.name)
+        el.find('.country-flag').addClass("flag-" + place.code.toLowerCase())
+        .attr('alt', place.name)
+        .attr('title', place.name)
+        .parent().attr('title', place.name);
+
+        el.attr('PokemonCountry',place.name )
+    }
     private loadGeolocation = (el: any, lat:number, lng: number): void => {
 
         let cacheKey = Math.ceil(lat) +'-' + Math.ceil(lng);
 
-        if(this.locationCache[cacheKey]) {
-            el.find('.place-name').text(this.locationCache[cacheKey].name)
-            el.find('.country-flag').addClass("flag-" + this.locationCache[cacheKey].code.toLowerCase())
-            .attr('alt', this.locationCache[cacheKey].name)
-                                        .attr('title', this.locationCache[cacheKey].name)
-                                        .parent().attr('title', this.locationCache[cacheKey].name);
-            el.attr('PokemonCountry',this.locationCache[cacheKey].name )
-            return;
-        }
         let stogare = this.localStogare;
 
         let storeCacheKey = this.LOCATION_CACHE_KEY;
-        let current = this.locationCache;
+        let current = this;
 
-        $.getJSON(`http://api.geonames.org/findNearbyPlaceNameJSON?lat=${lat}&lng=${lng}&username=samuraitruong`, '', function(res){
+        $.getJSON(`http://api.geonames.org/findNearbyPlaceNameJSON?lat=${lat}&lng=${lng}&username=${this.configs.GeonameUsername}`, '', function(res){
                 var place = res.geonames[0];
-                current[cacheKey] =  {
+               let loc =  {
                     name:place.countryName,
                     code:place.countryCode.toLowerCase()
                 } 
-                el.find('.place-name').text(current[cacheKey].name);
-                el.find('.country-flag').addClass("flag-" + current[cacheKey].code.toLowerCase())
-                                        .attr('alt', current[cacheKey].name)
-                                        .attr('title', current[cacheKey].name)
-                                        .parent().attr('title', current[cacheKey].name);
-                                        
-                el.attr('PokemonCountry',current[cacheKey].name )
+                current[cacheKey] = loc;
                 stogare.save<any>(storeCacheKey, current )
-                //http://maps.googleapis.com/maps/api/geocode/json?latlng=55.704093,13.193582&sensor=false
+                current.displayPokemonGeoLocation(el,lat, lng);
         })
     } 
     private onHoverOnPokemonItem = (el:JQueryEventObject ): void => {
