@@ -92,6 +92,10 @@ declare module "express-serve-static-core" {
         use: IRouterHandler<this> & IRouterMatcher<this>;
 
         route(prefix: PathParams): IRoute;
+        /**
+         * Stack of configured routes
+         */
+        stack: any[];
     }
 
     interface IRoute {
@@ -1043,7 +1047,7 @@ declare module "express-serve-static-core" {
         routes: any;
         
         /**
-         * Using to all registered routes in Express Application
+         * Used to get all registered routes in Express Application
          */
         _router: any;
     }

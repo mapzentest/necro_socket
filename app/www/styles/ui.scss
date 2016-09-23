@@ -61,6 +61,9 @@
          color: #fff;
          line-height: 70px;
          padding: 0px;
+         &:hover {
+             color: #fff;
+         }
      }
      .counter {
          float: right;
@@ -173,6 +176,10 @@
      .gg-link {
          margin-right: 8px;
      }
+     .place-name {
+         display: block;
+         font-size: 15px;
+     }
      .moves {
          font-size: 13px;
          color: orangered;
@@ -274,3 +281,4 @@
  
  @import "_settings.scss";
  @import "awesome-bootstrap-checkbox.scss";
+ @import "_flags.scss"

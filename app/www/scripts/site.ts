@@ -18,6 +18,7 @@ declare module moment {
 declare var tinysort: any;
 
 class App {
+    private locationCache: any = {};
     private socket: SocketIOClient.Socket;
     private menu: JQuery;
     private pokemons: IPokemonItem[];
@@ -33,6 +34,7 @@ class App {
     private configs: IAppConfig;
     private localStogare: ILocalStorage = new StoreJsLocalStorage();
     private POKEMON_SETTING_SOCKET_COMMAND: string = 'pokemon-settings';
+    private LOCATION_CACHE_KEY :string = 'location-caches';
 
     constructor() {
 
@@ -75,7 +77,7 @@ class App {
         $('#use-pokesnipers').prop('checked', this.configs && this.configs.UsePokesnipers)
         $('#use-custom-sniper').prop('checked', this.configs && this.configs.UseCustomSniper)
         $('#custom-sniper-command').val(this.configs.CustomSniperLink)
-
+        $('#geo-username').val(this.configs.GeonameUsername)
         $(`[value="${this.configs.ToastPosition}"]`).prop('checked', true)
         if (this.configs && this.configs.PokemonFilters) {
             let grouped: any = {};
@@ -151,6 +153,7 @@ class App {
     private setupSettings = (): void => {
         //load setting from memory or local stogare
         this.configs = this.localStogare.read<IAppConfig>("app-settings");
+        this.locationCache = this.localStogare.read<any>(this.LOCATION_CACHE_KEY) || {};
 
         if (!this.configs) {
 
@@ -160,7 +163,8 @@ class App {
                 UseCustomSniper: false,
                 UseMSniper: true,
                 UsePokesnipers: false,
-                ToastPosition: 'toast-top-center'
+                ToastPosition: 'toast-top-center',
+                GeonameUsername :'mypogosnipers'
             };
         }
         if(!this.configs.PokemonFilters) 
@@ -198,6 +202,7 @@ class App {
             UsePokesnipers: $('#use-pokesnipers').prop('checked'),
             CustomSniperLink: $('#custom-sniper-command').val(),
             ToastPosition: $('[name="positions"]:checked').val(),
+            GeonameUsername : $('#geo-username').val(),
             PokemonFilters: []
         };
         $('.notification-filter').each((index, el) => {
@@ -296,11 +301,45 @@ class App {
         template.find('.card').addClass(data.Rarity);
          template.find('.gg-link').attr('href', `https://www.google.com/maps/@${data.Latitude},${data.Longitude},11.25z`);
 
-         template.find('.moves').text(`${data.Move1}, ${data.Move2}`)
+        template.find('.moves').text(`${data.Move1}, ${data.Move2}`)
         template.hover(this.onHoverOnPokemonItem)
         $('#pokemons').prepend(template);
-
+        this.loadGeolocation(template, data.Latitude, data.Longitude);
     }
+    private loadGeolocation = (el: any, lat:number, lng: number): void => {
+
+        let cacheKey = Math.ceil(lat) +'-' + Math.ceil(lng);
+
+        if(this.locationCache[cacheKey]) {
+            el.find('.place-name').text(this.locationCache[cacheKey].name)
+            el.find('.country-flag').addClass("flag-" + this.locationCache[cacheKey].code.toLowerCase())
+            .attr('alt', this.locationCache[cacheKey].name)
+                                        .attr('title', this.locationCache[cacheKey].name)
+                                        .parent().attr('title', this.locationCache[cacheKey].name);;
+            return;
+        }
+        let stogare = this.localStogare;
+
+        let storeCacheKey = this.LOCATION_CACHE_KEY;
+        let current = this.locationCache;
+
+        $.getJSON(`http://api.geonames.org/findNearbyPlaceNameJSON?lat=${lat}&lng=${lng}&username=samuraitruong`, '', function(res){
+                var place = res.geonames[0];
+                current[cacheKey] =  {
+                    name:place.countryName,
+                    code:place.countryCode.toLowerCase()
+                } 
+                el.find('.place-name').text(current[cacheKey].name);
+                el.find('.country-flag').addClass("flag-" + current[cacheKey].code.toLowerCase())
+                                        .attr('alt', current[cacheKey].name)
+                                        .attr('title', current[cacheKey].name)
+                                        .parent().attr('title', current[cacheKey].name);
+                                        
+                
+                stogare.save<any>(storeCacheKey, current )
+                //http://maps.googleapis.com/maps/api/geocode/json?latlng=55.704093,13.193582&sensor=false
+        })
+    } 
     private onHoverOnPokemonItem = (el:JQueryEventObject ): void => {
         var img = $(el.target).find('.pokemon-image')
         let pos = img.position();
