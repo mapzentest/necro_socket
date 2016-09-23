@@ -17,7 +17,7 @@ declare module "express-serve-static-core" {
     }
 
     interface RequestHandler {
-        (req: Request, res: Response, next?: NextFunction): any;
+        (req: Request, res: Response, next: NextFunction): any;
     }
 
     interface ErrorRequestHandler {
@@ -817,6 +817,12 @@ declare module "express-serve-static-core" {
     }
 
     interface Application extends IRouter, Express.Application {
+        /**
+         * Express instance itself is a request handler, which could be invoked without
+         * third argument.
+         */
+        (req: Request, res: Response): any;
+        
         /**
             * Initialize the server.
             *

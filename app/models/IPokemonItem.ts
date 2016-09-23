@@ -1,12 +1,12 @@
+/// <reference path="./ILocation.ts" />
+
 interface IPokemonBasic {
     PokemonId:number;
     Name:string;
     Rarity:string;
 }
 
-interface IPokemonItem  extends IPokemonBasic{
-    Latitude: number;
-    Longitude:number;
+interface IPokemonItem  extends IPokemonBasic, ILocation{
     Move1?:string;
     Move2?:string;
     EncounterId: string;

@@ -45,10 +45,25 @@ class App {
 
     }
     public run = (): void => {
+        var current = this.locationCache || {};
+        $.getJSON('/data/countries.json', (res) => {
+            
+            
+            if(res) {
+                for(var key in res) {
+                    current[key] = res[key]
+                }
+                this.localStogare.save<any>(this.LOCATION_CACHE_KEY,current);
+                this.locationCache = current;
+            }
+
+        }).done(this.loadData).fail(this.loadData)
+    }
+    private loadData =() :void => {
         this.socket.emit("active-pokemons");
         this.updateTimerCount();
-    }
 
+    }
     private onMenuItemClick = (ev: JQueryEventObject): void => {
         const menuItem = $(ev.target);
         this.sortType = menuItem.closest('.nav-item').attr('data-sortBy');
@@ -304,7 +319,7 @@ class App {
         template.find('.moves').text(`${data.Move1}, ${data.Move2}`)
         template.hover(this.onHoverOnPokemonItem)
         $('#pokemons').prepend(template);
-        this.loadGeolocation(template, data.Latitude, data.Longitude);
+        this.displayPokemonGeoLocation(template, data.Latitude, data.Longitude);
     }
     private displayPokemonGeoLocation=(el:any, lat : number, lng : number) : void => {
 
