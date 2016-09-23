@@ -337,8 +337,8 @@ class App {
                     name:place.countryName,
                     code:place.countryCode.toLowerCase()
                 } 
-                current[cacheKey] = loc;
-                stogare.save<any>(storeCacheKey, current )
+                current.locationCache[cacheKey] = loc;
+                stogare.save<any>(storeCacheKey, current.locationCache )
                 current.displayPokemonGeoLocation(el,lat, lng);
         })
     } 
