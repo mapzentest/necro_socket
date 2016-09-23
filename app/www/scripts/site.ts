@@ -312,6 +312,7 @@ class App {
         var place = this.locationCache[cacheKey];
         if(!place) {
             this.loadGeolocation(el, lat, lng);
+            return;
         };
 
         el.find('.place-name').text(place.name)
@@ -332,7 +333,11 @@ class App {
         let current = this;
 
         $.getJSON(`http://api.geonames.org/findNearbyPlaceNameJSON?lat=${lat}&lng=${lng}&username=${this.configs.GeonameUsername}`, '', function(res){
-                var place = res.geonames[0];
+             if(res.status) {
+                 _.forEach(current.notifiers, x=>x.sendNotification('Setting required',`Please go to setting screen and update with you geonames account [${res.status.message}])`))
+                 return;
+             }
+             var place = res.geonames[0];
                let loc =  {
                     name:place.countryName,
                     code:place.countryCode.toLowerCase()
