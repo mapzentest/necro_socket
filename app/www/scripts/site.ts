@@ -315,7 +315,8 @@ class App {
             el.find('.country-flag').addClass("flag-" + this.locationCache[cacheKey].code.toLowerCase())
             .attr('alt', this.locationCache[cacheKey].name)
                                         .attr('title', this.locationCache[cacheKey].name)
-                                        .parent().attr('title', this.locationCache[cacheKey].name);;
+                                        .parent().attr('title', this.locationCache[cacheKey].name);
+            el.attr('PokemonCountry',this.locationCache[cacheKey].name )
             return;
         }
         let stogare = this.localStogare;
@@ -335,7 +336,7 @@ class App {
                                         .attr('title', current[cacheKey].name)
                                         .parent().attr('title', current[cacheKey].name);
                                         
-                
+                el.attr('PokemonCountry',current[cacheKey].name )
                 stogare.save<any>(storeCacheKey, current )
                 //http://maps.googleapis.com/maps/api/geocode/json?latlng=55.704093,13.193582&sensor=false
         })
