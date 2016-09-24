@@ -52,6 +52,9 @@
                         }
                     }
                 }
+                &.VeryCommon {
+                    @include rarity-css($color-pokemon-very-common)
+                }
                 &.Common {
                     @include rarity-css($color-pokemon-common)
                 }
@@ -64,8 +67,11 @@
                 &.VeryRare {
                     @include rarity-css($color-pokemon-very-rare)
                 }
-                &.SuperRare {
+                &.Special {
                     @include rarity-css($color-pokemon-special)
+                }
+                &.Epic {
+                    @include rarity-css($color-pokemon-epic)
                 }
             }
         }

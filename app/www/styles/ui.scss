@@ -158,6 +158,9 @@
              white-space: nowrap;
          }
          &.Common {
+             @include box-rarity-css($color-pokemon-very-common);
+         }
+         &.Common {
              @include box-rarity-css($color-pokemon-common);
          }
          &.Rare {
@@ -169,8 +172,11 @@
          &.VeryRare {
              @include box-rarity-css($color-pokemon-very-rare);
          }
-         &.SuperRare {
+         &.Special {
              @include box-rarity-css($color-pokemon-special);
+         }
+         &.Epic {
+             @include box-rarity-css($color-pokemon-epic);
          }
      }
      .gg-link {

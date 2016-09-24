@@ -1,6 +1,6 @@
 {
     "1": {
-        "FilteredIV": 100,
+        "FilteredIV": 95,
         "FilteredLV": 0,
         "Feed": true,
         "Name": "Bulbasaur",
@@ -9,7 +9,7 @@
             "Grass",
             "Poison"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Common"
     },
     "2": {
         "FilteredLV": 0,
@@ -21,7 +21,7 @@
             "Grass",
             "Poison"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Special"
     },
     "3": {
         "FilteredLV": 0,
@@ -33,10 +33,10 @@
             "Grass",
             "Poison"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Epic"
     },
     "4": {
-        "FilteredIV": 95,
+        "FilteredIV": 90,
         "FilteredLV": 0,
         "Feed": true,
         "Name": "Charmander",
@@ -44,10 +44,10 @@
         "Types": [
             "Fire"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Common"
     },
     "5": {
-        "FilteredIV": 90,
+        "FilteredIV": 70,
         "FilteredLV": 0,
         "Feed": true,
         "Name": "Charmeleon",
@@ -55,7 +55,7 @@
         "Types": [
             "Fire"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Special"
     },
     "6": {
         "FilteredLV": 0,
@@ -67,10 +67,10 @@
             "Fire",
             "Flying"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Epic"
     },
     "7": {
-        "FilteredIV": 100,
+        "FilteredIV": 90,
         "FilteredLV": 0,
         "Feed": true,
         "Name": "Squirtle",
@@ -78,7 +78,7 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Common"
     },
     "8": {
         "FilteredIV": 80,
@@ -89,7 +89,7 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Special"
     },
     "9": {
         "FilteredLV": 0,
@@ -100,18 +100,18 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Epic"
     },
     "10": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Caterpie",
         "Id": 10,
         "Types": [
             "Bug"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "VeryCommon"
     },
     "11": {
         "FilteredLV": 0,
@@ -122,7 +122,7 @@
         "Types": [
             "Bug"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "12": {
         "FilteredLV": 0,
@@ -138,7 +138,7 @@
     },
     "13": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Weedle",
         "Id": 13,
@@ -146,11 +146,11 @@
             "Bug",
             "Poison"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "14": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 96,
         "Feed": true,
         "Name": "Kakuna",
         "Id": 14,
@@ -170,7 +170,7 @@
             "Bug",
             "Poison"
         ],
-        "Rarity": "Common"
+        "Rarity": "Rare"
     },
     "16": {
         "FilteredLV": 0,
@@ -182,7 +182,7 @@
             "Normal",
             "Flying"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "17": {
         "FilteredLV": 0,
@@ -206,7 +206,7 @@
             "Normal",
             "Flying"
         ],
-        "Rarity": "Common"
+        "Rarity": "Uncommon"
     },
     "19": {
         "FilteredLV": 0,
@@ -217,11 +217,11 @@
         "Types": [
             "Normal"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "20": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 960,
         "Feed": true,
         "Name": "Raticate",
         "Id": 20,
@@ -232,7 +232,7 @@
     },
     "21": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Spearow",
         "Id": 21,
@@ -240,11 +240,11 @@
             "Normal",
             "Flying"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "22": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Fearow",
         "Id": 22,
@@ -256,14 +256,14 @@
     },
     "23": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 98,
         "Feed": true,
         "Name": "Ekans",
         "Id": 23,
         "Types": [
             "Poison"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "24": {
         "FilteredLV": 0,
@@ -296,7 +296,7 @@
         "Types": [
             "Electric"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "27": {
         "FilteredLV": 0,
@@ -307,7 +307,7 @@
         "Types": [
             "Ground"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Uncommon"
     },
     "28": {
         "FilteredLV": 0,
@@ -329,7 +329,7 @@
         "Types": [
             "Poison"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "30": {
         "FilteredLV": 0,
@@ -352,11 +352,11 @@
             "Poison",
             "Ground"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "32": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 98,
         "Feed": true,
         "Name": "NidoraMale",
         "Id": 32,
@@ -367,7 +367,7 @@
     },
     "33": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Nidorino",
         "Id": 33,
@@ -386,39 +386,40 @@
             "Poison",
             "Ground"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VerRare"
     },
     "35": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 97,
         "Feed": true,
         "Name": "Clefairy",
         "Id": 35,
         "Types": [
             "Fairy"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "36": {
-        "FilteredLV": 50,
+        "FilteredLV": 0,
+        "FilteredIV": 0,
         "Feed": true,
         "Name": "Clefable",
         "Id": 36,
         "Types": [
             "Fairy"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Epic"
     },
     "37": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Vulpix",
         "Id": 37,
         "Types": [
             "Fire"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Common"
     },
     "38": {
         "FilteredLV": 0,
@@ -441,7 +442,7 @@
             "Normal",
             "Fairy"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Common"
     },
     "40": {
         "FilteredLV": 0,
@@ -457,15 +458,15 @@
     },
     "41": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
-        "Feed": false,
+        "FilteredIV": 100,
+        "Feed": true,
         "Name": "Zubat",
         "Id": 41,
         "Types": [
             "Poison",
             "Flying"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "42": {
         "FilteredLV": 0,
@@ -481,7 +482,7 @@
     },
     "43": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 98,
         "Feed": true,
         "Name": "Oddish",
         "Id": 43,
@@ -489,11 +490,11 @@
             "Grass",
             "Poison"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "44": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Gloom",
         "Id": 44,
@@ -501,7 +502,7 @@
             "Grass",
             "Poison"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "45": {
         "FilteredLV": 0,
@@ -513,11 +514,11 @@
             "Grass",
             "Poison"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "46": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 99,
         "Feed": true,
         "Name": "Paras",
         "Id": 46,
@@ -525,11 +526,11 @@
             "Bug",
             "Grass"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "VeryCommon"
     },
     "47": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Parasect",
         "Id": 47,
@@ -549,7 +550,7 @@
             "Bug",
             "Poison"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "49": {
         "FilteredLV": 0,
@@ -561,11 +562,11 @@
             "Bug",
             "Poison"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "50": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Diglett",
         "Id": 50,
@@ -587,7 +588,7 @@
     },
     "52": {
         "FilteredLV": 0,
-        "FilteredIV": 95,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Meowth",
         "Id": 52,
@@ -605,7 +606,7 @@
         "Types": [
             "Normal"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "54": {
         "FilteredLV": 0,
@@ -616,7 +617,7 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "55": {
         "FilteredLV": 0,
@@ -627,7 +628,7 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Uncommon"
     },
     "56": {
         "FilteredLV": 0,
@@ -653,7 +654,7 @@
     },
     "58": {
         "FilteredLV": 0,
-        "FilteredIV": 95,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Growlithe",
         "Id": 58,
@@ -675,7 +676,7 @@
     },
     "60": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 99,
         "Feed": true,
         "Name": "Poliwag",
         "Id": 60,
@@ -686,7 +687,7 @@
     },
     "61": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Poliwhirl",
         "Id": 61,
@@ -716,7 +717,7 @@
         "Types": [
             "Psychic"
         ],
-        "Rarity": "Common"
+        "Rarity": "Uncommon"
     },
     "64": {
         "FilteredLV": 0,
@@ -727,7 +728,7 @@
         "Types": [
             "Psychic"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Rare"
     },
     "65": {
         "FilteredLV": 0,
@@ -738,7 +739,7 @@
         "Types": [
             "Psychic"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "66": {
         "FilteredLV": 0,
@@ -771,7 +772,7 @@
         "Types": [
             "Fighting"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "69": {
         "FilteredLV": 0,
@@ -799,7 +800,7 @@
     },
     "71": {
         "FilteredLV": 0,
-        "FilteredIV": 80,
+        "FilteredIV": 0,
         "Feed": true,
         "Name": "Victreebel",
         "Id": 71,
@@ -823,7 +824,7 @@
     },
     "73": {
         "FilteredLV": 0,
-        "FilteredIV": 95,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Tentacruel",
         "Id": 73,
@@ -835,7 +836,7 @@
     },
     "74": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Geodude",
         "Id": 74,
@@ -847,7 +848,7 @@
     },
     "75": {
         "FilteredLV": 0,
-        "FilteredIV": 95,
+        "FilteredIV": 0,
         "Feed": true,
         "Name": "Graveler",
         "Id": 75,
@@ -855,11 +856,11 @@
             "Rock",
             "Ground"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "76": {
         "FilteredLV": 0,
-        "FilteredIV": 95,
+        "FilteredIV": 0,
         "Feed": true,
         "Name": "Golem",
         "Id": 76,
@@ -867,11 +868,11 @@
             "Rock",
             "Ground"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Rare"
     },
     "77": {
         "FilteredLV": 0,
-        "FilteredIV": 95,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Ponyta",
         "Id": 77,
@@ -893,7 +894,7 @@
     },
     "79": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 98,
         "Feed": true,
         "Name": "Slowpoke",
         "Id": 79,
@@ -901,7 +902,7 @@
             "Water",
             "Psychic"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "80": {
         "FilteredLV": 0,
@@ -917,7 +918,7 @@
     },
     "81": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 97,
         "Feed": true,
         "Name": "Magnemite",
         "Id": 81,
@@ -929,7 +930,7 @@
     },
     "82": {
         "FilteredLV": 0,
-        "FilteredIV": 90,
+        "FilteredIV": 50,
         "Feed": true,
         "Name": "Magneton",
         "Id": 82,
@@ -943,13 +944,13 @@
         "FilteredLV": 0,
         "FilteredIV": 90,
         "Feed": true,
-        "Name": "Farfetch'd",
+        "Name": "Farfetchd",
         "Id": 83,
         "Types": [
             "Normal",
             "Flying"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Special"
     },
     "84": {
         "FilteredLV": 0,
@@ -965,7 +966,7 @@
     },
     "85": {
         "FilteredLV": 0,
-        "FilteredIV": 96,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Dodrio",
         "Id": 85,
@@ -977,7 +978,7 @@
     },
     "86": {
         "FilteredLV": 0,
-        "FilteredIV": 98,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Seel",
         "Id": 86,
@@ -1000,7 +1001,7 @@
     },
     "88": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Grimer",
         "Id": 88,
@@ -1011,7 +1012,7 @@
     },
     "89": {
         "FilteredLV": 0,
-        "FilteredIV": 80,
+        "FilteredIV": 0,
         "Feed": true,
         "Name": "Muk",
         "Id": 89,
@@ -1022,7 +1023,7 @@
     },
     "90": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Shellder",
         "Id": 90,
@@ -1033,7 +1034,7 @@
     },
     "91": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Cloyster",
         "Id": 91,
@@ -1053,7 +1054,7 @@
             "Ghost",
             "Poison"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "93": {
         "FilteredLV": 0,
@@ -1069,7 +1070,7 @@
     },
     "94": {
         "FilteredLV": 0,
-        "FilteredIV": 90,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Gengar",
         "Id": 94,
@@ -1089,11 +1090,11 @@
             "Rock",
             "Ground"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "96": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Drowzee",
         "Id": 96,
@@ -1111,7 +1112,7 @@
         "Types": [
             "Psychic"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Rare"
     },
     "98": {
         "FilteredLV": 0,
@@ -1126,7 +1127,7 @@
     },
     "99": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Kingler",
         "Id": 99,
@@ -1148,7 +1149,7 @@
     },
     "101": {
         "FilteredLV": 0,
-        "FilteredIV": 90,
+        "FilteredIV": 60,
         "Feed": true,
         "Name": "Electrode",
         "Id": 101,
@@ -1159,7 +1160,7 @@
     },
     "102": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 99,
         "Feed": true,
         "Name": "Exeggcute",
         "Id": 102,
@@ -1194,14 +1195,14 @@
     },
     "105": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Marowak",
         "Id": 105,
         "Types": [
             "Ground"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Uncommon"
     },
     "106": {
         "FilteredLV": 0,
@@ -1212,7 +1213,7 @@
         "Types": [
             "Fighting"
         ],
-        "Rarity": "VeryRare"
+        "Rarity": "Rare"
     },
     "107": {
         "FilteredLV": 0,
@@ -1238,7 +1239,7 @@
     },
     "109": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 98,
         "Feed": true,
         "Name": "Koffing",
         "Id": 109,
@@ -1249,7 +1250,7 @@
     },
     "110": {
         "FilteredLV": 0,
-        "FilteredIV": 80,
+        "FilteredIV": 70,
         "Feed": true,
         "Name": "Weezing",
         "Id": 110,
@@ -1260,7 +1261,7 @@
     },
     "111": {
         "FilteredLV": 0,
-        "FilteredIV": 96,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Rhyhorn",
         "Id": 111,
@@ -1272,7 +1273,7 @@
     },
     "112": {
         "FilteredLV": 0,
-        "FilteredIV": 70,
+        "FilteredIV": 50,
         "Feed": true,
         "Name": "Rhydon",
         "Id": 112,
@@ -1302,7 +1303,7 @@
         "Types": [
             "Grass"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Rare"
     },
     "115": {
         "FilteredLV": 0,
@@ -1313,11 +1314,11 @@
         "Types": [
             "Normal"
         ],
-        "Rarity": "VeryRare"
+        "Rarity": "Special"
     },
     "116": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Horsea",
         "Id": 116,
@@ -1328,7 +1329,7 @@
     },
     "117": {
         "FilteredLV": 0,
-        "FilteredIV": 90,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Seadra",
         "Id": 117,
@@ -1346,7 +1347,7 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "119": {
         "FilteredLV": 0,
@@ -1368,11 +1369,11 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "121": {
         "FilteredLV": 0,
-        "FilteredIV": 90,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Starmie",
         "Id": 121,
@@ -1380,7 +1381,7 @@
             "Water",
             "Psychic"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Rare"
     },
     "122": {
         "FilteredLV": 0,
@@ -1392,11 +1393,11 @@
             "Psychic",
             "Fairy"
         ],
-        "Rarity": "SuperRare"
+        "Rarity": "Special"
     },
     "123": {
         "FilteredLV": 0,
-        "FilteredIV": 80,
+        "FilteredIV": 85,
         "Feed": true,
         "Name": "Scyther",
         "Id": 123,
@@ -1408,7 +1409,7 @@
     },
     "124": {
         "FilteredLV": 0,
-        "FilteredIV": 80,
+        "FilteredIV": 85,
         "Feed": true,
         "Name": "Jynx",
         "Id": 124,
@@ -1420,14 +1421,14 @@
     },
     "125": {
         "FilteredLV": 0,
-        "FilteredIV": 50,
+        "FilteredIV": 0,
         "Feed": true,
         "Name": "Electabuzz",
         "Id": 125,
         "Types": [
             "Electric"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "126": {
         "FilteredLV": 0,
@@ -1460,7 +1461,7 @@
         "Types": [
             "Normal"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Special"
     },
     "129": {
         "FilteredLV": 0,
@@ -1471,7 +1472,7 @@
         "Types": [
             "Water"
         ],
-        "Rarity": "Common"
+        "Rarity": "VeryCommon"
     },
     "130": {
         "FilteredLV": 0,
@@ -1495,7 +1496,7 @@
             "Water",
             "Ice"
         ],
-        "Rarity": "SuperRare"
+        "Rarity": "VeryRare"
     },
     "132": {
         "FilteredLV": 0,
@@ -1506,11 +1507,11 @@
         "Types": [
             "Normal"
         ],
-        "Rarity": "SuperRare"
+        "Rarity": "VeryRare"
     },
     "133": {
         "FilteredLV": 0,
-        "FilteredIV": 99,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Eevee",
         "Id": 133,
@@ -1521,7 +1522,7 @@
     },
     "134": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 50,
         "Feed": true,
         "Name": "Vaporeon",
         "Id": 134,
@@ -1532,7 +1533,7 @@
     },
     "135": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 50,
         "Feed": true,
         "Name": "Jolteon",
         "Id": 135,
@@ -1543,7 +1544,7 @@
     },
     "136": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 50,
         "Feed": true,
         "Name": "Flareon",
         "Id": 136,
@@ -1561,7 +1562,7 @@
         "Types": [
             "Normal"
         ],
-        "Rarity": "VeryRare"
+        "Rarity": "Special"
     },
     "138": {
         "FilteredLV": 0,
@@ -1573,7 +1574,7 @@
             "Rock",
             "Water"
         ],
-        "Rarity": "Uncommon"
+        "Rarity": "Common"
     },
     "139": {
         "FilteredLV": 0,
@@ -1585,11 +1586,11 @@
             "Rock",
             "Water"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "140": {
         "FilteredLV": 0,
-        "FilteredIV": 100,
+        "FilteredIV": 96,
         "Feed": true,
         "Name": "Kabuto",
         "Id": 140,
@@ -1601,7 +1602,7 @@
     },
     "141": {
         "FilteredLV": 0,
-        "FilteredIV": 90,
+        "FilteredIV": 0,
         "Feed": true,
         "Name": "Kabutops",
         "Id": 141,
@@ -1609,7 +1610,7 @@
             "Rock",
             "Water"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "142": {
         "FilteredLV": 0,
@@ -1621,7 +1622,7 @@
             "Rock",
             "Flying"
         ],
-        "Rarity": "VeryRare"
+        "Rarity": "Special"
     },
     "143": {
         "FilteredLV": 0,
@@ -1644,7 +1645,7 @@
             "Ice",
             "Flying"
         ],
-        "Rarity": "SuperRare"
+        "Rarity": "VeryRare"
     },
     "145": {
         "FilteredLV": 0,
@@ -1656,7 +1657,7 @@
             "Electric",
             "Flying"
         ],
-        "Rarity": "SuperRare"
+        "Rarity": "VeryRare"
     },
     "146": {
         "FilteredLV": 0,
@@ -1672,14 +1673,14 @@
     },
     "147": {
         "FilteredLV": 0,
-        "FilteredIV": 90,
+        "FilteredIV": 95,
         "Feed": true,
         "Name": "Dratini",
         "Id": 147,
         "Types": [
             "Dragon"
         ],
-        "Rarity": "Rare"
+        "Rarity": "Uncommon"
     },
     "148": {
         "FilteredLV": 0,
@@ -1702,7 +1703,7 @@
             "Dragon",
             "Flying"
         ],
-        "Rarity": "Rare"
+        "Rarity": "VeryRare"
     },
     "150": {
         "FilteredLV": 0,
