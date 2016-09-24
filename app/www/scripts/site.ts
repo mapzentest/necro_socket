@@ -321,7 +321,6 @@ class App {
         template.find('.gg-link').attr('href', `https://www.google.com/maps/@${data.Latitude},${data.Longitude},11.25z`);
         template.find('.moves').text(`${data.Move1}, ${data.Move2}`)
         template.find('.clipboard-copy').attr('id', 'cc-' + data.SpawnPointId);
-        template.find('.clipboard').text(`${data.Move1}, ${data.Move2}`)
         template.hover(this.onHoverOnPokemonItem)
         $('#pokemons').prepend(template);
         this.displayPokemonGeoLocation(template, data.Latitude, data.Longitude);
