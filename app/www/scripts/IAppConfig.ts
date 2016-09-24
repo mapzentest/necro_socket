@@ -10,5 +10,6 @@ interface IAppConfig extends IStorageItem{
     CustomSniperLink?: string;
     ToastPosition?: string;
     GeonameUsername?:string;
-    PokemonFilters? :IPokemonFilter[]
+    PokemonFilters? :IPokemonFilter[];
+    CopyPattern?: string;
 }

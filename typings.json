@@ -1,6 +1,7 @@
 {
     "globalDependencies": {
         "body-parser": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/body-parser/body-parser.d.ts",
+        "clipboard": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/clipboard/clipboard.d.ts",
         "express": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express/express.d.ts",
         "express-serve-static-core": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/express-serve-static-core/express-serve-static-core.d.ts",
         "jquery": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/jquery/jquery.d.ts",

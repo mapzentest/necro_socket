@@ -34,7 +34,7 @@ class App {
     private configs: IAppConfig;
     private localStogare: ILocalStorage = new StoreJsLocalStorage();
     private POKEMON_SETTING_SOCKET_COMMAND: string = 'pokemon-settings';
-    private LOCATION_CACHE_KEY :string = 'location-caches';
+    private LOCATION_CACHE_KEY: string = 'location-caches';
 
     constructor() {
 
@@ -47,19 +47,19 @@ class App {
     public run = (): void => {
         var current = this.locationCache || {};
         $.getJSON('/data/countries.json', (res) => {
-            
-            
-            if(res) {
-                for(var key in res) {
+
+
+            if (res) {
+                for (var key in res) {
                     current[key] = res[key]
                 }
-                this.localStogare.save<any>(this.LOCATION_CACHE_KEY,current);
+                this.localStogare.save<any>(this.LOCATION_CACHE_KEY, current);
                 this.locationCache = current;
             }
 
         }).done(this.loadData).fail(this.loadData)
     }
-    private loadData =() :void => {
+    private loadData = (): void => {
         this.socket.emit("active-pokemons");
         this.updateTimerCount();
 
@@ -75,7 +75,7 @@ class App {
 
         const arrow = $(` <i class="fa fa-sort-${this.sortOrder}" aria-hidden="true" id='sort-indicator'></i>`)
         menuItem.append(arrow)
-        if($(document).width() < 480) {
+        if ($(document).width() < 480) {
             $('.navbar-toggler').click();
         }
         this.applySort();
@@ -93,6 +93,8 @@ class App {
         $('#use-custom-sniper').prop('checked', this.configs && this.configs.UseCustomSniper)
         $('#custom-sniper-command').val(this.configs.CustomSniperLink)
         $('#geo-username').val(this.configs.GeonameUsername)
+        $('#copy-pattern').val(this.configs.CopyPattern)
+
         $(`[value="${this.configs.ToastPosition}"]`).prop('checked', true)
         if (this.configs && this.configs.PokemonFilters) {
             let grouped: any = {};
@@ -114,19 +116,19 @@ class App {
                         <ul/>
                     </div>
                     </div>
-                `).change(x=> {
-                    let el = $(x.target);
-                    var checked = el.prop('checked');
-                    if(checked) {
-                        el.closest('.pokemon-filter')
-                        .find('li')
-                        .removeClass('deselected')
-                    }
-                    else{
-                        el.closest('.pokemon-filter').find('li').addClass('deselected')
-                    }
-                    el.closest('.pokemon-filter').find('li').data('EnableNotification', checked)
-                });
+                `).change(x => {
+                        let el = $(x.target);
+                        var checked = el.prop('checked');
+                        if (checked) {
+                            el.closest('.pokemon-filter')
+                                .find('li')
+                                .removeClass('deselected')
+                        }
+                        else {
+                            el.closest('.pokemon-filter').find('li').addClass('deselected')
+                        }
+                        el.closest('.pokemon-filter').find('li').data('EnableNotification', checked)
+                    });
                 $('#pkm-filters').append(rarityDiv);
                 _.forEach(grouped[rarity], f => {
                     var css = f.EnableNotification ? 'selected' : 'deselected';
@@ -179,12 +181,12 @@ class App {
                 UseMSniper: true,
                 UsePokesnipers: false,
                 ToastPosition: 'toast-top-center',
-                GeonameUsername :'mypogosnipers'
+                GeonameUsername: 'mypogosnipers',
             };
         }
-        if(!this.configs.PokemonFilters) 
+        if (!this.configs.PokemonFilters)
             this.socket.emit('pokemon-settings', '');
-        
+
         $('#save-settings').click(this.saveSettings);
         $('#close-settings').click(this.toggleSettingsForm);
         this.displayConfigData();
@@ -217,7 +219,8 @@ class App {
             UsePokesnipers: $('#use-pokesnipers').prop('checked'),
             CustomSniperLink: $('#custom-sniper-command').val(),
             ToastPosition: $('[name="positions"]:checked').val(),
-            GeonameUsername : $('#geo-username').val(),
+            GeonameUsername: $('#geo-username').val(),
+            CopyPattern: $('#copy-pattern').val(),
             PokemonFilters: []
         };
         $('.notification-filter').each((index, el) => {
@@ -228,7 +231,7 @@ class App {
         this.localStogare.save<IAppConfig>("app-settings", this.configs)
         //close setting form
         this.toggleSettingsForm();
-        _.forEach(this.notifiers, x=> x.sendNotification('Settings','Your settings has been saved.'))
+        _.forEach(this.notifiers, x => x.sendNotification('Settings', 'Your settings has been saved.'))
     }
 
     private setupMenu = (): void => {
@@ -266,7 +269,7 @@ class App {
         return Math.floor(originalNumber * p) / p
     }
     private updateTimerCount = (): void => {
-        
+
         let me = this;
         $('.timer', "#pokemons").each(function () {
             var el = $(this);
@@ -301,7 +304,8 @@ class App {
             .attr('PokemonName', data.Name)
             .attr('IV', data.IV)
             .attr('Rarity', PokemonRarities[data.Rarity])
-            .attr('Update', (new Date().getTime()));
+            .attr('Update', (new Date().getTime()))
+            .data('pokemon', data);
 
         const iv = this.round(data.IV, 2);
         const endTime = moment.utc(data.ExpireTimestamp)
@@ -314,64 +318,88 @@ class App {
         template.find('.pokemon-image').attr('src', 'https://df48mbt4ll5mz.cloudfront.net/images/pokemon/' + data.PokemonId + '.png')
         template.find('.sniper-links').attr('href', this.buildSnipeLink(data))
         template.find('.card').addClass(data.Rarity);
-         template.find('.gg-link').attr('href', `https://www.google.com/maps/@${data.Latitude},${data.Longitude},11.25z`);
-
+        template.find('.gg-link').attr('href', `https://www.google.com/maps/@${data.Latitude},${data.Longitude},11.25z`);
         template.find('.moves').text(`${data.Move1}, ${data.Move2}`)
+        template.find('.clipboard-copy').attr('id', 'cc-' + data.SpawnPointId);
+        template.find('.clipboard').text(`${data.Move1}, ${data.Move2}`)
         template.hover(this.onHoverOnPokemonItem)
         $('#pokemons').prepend(template);
         this.displayPokemonGeoLocation(template, data.Latitude, data.Longitude);
-    }
-    private displayPokemonGeoLocation=(el:any, lat : number, lng : number) : void => {
 
-        let cacheKey = Math.ceil(lat) +'-' + Math.ceil(lng);
+        new Clipboard(`#cc-${data.SpawnPointId}`, {
+            text: (trigger) => 
+            {
+                const pattern = this.configs.CopyPattern || '{Name}/{Latitude},{Longitude}';
+                return this.parseText( pattern, data);
+            }
+        }).on('success', (e)=> {
+            _.forEach(this.notifiers, x=>x.sendNotification('Data Copied', e.text));
+
+        });
+    }
+
+    private parseText =(pattern:string , data: IPokemonItem ) : string => {
+
+        for (var prop in data) {
+            var propValue = data[prop];
+            if (prop == "IV") propValue = this.round(propValue, 2);
+
+            pattern = pattern.replace('{' + prop + '}', propValue);
+        }
+        return pattern;
+
+    }   
+    private displayPokemonGeoLocation = (el: any, lat: number, lng: number): void => {
+
+        let cacheKey = Math.ceil(lat) + '-' + Math.ceil(lng);
         var place = this.locationCache[cacheKey];
-        if(!place) {
+        if (!place) {
             this.loadGeolocation(el, lat, lng);
             return;
         };
 
         el.find('.place-name').text(place.name)
         el.find('.country-flag').addClass("flag-" + place.code.toLowerCase())
-        .attr('alt', place.name)
-        .attr('title', place.name)
-        .parent().attr('title', place.name);
+            .attr('alt', place.name)
+            .attr('title', place.name)
+            .parent().attr('title', place.name);
 
-        el.attr('PokemonCountry',place.name )
+        el.attr('PokemonCountry', place.name)
     }
-    private loadGeolocation = (el: any, lat:number, lng: number): void => {
+    private loadGeolocation = (el: any, lat: number, lng: number): void => {
 
-        let cacheKey = Math.ceil(lat) +'-' + Math.ceil(lng);
+        let cacheKey = Math.ceil(lat) + '-' + Math.ceil(lng);
 
         let stogare = this.localStogare;
 
         let storeCacheKey = this.LOCATION_CACHE_KEY;
         let current = this;
 
-        $.getJSON(`http://api.geonames.org/findNearbyPlaceNameJSON?lat=${lat}&lng=${lng}&username=${this.configs.GeonameUsername}`, '', function(res){
-             if(res.status) {
-                 _.forEach(current.notifiers, x=>x.sendNotification('Setting required',`Please go to setting screen and update with you geonames account [${res.status.message}])`))
-                 return;
-             }
-             var place = res.geonames[0];
-               let loc =  {
-                    name:place.countryName,
-                    code:place.countryCode.toLowerCase()
-                } 
-                current.locationCache[cacheKey] = loc;
-                stogare.save<any>(storeCacheKey, current.locationCache )
-                current.displayPokemonGeoLocation(el,lat, lng);
+        $.getJSON(`http://api.geonames.org/findNearbyPlaceNameJSON?lat=${lat}&lng=${lng}&username=${this.configs.GeonameUsername}`, '', function (res) {
+            if (res.status) {
+                _.forEach(current.notifiers, x => x.sendNotification('Setting required', `Please go to setting screen and update with you geonames account [${res.status.message}])`))
+                return;
+            }
+            var place = res.geonames[0];
+            let loc = {
+                name: place.countryName,
+                code: place.countryCode.toLowerCase()
+            }
+            current.locationCache[cacheKey] = loc;
+            stogare.save<any>(storeCacheKey, current.locationCache)
+            current.displayPokemonGeoLocation(el, lat, lng);
         })
-    } 
-    private onHoverOnPokemonItem = (el:JQueryEventObject ): void => {
+    }
+    private onHoverOnPokemonItem = (el: JQueryEventObject): void => {
         var img = $(el.target).find('.pokemon-image')
         let pos = img.position();
-        if(!pos ) return;
+        if (!pos) return;
 
         var link = $(el.target).find('.sniper-links')
         link.width(img.width())
-                .height(img.height())
-                .css('top', `${pos.top}px`)
-                .css('left', `${pos.left}px`);
+            .height(img.height())
+            .css('top', `${pos.top}px`)
+            .css('left', `${pos.left}px`);
     }
     private buildSnipeLink = (data: IPokemonItem): string => {
         let pattern = 'msniper://{Name}/{EncounterId}/{SpawnPointId}/{Latitude},{Longitude}/{IV}';
@@ -384,15 +412,7 @@ class App {
         else {
             pattern = this.configs.CustomSniperLink || pattern;
         }
-        for (var prop in data) {
-            var propValue = data[prop];
-            if (prop == "IV") propValue = this.round(propValue, 2);
-
-            pattern = pattern.replace('{' + prop + '}', propValue);
-        }
-
-        //const sniperLink = "msniper://" + data.Name + "/" + data.EncounterId + "/" + data.SpawnPointId + "/" + data.Latitude + "," + data.Longitude + "/" + iv;
-        return pattern;
+        return this.parseText(pattern, data);
     }
 
     private configSocket = (): void => {

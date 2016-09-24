@@ -157,7 +157,7 @@
              text-overflow: ellipsis;
              white-space: nowrap;
          }
-         &.Common {
+         &.VeryCommon {
              @include box-rarity-css($color-pokemon-very-common);
          }
          &.Common {

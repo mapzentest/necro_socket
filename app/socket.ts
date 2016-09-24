@@ -43,6 +43,8 @@ class SocketServer {
 
              socket.on('pokemon', function (msg) {
                 delete msg.$type
+                delete msg.IsRecievedFromSocket;
+                
                 let pokemon: IPokemonItem = msg;
                 if(mdb.addPokemon(msg)) { 
                     socket.broadcast.emit('pokemon', msg);
@@ -57,6 +59,7 @@ class SocketServer {
                 if(!data ) return;
                 _.forEach(data.$values, (msg)=> {
                     delete msg.$type
+                    delete msg.IsRecievedFromSocket
                     let pokemon: IPokemonItem = msg;
                     if(mdb.addPokemon(msg)) { 
                         socket.broadcast.emit('pokemon', msg);
