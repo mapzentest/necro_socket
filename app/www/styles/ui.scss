@@ -74,8 +74,9 @@
          background-color: orangered;
          color: #fff;
          font-weight: bold;
-         .settings {
+         i {
              cursor: pointer;
+             margin-right: 5px;
          }
          @media (max-width: $screen-mobile) {
              position: fixed;
@@ -286,5 +287,6 @@
  }
  
  @import "_settings.scss";
+ @import "_sidebar.scss";
  @import "awesome-bootstrap-checkbox.scss";
  @import "_flags.scss"

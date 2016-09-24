@@ -1,6 +1,7 @@
 /// <reference path="./../../../_all.d.ts" />
 /// <reference path="../../models/IPokemonItem.ts" />
 /// <reference path="./IMenuItem.ts" />
+/// <reference path="./IStatistic.ts" />
 /// <reference path=".//enums.ts" />
 /// <reference path="INotification.ts" />
 /// <reference path="DesktopNotification.ts" />
@@ -26,7 +27,7 @@ class App {
     private sortOrder: string = "asc";
     private pokemonItemSelector: string = '.pkm-item-query';
     private totalPokemon: number = 0;
-    private counterElement: JQuery = $('.counter span');
+    private counterElement: JQuery = $('.counter span, .sidebar .counter');
     private notifiers: INotification[] = []
     private pokemonListElement: JQuery = $("#pokemons");
     private settingsElement: JQuery = $("#settings");
@@ -35,12 +36,15 @@ class App {
     private localStogare: ILocalStorage = new StoreJsLocalStorage();
     private POKEMON_SETTING_SOCKET_COMMAND: string = 'pokemon-settings';
     private LOCATION_CACHE_KEY: string = 'location-caches';
+    private stats :IStatistic;
+    private filters: string[] = ['All']
 
     constructor() {
-
+        this.stats = {total: 0, All : 0}
         this.setupMenu();
         this.configSocket();
         this.setupSettings();
+        this.setupFilters();
         this.pokemons = [];
 
     }
@@ -63,6 +67,63 @@ class App {
         this.socket.emit("active-pokemons");
         this.updateTimerCount();
 
+    }
+    private setupFilters = () : void => {
+
+        var btnFilter = $('#btn-filters');
+        btnFilter.click(()=> {
+            $('.sidebar').toggle(2000,'swing');
+        });
+
+        $('#all-pokemon-filter').click(this.onFilterClick);
+
+    }
+    private onFilterClick = (ev:JQueryEventObject) :void => {
+        var el = $(ev.target);
+        el.toggleClass('selected');
+        var selected = el.hasClass('selected'); 
+        if(el.data().pokemon) {
+            if(selected) {
+                el.siblings('li:first').removeClass('selected')
+                this.filters.push(el.data().pokemon)
+            }
+            else{
+                this.filters = this.filters.filter((x)=> {
+                    return x != el.data().pokemon;
+                })
+            }
+        }
+        else{
+            if(selected) {
+                this.filters = ['All']
+                el.siblings().removeClass('selected');
+            }
+        }
+        this.applyFilter(this.filters);
+    }
+    private applyFilter = (appliedFilters:string[]) : void => {
+        if(appliedFilters && appliedFilters.length == 1) {
+            $('.pkm-item-query').each((index, el)=>{
+                var pkm = $(el);
+                pkm.fadeIn(250)
+            });
+        }
+        else{
+            $('.pkm-item-query').each((index, el)=>{
+                var pkm = $(el);
+                let isShow = false;
+                
+                _.forEach(appliedFilters, x=> {
+                    if(pkm.attr('pokemonname') == x) isShow = true;
+                })
+                if(isShow) {
+                    pkm.fadeIn(250)
+                }
+                else{
+                    pkm.fadeOut(250)
+                }
+            })
+        }
     }
     private onMenuItemClick = (ev: JQueryEventObject): void => {
         const menuItem = $(ev.target);
@@ -278,20 +339,61 @@ class App {
             var expired = moment.utc(time)
             var diff = moment.duration(expired.diff(now)).format("mm:ss");
             if (now > expired) {
-
+                var pokemonName =  el.closest('.pokemon-item').attr('pokemonname');
+               
                 el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
                     $(this).remove();
                     me.totalPokemon = me.totalPokemon - 1;
                     me.updateNumber();
+                    me.stats[pokemonName] = me.stats[pokemonName] - 1;
+                    me.stats.total = me.stats.total - 1;
+                    me.stats['All'] = me.stats['All'] -1;
 
+                    me.updateSidebar();
                 });
 
             } else
                 el.text(diff);
         });
-
+        
         setTimeout(this.updateTimerCount, 1000)
     }
+
+    private updateSidebar =() : void => {
+        var el = $(".sidebar").find('ul');
+
+        for(var x in this.stats) {
+
+            let li = el.find(`li.${x}`);
+            
+            if(this.stats[x] <= 0) {
+                li.remove();
+                delete this.stats[x]
+            }
+            else{
+                li.find('span').text(this.stats[x]);
+            }
+            
+        }
+    }
+
+    private addSidebarItem = (data: IPokemonItem): void => {
+        this.stats["All"] = this.stats["All"] + 1;
+        
+        var el = $(".sidebar").find('ul');
+        if(this.stats[data.Name] > 0) {
+            this.stats[data.Name] = this.stats[data.Name] +1;
+            var li = el.find(`li.${data.Name} span`).text(this.stats[data.Name]);    
+        }
+        else{
+            this.stats[data.Name] = 1;
+            var li = $(`<li class='${data.Rarity} ${data.Name}'>${data.Name}<span class="tag">${this.stats[data.Name]}</span></li>`);
+                li.data('pokemon', data.Name);
+            el.append(li);
+            li.click(this.onFilterClick);
+        }
+        //apply sort
+   }
     private addPokemonItem = (data: IPokemonItem): void => {
 
         $('#loading').remove();
@@ -304,8 +406,7 @@ class App {
             .attr('PokemonName', data.Name)
             .attr('IV', data.IV)
             .attr('Rarity', PokemonRarities[data.Rarity])
-            .attr('Update', (new Date().getTime()))
-            .data('pokemon', data);
+            .attr('Update', (new Date().getTime()));
 
         const iv = this.round(data.IV, 2);
         const endTime = moment.utc(data.ExpireTimestamp)
@@ -423,12 +524,11 @@ class App {
     }
 
     private onPokemonItem = (data: IPokemonItem): void => {
-        //this.pokemons.push(data);
         this.addPokemonItem(data)
         this.applySort();
         this.totalPokemon = this.totalPokemon + 1;
         this.updateNumber();
-
+        this.addSidebarItem(data);
         _.each(this.notifiers, n => n.sendPokemonNotification(data, this.buildSnipeLink(data)));
     }
     private updateNumber = (): void => {
@@ -448,11 +548,10 @@ class App {
     private onPokemonItems = (msg: IPokemonItem[]): void => {
         if (msg && msg.length) {
             _.forEach(msg, (s) => {
-                //this.pokemons.push(s);
+                this.addPokemonItem(s);
                 this.totalPokemon = this.totalPokemon + 1;
                 this.updateNumber();
-
-                this.addPokemonItem(s);
+                this.addSidebarItem(s);
             })
         }
 
