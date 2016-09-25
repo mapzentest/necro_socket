@@ -343,17 +343,21 @@ class App {
             var diff = moment.duration(expired.diff(now)).format("mm:ss");
             if (now > expired) {
                 var pokemonName =  el.closest('.pokemon-item').attr('pokemonname');
-               
-                el.closest('.pokemon-item').slideUp(1500, 'swing', function () {
+               if(!el.closest('.pokemon-item').hasClass('removed')) {
+                el.closest('.pokemon-item').addClass('removed').slideUp(1500, 'swing', function () {
                     $(this).remove();
-                    me.totalPokemon = me.totalPokemon - 1;
-                    me.updateNumber();
-                    me.stats[pokemonName] = me.stats[pokemonName] - 1;
-                    me.stats.total = me.stats.total - 1;
-                    me.stats['All'] = me.stats['All'] -1;
+                        me.totalPokemon = me.totalPokemon - 1;
+                        me.stats[pokemonName] = me.stats[pokemonName] - 1;
+                        me.stats.total = me.stats.total - 1;
+                        me.stats['All'] = me.stats['All'] -1;
+                        me.updateNumber();
 
-                    me.updateSidebar();
+                        me.updateSidebar();
                 });
+               }
+               else{
+                   el.closest('.pokemon-item').addClass('removed').slideUp(1500, 'swing');
+               }
 
             } else
                 el.text(diff);
