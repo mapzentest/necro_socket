@@ -414,7 +414,7 @@ class App {
         const iv = this.round(data.IV, 2);
         const endTime = moment.utc(data.ExpireTimestamp)
         const exp = moment.duration(endTime.diff(moment())).format("mm:ss");
-        const uniqueId = data.EncounterId.replace(/[^a-zA-Z0-9]/,'-');
+        const uniqueId = data.PokemonId + data.SpawnPointId;//data.EncounterId.replace(/[^a-zA-Z0-9]/,'-');
         template.find('.pokemon-name').text(`LV${data.Level} - ${data.Name}`)
         template.find('.timer').text(exp).attr('expired', data.ExpireTimestamp)
         template.find('.iv').text(`IV : ${iv}%`)
