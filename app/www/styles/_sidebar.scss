@@ -8,19 +8,22 @@
     opacity: 0.9;
     top: 70px;
     bottom: 0px;
-    padding-top: 50px;
+    padding-top: 10px;
+    z-index: 3333;
+    padding-bottom: 35px;
     display: none;
     ul {
         margin-left: 0px;
         padding-left: 0px;
         list-style: none;
         list-style-type: none;
+        overflow-y: auto;
+        height: 100%;
         li {
             width: 100%;
             padding: 5px 0px 5px 25px;
             list-style-type: none;
-            cursor:pointer;
-            
+            cursor: pointer;
             &.selected {
                 background: rgba(112, 232, 211, 0.4);
             }

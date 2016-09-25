@@ -257,7 +257,9 @@
             $(document).ready(function() {
                 var app = new App();
                 app.run();
-                $("html").niceScroll();
+                $(".sidebar ul").niceScroll({
+                    cursorwidth: "12px"
+                });
             });
         </script>
 
