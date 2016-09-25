@@ -46,7 +46,10 @@ class App {
         this.setupSettings();
         this.setupFilters();
         this.pokemons = [];
-
+        $('#btn-switch-view').click(this.onToggleView);
+    }
+    private onToggleView = (ev:JQueryEventObject) : void => {
+        this.pokemonListElement.toggleClass('list-view');
     }
     public run = (): void => {
         var current = this.locationCache || {};
@@ -411,8 +414,8 @@ class App {
         const iv = this.round(data.IV, 2);
         const endTime = moment.utc(data.ExpireTimestamp)
         const exp = moment.duration(endTime.diff(moment())).format("mm:ss");
-
-        template.find('.card-title').text(`LV${data.Level} - ${data.Name}`)
+        const uniqueId = data.EncounterId.replace(/[^a-zA-Z0-9]/,'-');
+        template.find('.pokemon-name').text(`LV${data.Level} - ${data.Name}`)
         template.find('.timer').text(exp).attr('expired', data.ExpireTimestamp)
         template.find('.iv').text(`IV : ${iv}%`)
         template.find('.coordinate').text("[" + this.round(data.Latitude, 5) + "," + this.round(data.Longitude, 5) + "]")
@@ -421,12 +424,14 @@ class App {
         template.find('.card').addClass(data.Rarity);
         template.find('.gg-link').attr('href', `https://www.google.com/maps/@${data.Latitude},${data.Longitude},11.25z`);
         template.find('.moves').text(`${data.Move1}, ${data.Move2}`)
-        template.find('.clipboard-copy').attr('id', 'cc-' + data.SpawnPointId);
-        template.hover(this.onHoverOnPokemonItem)
+        template.find('.clipboard-copy').attr('id', `cc-${uniqueId}`);
+        template.find('.pokemon-image').hover(this.onHoverOnPokemonItem)
+        //template.hover(this.onHoverOnPokemonItem)
+        template.find('.list-row').addClass(data.Rarity);
         $('#pokemons').prepend(template);
         this.displayPokemonGeoLocation(template, data.Latitude, data.Longitude);
 
-        new Clipboard(`#cc-${data.SpawnPointId}`, {
+        new Clipboard(`#cc-${uniqueId}`, {
             text: (trigger) => 
             {
                 const pattern = this.configs.CopyPattern || '{Name}/{Latitude},{Longitude}';
@@ -491,11 +496,12 @@ class App {
         })
     }
     private onHoverOnPokemonItem = (el: JQueryEventObject): void => {
-        var img = $(el.target).find('.pokemon-image')
+        var img =  $(el.target);
+
         let pos = img.position();
         if (!pos) return;
 
-        var link = $(el.target).find('.sniper-links')
+        var link = img.siblings('.sniper-links')
         link.width(img.width())
             .height(img.height())
             .css('top', `${pos.top}px`)

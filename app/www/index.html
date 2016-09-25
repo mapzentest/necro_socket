@@ -32,6 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 </head>
 
 <body>
@@ -81,6 +82,7 @@
                         </li>
 
                         <li class="counter nav-item hidden-sm-down">
+                            <i class="fa fa-th" aria-hidden="true" id="btn-switch-view"></i>
                             <i class="fa fa-filter" aria-hidden="true" id="btn-filters"></i>
                             <i class="fa fa-cog settings" aria-hidden="true" id="btn-settings"></i>
                             <span id="counter">0</span>
@@ -185,7 +187,7 @@
                             <input type="text" class="form-control" id="custom-sniper-command" placeholder="sniper://{Name}/{Latitude},{Longitude}">
                             <br/>
 
-                            <input type="text" class="form-control" id="copy-pattern" placeholder="{Name}/{Latitude},{Longitude}">
+                            <input type="text" class="form-control" id="copy-pattern" placeholder="Copy pattern: ex {Name}/{Latitude},{Longitude}">
                             <br/>
 
                             <div class="alert alert-info" role="alert">
@@ -252,8 +254,11 @@
         <script src="scripts/StoreJsLocalStorage.js"></script>
         <script src="scripts/site.js"></script>
         <script>
-            var app = new App();
-            app.run();
+            $(document).ready(function() {
+                var app = new App();
+                app.run();
+                $("html").niceScroll();
+            });
         </script>
 
 </body>
@@ -265,17 +270,37 @@
                 <span class="pull-right timer" style="float:right"></span>
             </div>
             <div class="card-block">
-                <a href="#" class="sniper-links" title="click to catch him" target="_blank"></a>
                 <span class="clipboard-copy"></span>
-
                 <img src="" class="pokemon-image" />
-                <h4 class="card-title"></h4>
+                <a href="#" class="sniper-links" title="click to catch him" target="_blank"></a>
+                <h4 class="card-title pokemon-name"></h4>
                 <p class="card-text">
                     <span class="place-name"></span>
                     <a href="" target="_blank" class="gg-link"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="flag country-flag" alt="Czech Republic" /></a><span class="coordinate"></span>
                     <br/>
                     <span class="moves"></span>
                 </p>
+            </div>
+        </div>
+        <div class="list-row">
+            <div class="pokemon-image-cell">
+                <img src="" class="pokemon-image" width="50px" />
+                <a href="#" class="sniper-links" title="click to catch him" target="_blank"></a>
+            </div>
+            <div class="pokemon-name">
+            </div>
+            <div class="iv"></div>
+
+            <div class="coords">
+                <a href="" target="_blank" class="gg-link">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="flag country-flag" alt="Czech Republic" /></a>
+                <span class="coordinate"></span>
+            </div>
+            <div class="place-name"></div>
+            <div class="moves"></div>
+            <div class="timer"></div>
+            <div class="actions-links">
+                <span class="clipboard-copy" />
             </div>
         </div>
     </div>

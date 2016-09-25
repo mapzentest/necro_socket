@@ -212,6 +212,86 @@
              opacity: 1;
          }
      }
+     .list-row {
+         display: none;
+     }
+ }
+ 
+ .list-view {
+     .pokemon-item {
+         display: table-row;
+         width: 100% !important;
+         .card {
+             display: none;
+         }
+         .list-row {
+             width: 100%;
+             height: auto;
+             overflow: auto;
+             display: block;
+             &.VeryCommon {
+                 @include box-rarity-css($color-pokemon-very-common);
+             }
+             &.Common {
+                 @include box-rarity-css($color-pokemon-common);
+             }
+             &.Rare {
+                 @include box-rarity-css($color-pokemon-rare);
+             }
+             &.Uncommon {
+                 @include box-rarity-css($color-pokemon-popular);
+             }
+             &.VeryRare {
+                 @include box-rarity-css($color-pokemon-very-rare);
+             }
+             &.Special {
+                 @include box-rarity-css($color-pokemon-special);
+             }
+             &.Epic {
+                 @include box-rarity-css($color-pokemon-epic);
+             }
+             >div {
+                 float: left;
+                 &.pokemon-image-cell {
+                     width: 10%;
+                     &:hover {
+                         a {
+                             display: block;
+                         }
+                     }
+                 }
+                 &.iv {
+                     width: 10%;
+                 }
+                 &.pokemon-name {
+                     width: 15%;
+                 }
+                 &.coords {
+                     width: 20%;
+                 }
+                 &.timer {
+                     width: 5%;
+                 }
+                 &.moves {
+                     padding-left: 15px;
+                     width: 25%;
+                 }
+                 .sniper-links {
+                     top: 0px;
+                     left: 15px;
+                     width: 50px;
+                     height: 50px;
+                 }
+                 &.actions-links {
+                     width: 5%;
+                     .clipboard-copy {
+                         position: relative;
+                         float: right;
+                     }
+                 }
+             }
+         }
+     }
  }
  
  .load-bar {
