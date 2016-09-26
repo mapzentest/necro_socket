@@ -4,5 +4,7 @@ interface IAppConfigs {
     SyncByTimes : number,
     DropboxKey: string
     DropboxSync :boolean,
-    StatsFile : string
+    StatsFile : string;
+    MasterSocketServer?:string;
+    IsSlaveNode?:boolean;
 }

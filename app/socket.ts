@@ -1,5 +1,6 @@
 /// <reference path="../_all.d.ts" />
 /// <reference path="models/IAppSettings.ts" />
+
 //http://brianflove.com/2016/03/29/typescript-express-node-js/
 
 "use strict";
@@ -13,8 +14,10 @@ var pokemons: IPokemonItem[] = require('./config/pokemons.json')
 class SocketServer {
     private appConfigs : IAppConfigs;
     public server: SocketIO.Server;
+    public client : any;
     public db : IPogoDatabase;
     public pokemonSettings : IPokemonBasic[]
+    public sendToMaster(data : IPokemonItem)  {}
     /**
      * Constructor.
      *
@@ -24,7 +27,6 @@ class SocketServer {
     constructor(http: any, settings: IAppConfigs) {
         //create expressjs application
         this.appConfigs = settings;
-        
         this.server = socketio(http);
         this.config();
     }
@@ -48,6 +50,10 @@ class SocketServer {
                 let pokemon: IPokemonItem = msg;
                 if(mdb.addPokemon(msg)) { 
                     socket.broadcast.emit('pokemon', msg);
+                    if(me.appConfigs.IsSlaveNode){
+                        //send this to master server.
+                        me.client.sendToMaster(msg);
+                    }
                 }
             });
             socket.on('active-pokemons', function () {
@@ -63,6 +69,10 @@ class SocketServer {
                     let pokemon: IPokemonItem = msg;
                     if(mdb.addPokemon(msg)) { 
                         socket.broadcast.emit('pokemon', msg);
+                        if(me.appConfigs.IsSlaveNode){
+                            //send this to master server.
+                            me.client.sendToMaster(msg);
+                        }
                     }
                 });
                 
@@ -83,5 +93,5 @@ class SocketServer {
 }
 
 export = module.exports = function (http: any, settings :IAppConfigs) {
-    return new SocketServer(http, settings).server
+    return new SocketServer(http, settings)
 }

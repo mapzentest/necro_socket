@@ -4,5 +4,7 @@
     "SyncByTimes": 0,
     "DropboxKey": "6uT8iPrMZWwAAAAAAAAAMS1vZjJmZeEmBn8CHNd1bvNCPst25N__vrGbF5EzuXA1",
     "DropboxSync": true,
-    "StatsFile": "stats_dev.txt"
+    "StatsFile": "stats_dev.txt",
+    "MasterSocketServer": "http://localhost:5000",
+    "IsSlaveNode": true
 }
