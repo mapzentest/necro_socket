@@ -38,6 +38,7 @@ class SocketClient {
 
         //console.log(this)
         console.log('send data to master server, in slaver mode')
+        data.ServerToServer =  true;
         this.client.emit('pokemon', data);
     }
     private config() {

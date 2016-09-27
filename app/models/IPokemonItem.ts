@@ -5,8 +5,12 @@ interface IPokemonBasic {
     Name:string;
     Rarity:string;
 }
-
-interface IPokemonItem  extends IPokemonBasic, ILocation{
+interface ISocketDataTransfer{
+    ServerToServer?:boolean;
+    $type?:string;
+    IsRecievedFromSocket?:boolean;
+}
+interface IPokemonItem  extends IPokemonBasic, ILocation, ISocketDataTransfer{
     Move1?:string;
     Move2?:string;
     EncounterId: string;
@@ -15,5 +19,4 @@ interface IPokemonItem  extends IPokemonBasic, ILocation{
     SpawnPointId:string;
     Level:number;
     IV:number,
-    $type?:string
 }

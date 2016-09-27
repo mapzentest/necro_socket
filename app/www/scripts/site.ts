@@ -532,7 +532,7 @@ class App {
         this.socket.on('pokemon', this.onPokemonItem);
         this.socket.on(this.POKEMON_SETTING_SOCKET_COMMAND, this.onPokemonSettingsRecieved)
     }
-
+    
     private onPokemonItem = (data: IPokemonItem): void => {
         this.addPokemonItem(data)
         this.applySort();

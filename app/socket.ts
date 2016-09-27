@@ -43,17 +43,19 @@ class SocketServer {
                 console.log('user disconnected ===>>> ', --clientCount);
             });
 
-             socket.on('pokemon', function (msg) {
+             socket.on('pokemon', function (msg:IPokemonItem) {
                 delete msg.$type
                 delete msg.IsRecievedFromSocket;
                 
                 let pokemon: IPokemonItem = msg;
                 if(mdb.addPokemon(msg)) { 
-                    socket.broadcast.emit('pokemon', msg);
                     if(me.appConfigs.IsSlaveNode){
                         //send this to master server.
                         me.client.sendToMaster(msg);
                     }
+                    delete msg.ServerToServer;    
+                    socket.broadcast.emit('pokemon', msg);
+                    
                 }
             });
             socket.on('active-pokemons', function () {

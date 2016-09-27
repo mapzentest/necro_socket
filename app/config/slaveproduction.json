@@ -1,0 +1,10 @@
+{
+    "UseFilter": true,
+    "BatchSize": 1234,
+    "SyncByTimes": 0,
+    "DropboxKey": "6uT8iPrMZWwAAAAAAAAAMS1vZjJmZeEmBn8CHNd1bvNCPst25N__vrGbF5EzuXA1",
+    "DropboxSync": true,
+    "StatsFile": "stats.txt",
+    "MasterSocketServer": "http://necrosocket.herokuapp.com",
+    "IsSlaveNode": true
+}

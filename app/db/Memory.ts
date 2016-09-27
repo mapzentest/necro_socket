@@ -64,6 +64,8 @@ class Memory implements IPogoDatabase {
     }
 
     public addStatistics = (pkm: IPokemonItem): void => {
+        if(pkm.ServerToServer) return;
+        
         this.counter++;
         if (this.stats && pkm.Name) {
             if (!this.stats.pokemons[pkm.Name]) this.stats.pokemons[pkm.Name] = {
