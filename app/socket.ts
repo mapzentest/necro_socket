@@ -6,18 +6,19 @@
 "use strict";
 
 import * as socketio from "socket.io"
+import * as socketioclient from "socket.io-client"
 import * as http from "http"
 import * as _ from "lodash"
 import Memory = require("./db/Memory")
+
 var pokemons: IPokemonItem[] = require('./config/pokemons.json')
 
 class SocketServer {
     private appConfigs : IAppConfigs;
     public server: SocketIO.Server;
-    public client : any;
+    public client : SocketIOClient.Socket;
     public db : IPogoDatabase;
     public pokemonSettings : IPokemonBasic[]
-    public sendToMaster(data : IPokemonItem)  {}
     /**
      * Constructor.
      *
@@ -25,15 +26,47 @@ class SocketServer {
      * @constructor
      */
     constructor(http: any, settings: IAppConfigs) {
-        //create expressjs application
+
         this.appConfigs = settings;
+        this.db = Memory(this.appConfigs)
+        
         this.server = socketio(http);
-        this.config();
+        this.configSocketServer();
+
+        if(this.appConfigs.IsSlaveNode && this.appConfigs.MasterSocketServer) {
+            this.client = socketioclient(this.appConfigs.MasterSocketServer);
+            this.configSocketClient();
+        }
+
+    }
+    public sendToMaster(data : IPokemonItem)  {
+        console.log('send data to master server, in slaver mode')
+        data.ServerToServer =  true;
+        this.client.emit('pokemon', data);
+        delete data.ServerToServer;   
     }
 
-    private config() {
+    private configSocketClient() {
+            var mdb = this.db;
+            var me = this;
+            this.client.on('connect', () => {
+                console.log('connected to master server', this.appConfigs.MasterSocketServer)
+            });
 
-        this.db = Memory(this.appConfigs)
+            this.client.on('pokemon', (data:IPokemonItem) => {
+                console.log('data recieved from server');
+                data.ServerToServer = true;
+                if(mdb.addPokemon(data)) {
+                    delete data.ServerToServer;
+                    me.server.sockets.emit('pokemon', data)
+                }
+            });
+            this.client.connect();
+        }
+
+
+    private configSocketServer= (): void =>  {
+
         var mdb = this.db;
         var me = this;
         let clientCount = 0;
@@ -50,12 +83,10 @@ class SocketServer {
                 let pokemon: IPokemonItem = msg;
                 if(mdb.addPokemon(msg)) { 
                     if(me.appConfigs.IsSlaveNode){
-                        //send this to master server.
-                        me.client.sendToMaster(msg);
+                        me.sendToMaster(msg);
                     }
                     delete msg.ServerToServer;    
                     socket.broadcast.emit('pokemon', msg);
-                    
                 }
             });
             socket.on('active-pokemons', function () {
@@ -73,7 +104,7 @@ class SocketServer {
                         socket.broadcast.emit('pokemon', msg);
                         if(me.appConfigs.IsSlaveNode){
                             //send this to master server.
-                            me.client.sendToMaster(msg);
+                            me.sendToMaster(msg);
                         }
                     }
                 });

@@ -2,6 +2,8 @@
 /// <reference path="../../_all.d.ts" />
 /// <reference path="../models/IPokemonItem.ts" />
 /// <reference path="../models/IAppSettings.ts" />
+/// <reference path="../models/IStatistics.ts" />
+
 import * as moment from 'moment'
 var node_dropbox = require('node-dropbox')
 //var configs = require('../config/config.json')
@@ -15,17 +17,31 @@ class Memory implements IPogoDatabase {
     private dropbox: any;
     private all: any = [];
     private counter: any = 0;
-    private stats: any = {}
+    private stats: IStatistics = { totals:0, pokemons: {}}
     private pokemonSettings: IPokemonBasic[];
     constructor(settings: IAppConfigs) {
         this.configs = settings;
         this.pokemonSettings = [];
         this.dropbox = new Dropbox({ accessToken: this.configs.DropboxKey });
-        this.loadSyncedData()
+        // this.loadSyncedData((data)=> {
+            //do not need to load data....
+        // });
     }
 
-    public storeSyncedData = (obj: any): void => {
+    public storeSyncedData = (obj: IStatistics): void => {
         if (obj) {
+            //merge existing object
+            obj.totals += this.stats.totals;
+            for(var prop in this.stats.pokemons){
+                if(!obj.pokemons[prop])  { 
+                    obj.pokemons[prop] = this.stats.pokemons[prop]
+                 }
+                else{
+                    obj.pokemons[prop].Count = this.stats.pokemons[prop].Count;
+                }
+                obj.pokemons[prop].Percentage = obj.pokemons[prop].Count/obj.totals; 
+            }
+            this.stats = { totals:0, pokemons: {}};//reset local stats
             this.dropbox.filesUpload(
                 {
                     path: '/' + this.configs.StatsFile,
@@ -44,7 +60,7 @@ class Memory implements IPogoDatabase {
         }
     }
 
-    public loadSyncedData = (): void => {
+    public loadSyncedData = (onSuccess:(data:IStatistics) => void, onError?:Function): void => {
         let me = this;
         this.dropbox.filesDownload(
             {
@@ -52,13 +68,15 @@ class Memory implements IPogoDatabase {
                 '.tag': 'path'
             })
             .then(function (response) {
-                me.stats = JSON.parse(response.fileBinary);
+                let stastOnServer : IStatistics = JSON.parse(response.fileBinary);
+                onSuccess(stastOnServer);
             })
             .catch(function (error) {
-                me.stats = {
-                    totals: 0,
-                    pokemons: {}
-                }
+                if(onError) onError();
+                // me.stats = {
+                //     totals: 0,
+                //     pokemons: {}
+                // }
             });
 
     }
@@ -70,7 +88,8 @@ class Memory implements IPogoDatabase {
         if (this.stats && pkm.Name) {
             if (!this.stats.pokemons[pkm.Name]) this.stats.pokemons[pkm.Name] = {
                 Id: pkm.PokemonId,
-                Count: 0
+                Count: 0,
+                Percentage: 0.0
             };
             this.stats.pokemons[pkm.Name].Count = this.stats.pokemons[pkm.Name].Count + 1;
             this.stats.totals = this.stats.totals + 1;
@@ -78,7 +97,7 @@ class Memory implements IPogoDatabase {
 
         if (this.configs.DropboxSync && (this.counter == this.configs.BatchSize)) {
             this.counter = 0;
-            this.storeSyncedData(this.stats)
+            this.loadSyncedData(this.storeSyncedData)
         }
     }
     public addPokemon = (p: IPokemonItem): boolean => {
