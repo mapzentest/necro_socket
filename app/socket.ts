@@ -77,7 +77,6 @@ class SocketServer {
             });
 
             socket.on('fpm', function (msg:any) {
-                console.log('fpm', msg)
                 socket.broadcast.emit('fpm', msg)
             });
 
