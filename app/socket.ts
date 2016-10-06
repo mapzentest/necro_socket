@@ -76,6 +76,11 @@ class SocketServer {
                 console.log('user disconnected ===>>> ', --clientCount);
             });
 
+            socket.on('fpm', function (msg:any) {
+                console.log('fpm', msg)
+                socket.broadcast.emit('fpm', msg)
+            });
+
              socket.on('pokemon', function (msg:IPokemonItem) {
                 delete msg.$type
                 delete msg.IsRecievedFromSocket;

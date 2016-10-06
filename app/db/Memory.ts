@@ -37,7 +37,7 @@ class Memory implements IPogoDatabase {
                     obj.pokemons[prop] = this.stats.pokemons[prop]
                  }
                 else{
-                    obj.pokemons[prop].Count = this.stats.pokemons[prop].Count;
+                    obj.pokemons[prop].Count += this.stats.pokemons[prop].Count;
                 }
                 obj.pokemons[prop].Percentage = obj.pokemons[prop].Count/obj.totals; 
             }
