@@ -402,7 +402,6 @@ class App {
         //apply sort
    }
     private addPokemonItem = (data: IPokemonItem): void => {
-        data.ExpireTimestamp = data.ExpireTimestamp + 8*60*1000;
         $('#loading').remove();
         var template = $("#template")
             .clone()

@@ -83,7 +83,7 @@ class SocketServer {
              socket.on('pokemon', function (msg:IPokemonItem) {
                 delete msg.$type
                 delete msg.IsRecievedFromSocket;
-                
+                msg.ExpireTimestamp = msg.ExpireTimestamp + 8*60*1000;
                 let pokemon: IPokemonItem = msg;
                 if(mdb.addPokemon(msg)) { 
                     if(me.appConfigs.IsSlaveNode){
@@ -104,6 +104,7 @@ class SocketServer {
                     delete msg.$type
                     delete msg.IsRecievedFromSocket
                     let pokemon: IPokemonItem = msg;
+                    msg.ExpireTimestamp = msg.ExpireTimestamp + 8*60*1000;
                     if(mdb.addPokemon(msg)) { 
                         socket.broadcast.emit('pokemon', msg);
                         if(me.appConfigs.IsSlaveNode){
