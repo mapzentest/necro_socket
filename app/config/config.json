@@ -6,5 +6,5 @@
     "DropboxSync": true,
     "StatsFile": "stats_dev.txt",
     "MasterSocketServer": "http://localhost:5000",
-    "IsSlaveNode": true
+    "IsSlaveNode": false
 }
