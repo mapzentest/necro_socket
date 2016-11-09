@@ -4,5 +4,7 @@
     "SyncByTimes": 0,
     "DropboxKey": "6uT8iPrMZWwAAAAAAAAAJqQ7SxCUIdPkidHXmbTq9PZyKGePBLv4n9c7EG3wcqq_",
     "DropboxSync": true,
-    "StatsFile": "stats.txt"
+    "StatsFile": "stats.txt",
+    "DiscordToken": "MjQ1NzA4OTI3NjUwNDk2NTEz.CwSEBA.GmOrhSI_FvKQzUdoEhiMLd9GdL0",
+    "DiscordChannels": "245851541024538624"
 }
