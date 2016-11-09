@@ -36,7 +36,7 @@ class Discord implements ISubscribler {
 
         this.bot.sendMessage({
             to:this.channels,
-            message:`${pkm.Name} ${pkm.Latitude}, ${pkm.Longitude}   IV: ${iv}% expired: ${pkm.ExpireTimestamp}` 
+            message:`**${pkm.Name}**    __${pkm.Latitude}, ${pkm.Longitude}__     IV: ${iv}%     expired: ${pkm.ExpireTimestamp}` 
         })
     }
 }
