@@ -10,7 +10,7 @@ import * as socketioclient from "socket.io-client"
 import * as http from "http"
 import * as _ from "lodash"
 import Memory = require("./db/Memory")
-
+import Discord = require("./discord")
 var pokemons: IPokemonItem[] = require('./config/pokemons.json')
 
 class SocketServer {
@@ -19,6 +19,7 @@ class SocketServer {
     public client : SocketIOClient.Socket;
     public db : IPogoDatabase;
     public pokemonSettings : IPokemonBasic[]
+    public subscriblers : ISubscribler[] = [];
     /**
      * Constructor.
      *
@@ -38,6 +39,9 @@ class SocketServer {
             this.configSocketClient();
         }
 
+    }
+    public addSubscribler(listerner: ISubscribler) {
+        this.subscriblers.push(listerner)
     }
     public sendToMaster(data : IPokemonItem)  {
         console.log('send data to master server, in slaver mode')
@@ -91,6 +95,8 @@ class SocketServer {
                     }
                     delete msg.ServerToServer;    
                     socket.broadcast.emit('pokemon', msg);
+
+                    _.forEach(me.subscriblers, x=>x.onPokemon(pokemon))
                 }
             });
             socket.on('active-pokemons', function () {
@@ -111,6 +117,7 @@ class SocketServer {
                             //send this to master server.
                             me.sendToMaster(msg);
                         }
+                        _.forEach(me.subscriblers, x=>x.onPokemon(pokemon))
                     }
                 });
                 
@@ -131,5 +138,7 @@ class SocketServer {
 }
 
 export = module.exports = function (http: any, settings :IAppConfigs) {
-    return new SocketServer(http, settings)
+    var socketSrv=  new SocketServer(http, settings)
+    socketSrv.addSubscribler(Discord(settings.DiscordToken, settings.DiscordChannels))
+    return socketSrv;
 }

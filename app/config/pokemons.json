@@ -1454,7 +1454,7 @@
     },
     "128": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "Tauros",
         "Id": 128,

@@ -7,4 +7,6 @@ interface IAppConfigs {
     StatsFile : string;
     MasterSocketServer?:string;
     IsSlaveNode?:boolean;
+    DiscordToken:string;
+    DiscordChannels :string;
 }

@@ -6,5 +6,7 @@
     "DropboxSync": true,
     "StatsFile": "stats_dev.txt",
     "MasterSocketServer": "http://localhost:5000",
-    "IsSlaveNode": false
+    "IsSlaveNode": false,
+    "DiscordToken": "MjQ1NzA4OTI3NjUwNDk2NTEz.CwSEBA.GmOrhSI_FvKQzUdoEhiMLd9GdL0",
+    "DiscordChannels": "245851541024538624"
 }
