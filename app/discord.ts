@@ -37,7 +37,7 @@ class Discord implements ISubscribler {
        
         this.bot.sendMessage({
             to:this.channels,
-            message: "```" + message + "```" 
+            message:  message 
         })
     }
 }
