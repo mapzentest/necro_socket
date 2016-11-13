@@ -278,7 +278,7 @@
     },
     "25": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Pikachu",
         "Id": 25,
@@ -1385,7 +1385,7 @@
     },
     "122": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 90,
         "Feed": true,
         "Name": "MrMime",
         "Id": 122,
