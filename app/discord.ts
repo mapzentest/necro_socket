@@ -33,10 +33,11 @@ class Discord implements ISubscribler {
     }
     public onPokemon = (pkm: IPokemonItem): void => {
         const iv = Math.round(pkm.IV * 100) / 100
-
+        const  message = `**${pkm.Name}**    __${pkm.Latitude}, ${pkm.Longitude}__     IV: ${iv}%     expired: ${pkm.ExpireTimestamp}` 
+       
         this.bot.sendMessage({
             to:this.channels,
-            message:`**${pkm.Name}**    __${pkm.Latitude}, ${pkm.Longitude}__     IV: ${iv}%     expired: ${pkm.ExpireTimestamp}` 
+            message: "```" + message + "```" 
         })
     }
 }
