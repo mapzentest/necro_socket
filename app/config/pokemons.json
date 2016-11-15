@@ -1082,7 +1082,7 @@
     },
     "95": {
         "FilteredLV": 0,
-        "FilteredIV": 0,
+        "FilteredIV": 80,
         "Feed": true,
         "Name": "Onix",
         "Id": 95,
